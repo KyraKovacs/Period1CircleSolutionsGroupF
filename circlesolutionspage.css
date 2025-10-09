@@ -26,8 +26,8 @@ body{
 .px100{
     font-size: 100px;
 }
-.px20{
-    font-size: 20px;
+.px30{
+    font-size: 30px;
 }
 .px40{
     font-size: 40px;
@@ -58,9 +58,9 @@ body{
     display: flex;
     align-content: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 30px;
     color: #799DAB;
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: none;
 }
 .photo{
@@ -82,7 +82,8 @@ body{
 
 
 .globalreach{
-    background-color: #799DAB;
+    width: 300px;
+    height: auto;
 }
 
 .white{
