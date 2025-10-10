@@ -1,19 +1,300 @@
 body{
     color: #799DAB;
 }
-
-.welcomeblue{
+.navbar{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
     background-color: #C7EAF8;
+}
+.logo{
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4px;
+}
+
+.quote{
+    width: 50px;
+    height: 50px;
+}
+.px130{
+    font-size: 120px;
+}
+.px100{
+    font-size: 100px;
+}
+.px30{
+    font-size: 30px;
+}
+.px40{
+    font-size: 40px;
+}
+.textleftside{
+    padding: 6rem;
+    line-height: 30px;
+}
+.language{
+    width: 50px;
+    height: 50px;
+}
+.welcometext{
+    background-color: #C7EAF8;
+    display: flex;
+    align-content: space-between;
+    justify-content: flex-start;
 }
 
 .card{
     background-color: white;
+    display: flex;
+    align-content:center;
+    justify-content: center;
+}
+.navbar a{
+    float: inline-end;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    color: #799DAB;
+    font-size: 30px;
+    text-decoration: none;
+}
+.photo{
+    width: 75px;
+    height: 75px;
+}
+.company{
+    width: 30px;
+    height: 30px;
+}
+.flag{
+    width: 60px;
+    height: 40px;
+}
+.welcomeblue{
+    background-color: #C7EAF8;
 }
 
 .globalreach{
-    background-color: #799DAB;
+    width: 300px;
+    height: auto;
 }
 
 .white{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Calibre-Regular";
+    src: url(fonts/Calibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Calibre-Bold";
+    src: url(fonts/Calibre-Bold.otf);
+}
+
+.content {
+  color: #799dab;
+}
+
+
+
+/* section : values */
+
+.values-section {
+    display: flex;
+    overflow: hidden; /* prevent scrollbars */
+    max-width: 100%;
+    min-height: 100vh;
+    padding-top: 70px;
+}
+
+.values-section-left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.values-section-left h1 {
+    font-size: 5rem;
+    font-family: "Calibre-Bold";
+    color: #c7eaf8;
+}
+
+.values-section-right {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+}
+
+.values-section-right img {
+    width: 680px;
+    height: auto;
+}
+
+
+/* section : executive team */
+
+.team-section {
+    max-width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#C7eaf8 50%, white 50%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 20px;
+}
+
+.team-section h1 {
+    font-family: "Calibre-Bold";
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    max-width: 1080px;
+}
+
+.team-member {
+    text-align: center;
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.team-member h2 {
+    font-family: "Calibre-Bold";
+    font-size: 1.25rem;
+    margin-top: 40px;
+    color: #799dab;
+}
+
+.team-member p {
+    font-family: "Calibre-Regular";
+    font-size: 1.125rem;
+    line-height: 2;
+    color: #799dab;
+}
+
+.team-button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 6px 20px;
+    font-size: 0.875rem;
+    border: 1px solid #799dab;
+    background: transparent;
+    color: #799dab;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.team-button:hover {
+    background-color: #799dab;
     color: white;
 }
