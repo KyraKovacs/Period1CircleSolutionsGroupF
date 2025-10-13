@@ -1,0 +1,122 @@
+@font-face {
+font-family: "calibre";
+src: url(fonts/fonts/Calibre-Black.otf) format("opentype");
+font-weight: 500;
+font-style: normal;
+}
+@font-face {
+font-family: "calibre";
+src: url(fonts/fonts/Calibre-BlackItalic.otf) format("opentype");
+font-weight: 500;
+font-style: italic;
+}
+@font-face{
+    font-family: "calibre";
+    src: url(fonts/fonts/Calibre-Bold.otf) format("opentype");
+    font-weight: 500;
+    font-style: bold;
+}
+@font-face{
+    font-family: "calibre";
+src: url(fonts/fonts/Calibre-BoldItalic.otf) format("opentype");
+font-weight: 700;
+font-style: normal;
+}
+@font-face{
+    font-family: "calibre";
+src: url(fonts/fonts/Calibre-Light.otf) format("opentype");
+font-weight: 300;
+font-style: normal;
+}
+@font-face{
+    font-family: "calibre";
+src: url(fonts/fonts/Calibre-LightItalic.otf) format("opentype");
+font-weight: 300;
+font-style: italic;
+}
+@font-face{
+    font-family: "calibre";
+src: url(fonts/fonts/Calibre-Medium.otf) format("opentype");
+font-weight: 600;
+font-style: normal;
+}
+@font-face{
+    font-family: "calibre";
+src: url(fonts/fonts/Calibre-MediumItalic.otf) format("opentype");
+font-weight: 600;
+font-style: normal;
+}
+@font-face{
+    font-family: "calibre";
+src: url(fonts/fonts/Calibre-Regular.otf) format("opentype");
+font-weight: 500;
+font-style: normal;
+}
+@font-face{
+    font-family: "calibre";
+src: url(fonts/fonts/Calibre-RegularItalic.otf) format("opentype");
+font-weight: 400;
+font-style: italic;
+}
+@font-face{
+    font-family: "calibre";
+src: url(fonts/fonts/Calibre-Semibold.otf) format("opentype");
+font-weight: 400;
+font-style: bold;
+}
+@font-face{
+    font-family: "calibre";
+src: url(fonts/fonts/Calibre-SemiboldItalic.otf) format("opentype");
+font-weight: 200;
+  font-style: italic;
+  font-style: bold;
+}
+
+body {
+font-family: "calibre";
+background-color: #C7EAF8;
+display: flex;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(12, 1fr);
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+}
+
+main
+{
+    margin: 80px;
+}
+
+.white
+{
+    color: white;
+    font-family: "calibre";
+    font-weight: 700;
+    font-size: 90px;
+    letter-spacing: -2.3px;
+}
+
+.bluegrey
+{
+    color: #799DAB;
+    font-family: "calibre";
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: -1px;
+    margin-top: -40px;
+}
+
+.worldmap
+{
+    width: 80vw;
+}
+
+.whitebox
+{
+    background-color: white;
+    width: 1fr;
+    height: 30vh
+}
+
