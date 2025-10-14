@@ -797,14 +797,12 @@
             evolve.
         </p>
     </details>
-    <details>
-        <summary class="faq-question">How can we get started?</summary>
-        <p class="faq-text">
-            Simply reach out via the contact form below or send us an email at hi@circlesolutions.com.
-            We'll plan a short call to discuss your needs and explore what kind of software could help your team
-            work more efficiently.
-        </p>
-    </details>
+    <a href="">
+        <details>
+            <summary class="faq-question faq-error">How can we get started?</summary>
+        </details>
+    </a>
+
 </div>
 <!-- CONTACT US PAGE -->
 <div class="contact-us-container px30">
