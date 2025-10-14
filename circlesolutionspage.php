@@ -622,7 +622,16 @@
         </div>
     </div>
     <div class="contact-us-right-section">
-        <form action="<?php echo $_SERVER["PHP_SELF"]?>" method="POST"></form>
+        <form action="<?php echo $_SERVER["PHP_SELF"]?>" method="POST">
+            <label class="form-label" for="name">name</label>
+            <input class="form-input" type="text" name="name" id="name">
+            <label class="form-label" for="company-name">company name</label>
+            <input class="form-input" type="text" name="company-name" id="company-name">
+            <label class="form-label" for="email">e-mail</label>
+            <input class="form-input" type="email" name="email" id="email">
+            <label class="form-label" for="message">how can we help?</label>
+            <textarea name="message" id="message" rows="8" cols="50"></textarea>
+        </form>
     </div>
 </div>
 </body>
