@@ -1,6 +1,31 @@
 @font-face {
-    font-family: calibre;
+    font-family: "Calibre-Regular";
     src: url(fonts/fonts/Calibre-Regular.otf);
+}
+
+@font-face {
+    font-family: "Calibre-Bold";
+    src: url(fonts/fonts/Calibre-Bold.otf);
+}
+
+@font-face {
+    font-family: "Calibre-Black";
+    src: url(fonts/fonts/Calibre-Black.otf);
+}
+
+@font-face {
+    font-family: "Calibre-Semibold";
+    src: url(fonts/fonts/Calibre-Semibold.otf);
+}
+
+@font-face {
+    font-family: "Calibre-Medium";
+    src: url(fonts/fonts/Calibre-Medium.otf);
+}
+
+@font-face {
+    font-family: "Calibre-Light";
+    src: url(fonts/fonts/Calibre-Light.otf);
 }
 
 * {
@@ -10,7 +35,7 @@
 }
 body{
     margin: 0;
-    font-family: calibre;
+    font-family: Calibre-Regular;
     color: #799DAB;
 }
 .navbar{
@@ -187,16 +212,6 @@ body{
     margin: 0;
     padding: 10;
     box-sizing: border-box;
-}
-
-@font-face {
-    font-family: "Calibre-Regular";
-    src: url(fonts/Calibre-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Calibre-Bold";
-    src: url(fonts/Calibre-Bold.otf);
 }
 
 .content {
@@ -526,6 +541,10 @@ body{
     margin-bottom: 48px;
 }
 
+.contact-us-left-section, .contact-us-right-section {
+    display: inline-block;
+}
+
 .contact-methods-downloads-container {
     max-width: 300px;
     margin-left: 64px
@@ -570,12 +589,6 @@ body{
     font-weight: bold;
 }
 
-.download-option {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .download-option-text {
     font-size: 18px;
     font-weight: bold;
@@ -586,6 +599,14 @@ body{
     margin-right: 12px;
 }
 
+.download-lorem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #799DAB;
+    text-decoration: none;
+}
+
 .vertical-divider {
     height: 24px;
     display: inline-block;
@@ -593,7 +614,7 @@ body{
     margin: 12px 12px;
 }
 
-body {
+/* body {
 font-family: "calibre";
 background-color: #C7EAF8;
 display: flex;
@@ -603,7 +624,7 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 text-align: center;
-}
+} */
 
 main
 {

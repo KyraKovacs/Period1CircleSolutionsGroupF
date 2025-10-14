@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions</title>
     <link rel="stylesheet" href="circlesolutionspage.css">
 </head>
+
 <body>
     <!-- main div containing all of the blue bkg color items -->
     <div class="bluehomepage">
         <!-- navbar -->
         <div class="navbar">
             <img class="logo" src="images\logo\logo\circle solutions_logo_01(bluetext_blank background).png" alt="logo">
-            <a href="language"> <img class="language" src="images\_WINDOWS\1-homepage\language select icon.png" alt="languageselect">EN</a>
+            <a href="language"> <img class="language" src="images\_WINDOWS\1-homepage\language select icon.png"
+                    alt="languageselect">EN</a>
             <a href="contactus">contact us</a>
             <a href="whatwebuild">what we build</a>
             <a href="aboutus">about us</a>
@@ -32,7 +35,8 @@
                 <!-- card divclasses are for the white little cards -->
                 <div class="card">
                     <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
-                    <p class="px16">“circle solutions provides really good, dedicated talents that posses a strong work ethic.”</p>
+                    <p class="px16">“circle solutions provides really good, dedicated talents that posses a strong work
+                        ethic.”</p>
                     <img class="photo" src="images\_WINDOWS\1-homepage\1-Jinyi Guo.png" alt="jinyiguo">
                     <p class="px18"><b>Jinyi Guo</b></p>
                     <img class="company" src="images\_WINDOWS\1-homepage\Luckin Coffee.png" alt="luckincoffee">
@@ -41,7 +45,8 @@
                 </div>
                 <div class="card">
                     <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
-                    <p class="px16">“always understanding our requirements to the detail, designing and developing high-quality software.”</p>
+                    <p class="px16">“always understanding our requirements to the detail, designing and developing
+                        high-quality software.”</p>
                     <img class="photo" src="images\_WINDOWS\1-homepage\2-Andy Jassy.png" alt="andyjassy">
                     <p class="px18"><b>Andy Jassy</b></p>
                     <img class="company" src="images\_WINDOWS\1-homepage\Amazon.png" alt="amazon">
@@ -50,188 +55,227 @@
                 </div>
                 <div class="card">
                     <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
-                    <p class="px16">“this plugin has been great to work with. It has some really advanced functionality and easy to modify”</p>
+                    <p class="px16">“this plugin has been great to work with. It has some really advanced functionality
+                        and easy to modify”</p>
                     <img class="photo" src="images\_WINDOWS\1-homepage\3-Oliver Zipse.png" alt="oliverzipse">
                     <p class="px18"><b>Oliver Zipse</b></p>
                     <img class="company" src="images\_WINDOWS\1-homepage\BMW.png" alt="bmw">
                     <p class="px12">CEO | BMW, Germany</p>
                     <img class="flag" src="images\_WINDOWS\1-homepage\3-Germany flag.png" alt="usflag">
                 </div>
-                <a href="globalreach"><img class="globalreach" src="images\_WINDOWS\1-homepage\explore global reach button.png" alt=""></a>
+                <a href="globalreach"><img class="globalreach"
+                        src="images\_WINDOWS\1-homepage\explore global reach button.png" alt=""></a>
+            </div>
         </div>
-    </div>
-    <div class="whitehomepage">
-        <div class="firstrow">
-            <img class="reviews" src="images\_WINDOWS\1-homepage\Clutch Review.png" alt="clutchreview">
-            
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <main>
-        <h1 class="white">our global reach</h1>
-        <div class="bluegrey">trusted worldwide across 30+ countries</div>
-        <img class="worldmap" src="images/_WINDOWS/4-global presence/world map.png" alt="world map">
-
-
-
-
-
-
-    </main>
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     <!--section-values-->
-
-    <section class="values-section">
-        <div class="values-section-left">
-            <h1>values</h1>
+        <div class="whitehomepage">
+            <div class="firstrow">
+                <img class="reviews" src="images\_WINDOWS\1-homepage\Clutch Review.png" alt="clutchreview">
+
+            </div>
         </div>
 
-        <div class="values-section-right">
-            <img src="images/_WINDOWS/3-about us/values.png" alt="values">
-        </div>
-    </section>
 
 
-<!--section - executive team-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <main>
+            <h1 class="white">our global reach</h1>
+            <div class="bluegrey">trusted worldwide across 30+ countries</div>
+            <img class="worldmap" src="images/_WINDOWS/4-global presence/world map.png" alt="world map">
+
+
+
+
+
+
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--section-values-->
+
+        <section class="values-section">
+            <div class="values-section-left">
+                <h1>values</h1>
+            </div>
+
+            <div class="values-section-right">
+                <img src="img-about us/values.png" alt="values">
+            </div>
+        </section>
+
+
+        <!--section - executive team-->
 
         <section class="team-section">
             <h1>our executive team</h1>
 
             <div class="team-container">
                 <div class="team-member">
-                    <img src="images/_WINDOWS/3-about us/pieter bakker.png" alt="Pieter Bakker">
+                    <img src="img-about us/Pieter Bakker.png" alt="Pieter Bakker">
                     <h2>Pieter Bakker</h2>
                     <p>chief executive officer</p>
                     <button class="team-button" data-member="1">view profile</button>
                 </div>
 
-                <div class="team-member">
-                    <img src="images/_WINDOWS/3-about us/william wisser.png" alt="William Wisser">
-                    <h2>William Wisser</h2>
-                    <p>chief technology officer</p>
-                    <button class="team-button" data-member="2">view profile</button>
-                </div>
+                <div class="values-section-right">
+                    <img src="images/_WINDOWS/3-about us/values.png" alt="values">
+                    <div class="team-member">
+                        <img src="img-about us/William Wisser.png" alt="William Wisser">
+                        <h2>William Wisser</h2>
+                        <p>chief technology officer</p>
+                        <button class="team-button" data-member="2">view profile</button>
+                    </div>
 
-                <div class="team-member">
-                    <img src="images/_WINDOWS/3-about us/jan van dijk.png" alt="van Dijk">
-                    <h2>Jan van Dijk</h2>
-                    <p>chief commercial officer</p>
-                    <button class="team-button" data-member="3">view profile</button>
-                </div>
+                    <div class="team-member">
+                        <img src="img-about us/Jan van Dijk.png" alt="Jan van Dijk">
+                        <h2>Jan van Dijk</h2>
+                        <p>chief commercial officer</p>
+                        <button class="team-button" data-member="3">view profile</button>
+                    </div>
 
-                <div class="team-member">
-                    <img src="images/_WINDOWS/3-about us/sarah kleinn.png" alt="Sarah Kleinn">
-                    <h2>Sarah Kleinn</h2>
-                    <p>chief application officer</p>
-                    <button class="team-button" data-member="4">view profile</button>
+                    <!--section - executive team-->
+
+                    <section class="team-section">
+                        <h1>our executive team</h1>
+
+                        <div class="team-container">
+                            <div class="team-member">
+                                <img src="images/_WINDOWS/3-about us/pieter bakker.png" alt="Pieter Bakker">
+                                <h2>Pieter Bakker</h2>
+                                <p>chief executive officer</p>
+                                <button class="team-button" data-member="1">view profile</button>
+                            </div>
+
+                            <div class="team-member">
+                                <img src="images/_WINDOWS/3-about us/william wisser.png" alt="William Wisser">
+                                <h2>William Wisser</h2>
+                                <p>chief technology officer</p>
+                                <button class="team-button" data-member="2">view profile</button>
+                            </div>
+
+                            <div class="team-member">
+                                <img src="images/_WINDOWS/3-about us/jan van dijk.png" alt="Jan van Dijk">
+                                <h2>Jan van Dijk</h2>
+                                <p>chief commercial officer</p>
+                                <button class="team-button" data-member="3">view profile</button>
+                            </div>
+
+                            <div class="team-member">
+                                <img src="images/_WINDOWS/3-about us/sarah kleinn.png" alt="Sarah Kleinn">
+                                <h2>Sarah Kleinn</h2>
+                                <p>chief application officer</p>
+                                <button class="team-button" data-member="4">view profile</button>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="team-member">
+                        <img src="img-about us/Sarah Kleinn.png" alt="Sarah Kleinn">
+                        <h2>Sarah Kleinn</h2>
+                        <p>chief application officer</p>
+                        <button class="team-button" data-member="4">view profile</button>
+                    </div>
                 </div>
-            </div>
         </section>
 
 
@@ -247,9 +291,9 @@
         <div id="memberProfiles" style="display:none;">
             <div class="modal-content">
                 <div data-member="1">
-                    <img class="data-member-img" src="images/_WINDOWS/3-about us/pieter bakker.png" alt="Pieter Bakker">
+                    <img class="data-member-img" src="img-about us/Pieter Bakker.png" alt="Pieter Bakker">
                     <h2>Pieter Bakker</h2>
-                    <p>chief executive officer<p><br>
+                    <h3><strong>chief executive officer</strong></h3><br>
                     <p>Pieter Bakker has over 30 years of experience in digital strategy and enterprise transformation.
                         Before founding Circle Solutions in 2010, he served as Regional Director at a leading European
                         consulting firm,
@@ -262,9 +306,9 @@
             </div>
 
             <div data-member="2">
-                <img class="data-member-img" src="images/_WINDOWS/3-about us/william wisser.png" alt="William Wisser">
+                <img class="data-member-img" src="img-about us/William Wisser.png" alt="William Wisser">
                 <h2>William Wissen</h2>
-                <p>chief technology officer</h3><br>
+                <h3><strong>chief technology officer</strong></h3><br>
                 <p>William Wissen brings over 15 years of experience in software architecture, cloud engineering,
                     and enterprise systems integration. Before joining Circle Solutions in 2015, he led technology
                     innovation
@@ -277,9 +321,9 @@
             </div>
 
             <div data-member="3">
-                <img class="data-member-img" src="images/_WINDOWS/3-about us/jan van dijk.png" alt="Jan van Dijk">
+                <img class="data-member-img" src="img-about us/Jan van Dijk.png" alt="Jan van Dijk">
                 <h2>Jan van Dijk</h2>
-                <h3>chief commercial officer</h3><br>
+                <h3><strong>chief commercial officer</strong></h3><br>
                 <p>Jan van Dijk has more than 20 years of experience in international business development and client
                     relations. Prior to joining Circle Solutions in 2011, he managed strategic partnerships across
                     Europe and
@@ -292,9 +336,9 @@
             </div>
 
             <div data-member="4">
-                <img class="data-member-img" src="images/_WINDOWS/3-about us/sarah kleinn.png" alt="Sarah Kleinn">
+                <img class="data-member-img" src="img-about us/Sarah Kleinn.png" alt="Sarah Kleinn">
                 <h2>Sarah Kleinn</h2>
-                <h3>chief application officer</h3><br>
+                <h3><strong>chief application officer</strong></h3><br>
                 <p>Sarah Klein has over 20 years of experience in software development, UX design, and enterprise
                     application management. Before joining Circle Solutions in 2014, she directed application strategy
                     at
@@ -328,10 +372,7 @@
                 if (e.target === modal) modal.classList.remove('show');
             });
         </script>
-
-
-
->>>>>>> 541ecbea067f3a7e5d09eed896a5420131696095
+        >>>>>>> 541ecbea067f3a7e5d09eed896a5420131696095
 
 
 
@@ -479,70 +520,71 @@
 
 
 <!-- FAQ PAGE -->
- <div class="faq-questions-container px30">
-     <div class="help-section-header px80">frequently asked questions</div>
+<div class="faq-questions-container px30">
+    <div class="help-section-header px80">frequently asked questions</div>
     <details>
         <summary class="faq-question">What does Circle Solutions do?</summary>
-            <p class="faq-text">
-                We design and develop custom software that helps organizations work more efficiently. 
-                Every solution is built around real needs — no unnecessary features, no clutter. 
-                Just what's needed to make things work smoothly.
-            </p>
+        <p class="faq-text">
+            We design and develop custom software that helps organizations work more efficiently.
+            Every solution is built around real needs — no unnecessary features, no clutter.
+            Just what's needed to make things work smoothly.
+        </p>
     </details>
     <details>
         <summary class="faq-question">What types of software do you build?</summary>
-            <p class="faq-text">
-                Our work ranges from internal tools and workflow platforms to 
-                data dashboards and integration systems. We build solutions that simplify daily operations 
-                — especially for teams in business, logistics, and IT.
-            </p>
+        <p class="faq-text">
+            Our work ranges from internal tools and workflow platforms to
+            data dashboards and integration systems. We build solutions that simplify daily operations
+            — especially for teams in business, logistics, and IT.
+        </p>
     </details>
     <details>
         <summary class="faq-question">How do you approach new projects?</summary>
-            <p class="faq-text">
-                We start by understanding how your organization works and where things can be improved. 
-                From there, we design and develop software that fits — not the other way around. 
-                Throughout the process, you'll have one clear point of contact.
-            </p>
+        <p class="faq-text">
+            We start by understanding how your organization works and where things can be improved.
+            From there, we design and develop software that fits — not the other way around.
+            Throughout the process, you'll have one clear point of contact.
+        </p>
     </details>
     <details>
         <summary class="faq-question">What makes Circle Solutions different?</summary>
-            <p class="faq-text">
-                Simplicity. We don't add complexity where it's not needed. Our software is clean, 
-                functional, and reliable — focused on usability and long-term value.
-            </p>
+        <p class="faq-text">
+            Simplicity. We don't add complexity where it's not needed. Our software is clean,
+            functional, and reliable — focused on usability and long-term value.
+        </p>
     </details>
     <details>
         <summary class="faq-question">Do you offer off-the-shelf products?</summary>
-            <p class="faq-text">
-                No. Every solution we create is custom-built for the client's specific context and goals. 
-                This ensures that your software fits your processes — instead of forcing your processes to fit the software.
-            </p>
+        <p class="faq-text">
+            No. Every solution we create is custom-built for the client's specific context and goals.
+            This ensures that your software fits your processes — instead of forcing your processes to fit the
+            software.
+        </p>
     </details>
     <details>
         <summary class="faq-question">How do you ensure quality and reliability?</summary>
-            <p class="faq-text">
-                We follow a clear, structured development process with built-in testing at every step. 
-                Our code is maintainable, well-documented, and ready to grow with your organization.
-            </p>
+        <p class="faq-text">
+            We follow a clear, structured development process with built-in testing at every step.
+            Our code is maintainable, well-documented, and ready to grow with your organization.
+        </p>
     </details>
     <details>
         <summary class="faq-question">What happens after delivery?</summary>
-            <p class="faq-text">
-                After launch, we stay available for support and further development. 
-                Many of our clients continue working with us to refine or expand their systems as their needs evolve.
-            </p>
+        <p class="faq-text">
+            After launch, we stay available for support and further development.
+            Many of our clients continue working with us to refine or expand their systems as their needs
+            evolve.
+        </p>
     </details>
-    <details>
-        <summary class="faq-question">How can we get started?</summary>
-            <p class="faq-text">
-                Simply reach out via the contact form below or send us an email at hi@circlesolutions.com. 
-                We'll plan a short call to discuss your needs and explore what kind of software could help your team work more efficiently.
-            </p>
-    </details>
- </div>
- <!-- CONTACT US PAGE -->
-  <div class="contact-us-container px30">
+    <a href="">
+        <details>
+            <summary class="faq-question faq-error">How can we get started?</summary>
+        </details>
+    </a>
+
+</div>
+<!-- CONTACT US PAGE -->
+<div class="contact-us-container px30">
     <div class="contact-us-left-section">
         <div class="contact-us-header-container">
             <div class="help-section-header px80">contact us</div>
@@ -566,26 +608,36 @@
             <div class="downloads">
                 <div class="download-bold-text">download</div>
                 <div class="downloads-container">
-                    <div class="download-option">
+                    <a class="download-lorem" href="lorem.txt" target="_blank" download="whitepaper">
                         <img class="download-icon" src="images/_WINDOWS/8-contact us/download.png">
                         <div class="download-option-text">
                             whitepaper
                         </div>
-                    </div>
-                    <!-- elo -->
+                    </a>
                     <div class="vertical-divider"></div>
-                    <div class="download-option">
+                    <a class="download-lorem" href="lorem.txt" target="_blank" download="brochure">
                         <img class="download-icon" src="images/_WINDOWS/8-contact us/download.png">
                         <div class="download-option-text">
                             brochure
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="contact-us-right-section">
+        <form action="" method="POST">
+            <label class="form-label" for="name">name</label>
+            <input class="form-input" type="text" name="name" id="name">
+            <label class="form-label" for="company-name">company name</label>
+            <input class="form-input" type="text" name="company-name" id="company-name">
+            <label class="form-label" for="email">e-mail</label>
+            <input class="form-input" type="email" name="email" id="email">
+            <label class="form-label" for="message">how can we help?</label>
+            <textarea name="message" id="message" rows="8" cols="50"></textarea>
+        </form>
     </div>
-  </div>
+</div>
 </body>
+
 </html>
