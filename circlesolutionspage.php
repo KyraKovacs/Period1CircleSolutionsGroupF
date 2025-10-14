@@ -508,7 +508,13 @@
 
 
 
+ <!-- section : 404 page -->
 
+<section class="page404-section">
+    <h1>404</h1>
+    <p>page not found</p>
+    <button class="button-page404">go back home</button>
+</section>
 
 
 
@@ -634,6 +640,7 @@
         </form>
     </div>
 </div>
+  </div>
 </body>
 
 </html>
