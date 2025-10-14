@@ -1,4 +1,11 @@
+@font-face {
+    font-family: calibre;
+    src: url(fonts/fonts/Calibre-Regular.otf);
+}
+
 body{
+    margin: 0;
+    font-family: calibre;
     color: #799DAB;
 }
 .navbar{
@@ -26,11 +33,17 @@ body{
 .px100{
     font-size: 100px;
 }
+.px80{
+    font-size: 80px;
+}
 .px30{
     font-size: 30px;
 }
 .px40{
     font-size: 40px;
+}
+.px24{
+    font-size: 24px;
 }
 .textleftside{
     padding: 6rem;
@@ -297,4 +310,179 @@ body{
 .team-button:hover {
     background-color: #799dab;
     color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FAQ PAGE */
+
+.help-section-header {
+    font-weight: bold;
+    color:#C7EAF8; 
+    max-width: 510px;
+}
+
+.help-section-slogan {
+    color:#C7EAF8; 
+}
+
+.faq-questions-container {
+    /* temporarily */
+    margin-left: 300px; 
+}
+
+.faq-question {
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    max-width: 1000px;
+    margin-bottom: 16px;
+    transition: opacity 0.3s;
+}
+
+.faq-question:hover {
+    opacity: 0.7;
+}
+
+.faq-text {
+    font-size: 24px;
+    margin: 32px 32px;
+    max-width: 700px;
+    line-height: 48px;
+}
+
+/* CONTACT US PAGE */
+
+.contact-us-header-container {
+    max-width: 325px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.contact-methods-downloads-container {
+    max-width: 300px;
+    margin-left: 64px
+}
+
+.contact-methods {
+    margin-bottom: 96px
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.contact-method-icon {
+    margin-right: 24px;
+    height: 32px;
+}
+
+.contact-method-text {
+    font-size: 18px;
+    color: #799DAB;
+}
+
+.downloads {
+    text-align: center;
+    font-size: 24px;
+}
+
+.downloads-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #C7EAF8;
+    border-radius: 50px;
+    padding: 6px 6px;
+}
+
+.download-bold-text {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.download-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-option-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.download-icon {
+    height: 24px;
+    margin-right: 12px;
+}
+
+.vertical-divider {
+    height: 24px;
+    display: inline-block;
+    border: 0.1px solid #C7EAF8;
+    margin: 12px 12px;
 }
