@@ -587,7 +587,7 @@
 <div class="contact-us-container px30">
     <div class="contact-us-left-section">
         <div class="contact-us-header-container">
-            <div class="help-section-header px80">contact us</div>
+            <div class="help-section-header px72">contact us</div>
             <div class="help-section-slogan">just connect the dots.</div>
         </div>
         <div class="contact-methods-downloads-container">
@@ -626,15 +626,32 @@
         </div>
     </div>
     <div class="contact-us-right-section">
-        <form action="" method="POST">
+        <form class="contact-form" action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
             <label class="form-label" for="name">name</label>
             <input class="form-input" type="text" name="name" id="name">
             <label class="form-label" for="company-name">company name</label>
             <input class="form-input" type="text" name="company-name" id="company-name">
             <label class="form-label" for="email">e-mail</label>
             <input class="form-input" type="email" name="email" id="email">
-            <label class="form-label" for="message">how can we help?</label>
-            <textarea name="message" id="message" rows="8" cols="50"></textarea>
+            <label class="form-label-message" for="message">how can we help?</label>
+            <textarea class="message" name="message" id="message" rows="5" cols="50"></textarea>
+            <div class="attach-container">
+                <div>
+                    <label class="attach-label" for="file">
+                        <img class="attach-img" src="images/_WINDOWS/8-contact us/attach file.png">
+                        <span>attach file</span>
+                    </label>
+                    <input type="file" id="file">
+                </div>
+                <!-- <div class="tooltip-file">
+                    <img class="tooltip-img" src="images/_WINDOWS/8-contact us/information.png">
+                    <div class="tooltip-text">Upload a file from your device</div>
+                </div> -->
+            </div>
+            <div class="privacy-policy-container">
+                <input type="radio" name="privacy-policy" id="privacy-policy">
+                <label class="form-label" for="privacy-policy">i accept <u>privacy policy</u></label>
+            </div>
         </form>
     </div>
 </div>

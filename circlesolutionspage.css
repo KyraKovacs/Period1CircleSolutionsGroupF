@@ -69,6 +69,9 @@ body{
 .px80{
     font-size: 80px;
 }
+.px72{
+    font-size: 72px;
+}
 .px30{
     font-size: 30px;
 }
@@ -493,18 +496,13 @@ body{
 /* FAQ PAGE */
 
 .help-section-header {
-    font-weight: bold;
+    font-family: Calibre-Bold;
     color:#C7EAF8; 
     max-width: 510px;
 }
 
 .help-section-slogan {
     color:#C7EAF8; 
-}
-
-.faq-questions-container {
-    /* temporarily */
-    margin-left: 300px; 
 }
 
 .faq-question {
@@ -531,6 +529,12 @@ body{
 }
 
 /* CONTACT US PAGE */
+
+.contact-us-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .contact-us-header-container {
     max-width: 325px;
@@ -585,13 +589,12 @@ body{
 }
 
 .download-bold-text {
-    font-size: 32px;
     font-weight: bold;
+    font-size: 32px;
 }
 
 .download-option-text {
     font-size: 18px;
-    font-weight: bold;
 }
 
 .download-icon {
@@ -600,8 +603,8 @@ body{
 }
 
 .download-lorem {
+    font-family: Calibre-Semibold;
     display: flex;
-    justify-content: center;
     align-items: center;
     color: #799DAB;
     text-decoration: none;
@@ -612,6 +615,103 @@ body{
     display: inline-block;
     border: 0.1px solid #C7EAF8;
     margin: 12px 12px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.form-label {
+    font-size: 18px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.form-label-message {
+    font-size: 18px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.form-input {
+    font-size: 18px;
+    color: #799DAB;
+    border: none;
+    border-bottom: 1px solid #799DAB;
+    margin-bottom: 20px;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.message {
+    font-size: 18px;
+    color: #799DAB;
+    resize: none;
+    border: 1px solid #799DAB;
+}
+
+.message:focus {
+    outline: none;
+}
+
+.attach-container {
+    display: flex;
+    align-items: baseline;
+}
+
+#file {
+    display: none;
+}
+
+.attach-label {
+    margin-top: 12px;
+    margin-left: 24px;
+    display: inline-flex;
+    align-items: baseline;
+    cursor: pointer;
+    color: #799DAB;
+    font-size: 18px;
+}
+
+.attach-img {
+    height: 12px;
+    margin-right: 18px;
+}
+
+/* DO WE REALLY NEED THIS TOOLTIP???? */
+/* .tooltip-file {
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+}
+
+.tooltip-img {
+    height: 16px;
+    margin-left: 18px;
+}
+
+.tooltip-text {
+    margin-left: 32px;
+    font-size: 16px;
+    opacity: 0;
+    width: 200px;
+    color: #799DAB;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 0.3s;
+}
+
+.tooltip-file:hover .tooltip-text{
+    opacity: 100%;
+} */
+
+.privacy-policy-container {
+    cursor: pointer;
+    margin-left: 24px;
 }
 
 /* body {
