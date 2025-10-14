@@ -1,4 +1,11 @@
+@font-face {
+    font-family: calibre;
+    src: url(fonts/fonts/Calibre-Regular.otf);
+}
+
 body{
+    margin: 0;
+    font-family: calibre;
     color: #799DAB;
 }
 .navbar{
@@ -26,15 +33,21 @@ body{
 .px100{
     font-size: 100px;
 }
+.px80{
+    font-size: 80px;
+}
 .px30{
     font-size: 30px;
 }
 .px40{
     font-size: 40px;
 }
+.px24{
+    font-size: 24px;
+}
 .textleftside{
     padding: 6rem;
-    line-height: 30px;
+    line-height: 100px;
 }
 .language{
     width: 50px;
@@ -79,8 +92,6 @@ body{
     background-color: #C7EAF8;
 }
 
-
-
 .globalreach{
     width: 300px;
     height: auto;
@@ -88,4 +99,438 @@ body{
 
 .white{
     color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Calibre-Regular";
+    src: url(fonts/Calibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Calibre-Bold";
+    src: url(fonts/Calibre-Bold.otf);
+}
+
+.content {
+  color: #799dab;
+}
+
+
+
+/* section : values */
+
+.values-section {
+    display: flex;
+    overflow: hidden; /* prevent scrollbars */
+    max-width: 100%;
+    min-height: 100vh;
+    padding-top: 70px;
+}
+
+.values-section-left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.values-section-left h1 {
+    font-size: 5rem;
+    font-family: "Calibre-Bold";
+    color: #c7eaf8;
+}
+
+.values-section-right {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+}
+
+.values-section-right img {
+    width: 680px;
+    height: auto;
+}
+
+
+/* section : executive team */
+
+.team-section {
+    max-width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#C7eaf8 50%, white 50%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 20px;
+}
+
+.team-section h1 {
+    font-family: "Calibre-Bold";
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    max-width: 1080px;
+}
+
+.team-member {
+    text-align: center;
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.team-member h2 {
+    font-family: "Calibre-Bold";
+    font-size: 1.25rem;
+    margin-top: 40px;
+    color: #799dab;
+}
+
+.team-member p {
+    font-family: "Calibre-Regular";
+    font-size: 1.125rem;
+    line-height: 2;
+    color: #799dab;
+}
+
+.team-button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 6px 20px;
+    font-size: 0.875rem;
+    border: 1px solid #799dab;
+    background: transparent;
+    color: #799dab;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.team-button:hover {
+    background-color: #799dab;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FAQ PAGE */
+
+.help-section-header {
+    font-weight: bold;
+    color:#C7EAF8; 
+    max-width: 510px;
+}
+
+.help-section-slogan {
+    color:#C7EAF8; 
+}
+
+.faq-questions-container {
+    /* temporarily */
+    margin-left: 300px; 
+}
+
+.faq-question {
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    max-width: 1000px;
+    margin-bottom: 16px;
+    transition: opacity 0.3s;
+}
+
+.faq-question:hover {
+    opacity: 0.7;
+}
+
+.faq-text {
+    font-size: 24px;
+    margin: 32px 32px;
+    max-width: 700px;
+    line-height: 48px;
+}
+
+/* CONTACT US PAGE */
+
+.contact-us-header-container {
+    max-width: 325px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.contact-methods-downloads-container {
+    max-width: 300px;
+    margin-left: 64px
+}
+
+.contact-methods {
+    margin-bottom: 96px
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.contact-method-icon {
+    margin-right: 24px;
+    height: 32px;
+}
+
+.contact-method-text {
+    font-size: 18px;
+    color: #799DAB;
+}
+
+.downloads {
+    text-align: center;
+    font-size: 24px;
+}
+
+.downloads-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #C7EAF8;
+    border-radius: 50px;
+    padding: 6px 6px;
+}
+
+.download-bold-text {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.download-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-option-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.download-icon {
+    height: 24px;
+    margin-right: 12px;
+}
+
+.vertical-divider {
+    height: 24px;
+    display: inline-block;
+    border: 0.1px solid #C7EAF8;
+    margin: 12px 12px;
+}
+
+body {
+font-family: "calibre";
+background-color: #C7EAF8;
+display: flex;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(12, 1fr);
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+}
+
+main
+{
+    margin: 80px;
+}
+
+.white
+{
+    color: white;
+    font-family: "calibre";
+    font-weight: 700;
+    font-size: 90px;
+    letter-spacing: -2.3px;
+}
+
+.bluegrey
+{
+    color: #799DAB;
+    font-family: "calibre";
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: -1px;
+    margin-top: -40px;
+}
+
+.worldmap
+{
+    width: 80vw;
+}
+
+.whitebox
+{
+    background-color: white;
+    width: 1fr;
+    height: 30vh
 }
