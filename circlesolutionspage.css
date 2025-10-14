@@ -464,12 +464,6 @@ body{
     font-weight: bold;
 }
 
-.download-option {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .download-option-text {
     font-size: 18px;
     font-weight: bold;
@@ -478,6 +472,14 @@ body{
 .download-icon {
     height: 24px;
     margin-right: 12px;
+}
+
+.download-lorem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #799DAB;
+    text-decoration: none;
 }
 
 .vertical-divider {
