@@ -420,6 +420,10 @@ body{
     margin-bottom: 48px;
 }
 
+.contact-us-left-section, .contact-us-right-section {
+    display: inline-block;
+}
+
 .contact-methods-downloads-container {
     max-width: 300px;
     margin-left: 64px
@@ -489,9 +493,9 @@ body{
     margin: 12px 12px;
 }
 
-body {
+/* body {
 font-family: "calibre";
-/* background-color: #C7EAF8; */
+background-color: #C7EAF8;
 display: flex;
 grid-template-columns: repeat(12, 1fr);
 grid-template-rows: repeat(12, 1fr);
@@ -499,7 +503,7 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 text-align: center;
-}
+} */
 
 main
 {
