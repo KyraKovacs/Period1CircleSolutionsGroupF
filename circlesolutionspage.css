@@ -486,3 +486,51 @@ body{
     border: 0.1px solid #C7EAF8;
     margin: 12px 12px;
 }
+
+body {
+font-family: "calibre";
+background-color: #C7EAF8;
+display: flex;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(12, 1fr);
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+}
+
+main
+{
+    margin: 80px;
+}
+
+.white
+{
+    color: white;
+    font-family: "calibre";
+    font-weight: 700;
+    font-size: 90px;
+    letter-spacing: -2.3px;
+}
+
+.bluegrey
+{
+    color: #799DAB;
+    font-family: "calibre";
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: -1px;
+    margin-top: -40px;
+}
+
+.worldmap
+{
+    width: 80vw;
+}
+
+.whitebox
+{
+    background-color: white;
+    width: 1fr;
+    height: 30vh
+}
