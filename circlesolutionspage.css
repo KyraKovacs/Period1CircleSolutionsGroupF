@@ -3,6 +3,11 @@
     src: url(fonts/fonts/Calibre-Regular.otf);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     font-family: calibre;
@@ -13,14 +18,17 @@ body{
     top: 0;
     overflow: hidden;
     background-color: #C7EAF8;
+    z-index: 1000;
 }
+
 .logo{
-    width: 250px;
+    width: 200px;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 4px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .quote{
@@ -50,8 +58,9 @@ body{
     line-height: 100px;
 }
 .language{
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 .welcometext{
     background-color: #C7EAF8;
@@ -73,7 +82,7 @@ body{
     justify-content: space-between;
     padding: 10px 30px;
     color: #799DAB;
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
 }
 .photo{
@@ -235,8 +244,10 @@ body{
     height: auto;
 }
 
+/* END of section : Values */
 
-/* section : executive team */
+
+/* Section : executive team */
 
 .team-section {
     max-width: 100%;
@@ -283,7 +294,7 @@ body{
 
 .team-member h2 {
     font-family: "Calibre-Bold";
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-top: 40px;
     color: #799dab;
 }
@@ -311,6 +322,101 @@ body{
     background-color: #799dab;
     color: white;
 }
+
+/* modal profile data */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: fadeOut 0.3s forwards;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.data-member-img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.modal.show {
+    display: flex;
+    animation: fadeIn 0.3s forwards;
+}
+
+.modal-content {
+    font-family: "Calibre-Regular";
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.4;
+    background: white;
+    color: #799dab;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 100%;
+    overflow-y: 90vh;
+    position: relative;
+    transform: translateY(-20px);
+    animation: slideDown 0.4s ease forwards;
+}
+
+.modal-content h2 {
+    font-family: "Calibre-Regular";
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #799dab;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #ed4747;
+}
+
+/* 🌟 ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* END of section : Our Executive Team */
 
 
 
@@ -534,3 +640,62 @@ main
     width: 1fr;
     height: 30vh
 }
+
+/* section : 404 page not found */
+.page404-section {
+    max-width: 100%;
+    min-height: 100vh;
+    background: #C7eaf8;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 20px;
+}
+
+.page404-section h1 {
+    text-align: center;
+    font-family: "Calibre-Bold";
+    font-size: 15rem;
+    color: #799dab;
+    line-height: 0.5;
+}
+
+.page404-section p {
+    text-align: center;
+    font-family: "Calibre-regular";
+    font-size: 3rem;
+    color: #799dab;
+    margin-top: 0px;
+    /* small controlled gap */
+    margin-bottom: 5px;
+}
+
+.page404-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.button-page404 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 30px;
+    font-size: 1.20rem;
+    border: 1px solid #799dab;
+    background: #799dab;
+    color: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.button-page404:hover {
+    background-color: #ffffff;
+    color: #799dab;
+    border: 1px solid #ffffff;
+}
+
+/* END of section : 404 page not found */
