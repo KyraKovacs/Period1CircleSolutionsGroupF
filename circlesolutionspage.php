@@ -954,20 +954,15 @@
             <label class="form-label-message" for="message">how can we help?</label>
             <textarea class="message" name="message" id="message" rows="5" cols="50"></textarea>
             <div class="attach-container">
-                <div>
-                    <label class="attach-label" for="file">
-                        <img class="attach-img" src="images/_WINDOWS/8-contact us/attach file.png">
-                        <span>attach file</span>
-                    </label>
-                    <input type="file" id="file">
-                </div>
-                <!-- <div class="tooltip-file">
-                    <img class="tooltip-img" src="images/_WINDOWS/8-contact us/information.png">
-                    <div class="tooltip-text">Upload a file from your device</div>
-                </div> -->
+                <label class="attach-label" for="file">
+                    <img class="attach-img" src="images/_WINDOWS/8-contact us/attach file.png">
+                    <span>attach file</span>
+                </label>
+                <input type="file" id="file">
+                <img class="tooltip-img" src="images/_WINDOWS/8-contact us/information.png">
             </div>
             <div class="privacy-policy-container">
-                <input type="radio" name="privacy-policy" id="privacy-policy">
+                <input type="checkbox" name="privacy-policy" id="privacy-policy">
                 <label class="form-label" for="privacy-policy">i accept <u>privacy policy</u></label>
             </div>
         </form>
