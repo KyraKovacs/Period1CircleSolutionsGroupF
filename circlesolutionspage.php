@@ -797,12 +797,13 @@
             evolve.
         </p>
     </details>
-    <a href="">
-        <details>
-            <summary class="faq-question faq-error">How can we get started?</summary>
-        </details>
-    </a>
-
+    <details>
+        <summary class="faq-question">How can we get started?</summary>
+        <p class="faq-text">
+        Simply reach out via the contact form below or send us an email at hi@circlesolutions.com. 
+        We'll plan a short call to discuss your needs and explore what kind of software could help your team work more efficiently.
+        </p>
+    </details>
 </div>
 <!-- CONTACT US PAGE -->
 <div class="contact-us-container px30">
@@ -957,13 +958,19 @@
                 <label class="attach-label" for="file">
                     <img class="attach-img" src="images/_WINDOWS/8-contact us/attach file.png">
                     <span>attach file</span>
+                    <div class="tooltip-container">
+                        <img class="tooltip-img" src="images/_WINDOWS/8-contact us/information.png">
+                        <div class="tooltip-text">Upload relevant documents or images from your device.</div>
+                    </div>
                 </label>
                 <input type="file" id="file">
-                <img class="tooltip-img" src="images/_WINDOWS/8-contact us/information.png">
             </div>
-            <div class="privacy-policy-container">
-                <input type="checkbox" name="privacy-policy" id="privacy-policy">
-                <label class="form-label" for="privacy-policy">i accept <u>privacy policy</u></label>
+            <div class="privacy-submit">
+                <div class="privacy-policy-container">
+                    <input type="checkbox" name="privacy-policy" id="privacy-policy">
+                    <label class="form-label" for="privacy-policy">i accept <u>privacy policy</u></label>
+                </div>
+                <input class="submit-img" type="image" src="images/_WINDOWS/8-contact us/connect.png">
             </div>
         </form>
     </div>
