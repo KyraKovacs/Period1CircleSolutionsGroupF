@@ -1,3 +1,44 @@
+<?php
+    function validateInput() {
+        $name = filter_input(INPUT_POST, "name");
+        $company = filter_input(INPUT_POST, "company");
+        $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
+        $message = filter_input(INPUT_POST, "message");
+        $privacy = filter_input(INPUT_POST, "privacy");
+
+        $errors = array();
+
+        if(empty($name) || strlen($name) < 2) {
+            array_push($errors, '<div class="error">
+            <img class="error-dot" src="images/_WINDOWS/8-contact us/dot.png">
+            Please enter your full name.
+            </div>');
+        }
+        if(empty($email)) {
+            array_push($errors, '<div class="error">
+            <img class="error-dot" src="images/_WINDOWS/8-contact us/dot.png">
+            Please enter a valid email address.
+            </div>');
+        }
+        if(strlen($message) < 10) {
+            array_push($errors, '<div class="error">
+            <img class="error-dot" src="images/_WINDOWS/8-contact us/dot.png">
+            Please enter your message (at least 10 characters).
+            </div>');
+        }
+        if($privacy != "on") {
+            array_push($errors, '<div class="error">
+            <img class="error-dot" src="images/_WINDOWS/8-contact us/dot.png">
+            You must agree to the privacy policy to continue.
+            </div>');
+        }
+        if (empty($errors)) {
+            array_push($errors, '<p class="message-success">Your message has been sent successfully.</p>');
+        }
+        return $errors;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +47,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions</title>
     <link rel="stylesheet" href="circlesolutionspage.css">
+    <link rel="stylesheet" href="elo.css">
 </head>
 
 <body>
@@ -626,12 +668,12 @@
             </div>
         </div>
     </div>
-    <div class="contact-us-right-section">
-        <form class="contact-form" action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
+    <section class="contact-us-right-section" id="contact-form">
+        <form class="contact-form" action="<?php echo $_SERVER["PHP_SELF"] ?>#contact-form" method="POST">
             <label class="form-label" for="name">name</label>
             <input class="form-input" type="text" name="name" id="name">
-            <label class="form-label" for="company-name">company name</label>
-            <input class="form-input" type="text" name="company-name" id="company-name">
+            <label class="form-label" for="company">company name</label>
+            <input class="form-input" type="text" name="company" id="company">
             <label class="form-label" for="email">e-mail</label>
             <input class="form-input" type="email" name="email" id="email">
             <label class="form-label-message" for="message">how can we help?</label>
@@ -649,15 +691,26 @@
             </div>
             <div class="privacy-submit">
                 <div class="privacy-policy-container">
-                    <input type="checkbox" name="privacy-policy" id="privacy-policy">
-                    <label class="form-label" for="privacy-policy">i accept <u>privacy policy</u></label>
+                    <input type="checkbox" name="privacy" id="privacy">
+                    <label class="form-label" for="privacy">i accept <u>privacy policy</u></label>
                 </div>
                 <input class="submit-img" type="image" src="images/_WINDOWS/8-contact us/connect.png">
             </div>
         </form>
-    </div>
+        <?php
+        if($_SERVER["REQUEST_METHOD"] == "POST") {
+            $output = validateInput();
+
+
+            foreach($output as $error)
+            {
+                echo $error;
+            }
+        }
+        
+        ?>
+    </section>
 </div>
-<!-- elo -->
 </body>
 
 </html>
