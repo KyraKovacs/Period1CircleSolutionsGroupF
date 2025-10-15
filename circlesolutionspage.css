@@ -642,7 +642,20 @@ body{
     margin-bottom: 20px;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px none inset !important;
+    -webkit-text-fill-color: #799DAB !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 .form-input:focus {
+    background-color: none;
+    color: #799DAB;
     outline: none;
 }
 
@@ -654,6 +667,8 @@ body{
 }
 
 .message:focus {
+    background-color: none;
+    color:#799DAB;
     outline: none;
 }
 
@@ -663,7 +678,6 @@ body{
 
 .attach-label {
     margin-top: 12px;
-    margin-left: 24px;
     display: inline-flex;
     align-items: baseline;
     cursor: pointer;
@@ -678,12 +692,12 @@ body{
 
 .privacy-policy-container {
     cursor: pointer;
-    margin-left: 24px;
 }
 
 .privacy-submit {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 12px;
 }
 
 .tooltip-container {
@@ -723,6 +737,21 @@ body{
 
 .submit-img {
     height: 32px;
+}
+
+.error {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.error-dot {
+    height: 10px;
+}
+
+.message-success {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* body {
