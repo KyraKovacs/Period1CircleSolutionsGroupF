@@ -1,11 +1,80 @@
 @font-face {
-    font-family: calibre;
-    src: url(fonts/fonts/Calibre-Regular.otf);
+font-family: "Calibre-Black";
+src: url(fonts/fonts/Calibre-Black.otf) format("opentype");
+font-weight: 500;
+font-style: normal;
+}
+@font-face {
+font-family: "Calibre-Italic";
+src: url(fonts/fonts/Calibre-BlackItalic.otf) format("opentype");
+font-weight: 500;
+font-style: italic;
+}
+@font-face{
+    font-family: "Calibre-Bold";
+    src: url(fonts/fonts/Calibre-Bold.otf) format("opentype");
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face{
+    font-family: "Calibre-Bold-Italic";
+src: url(fonts/fonts/Calibre-BoldItalic.otf) format("opentype");
+font-weight: 700;
+font-style: italic;
+}
+@font-face{
+    font-family: "Calibre-Light";
+src: url(fonts/fonts/Calibre-Light.otf) format("opentype");
+font-weight: 300;
+font-style: normal;
+}
+@font-face{
+    font-family: "Calibre-Light-Ltalic";
+src: url(fonts/fonts/Calibre-LightItalic.otf) format("opentype");
+font-weight: 300;
+font-style: italic;
+}
+@font-face{
+    font-family: "Calibre-Medium";
+src: url(fonts/fonts/Calibre-Medium.otf) format("opentype");
+font-weight: 600;
+font-style: normal;
+}
+@font-face{
+    font-family: "Calibre-Medium-Italic";
+src: url(fonts/fonts/Calibre-MediumItalic.otf) format("opentype");
+font-weight: 600;
+font-style: italic;
+}
+@font-face{
+    font-family: "Calibre-Regular";
+src: url(fonts/fonts/Calibre-Regular.otf) format("opentype");
+font-weight: 400;
+font-style: normal;
+}
+@font-face{
+    font-family: "Calibre-Regular-Italic";
+src: url(fonts/fonts/Calibre-RegularItalic.otf) format("opentype");
+font-weight: 400;
+font-style: italic;
+}
+@font-face{
+    font-family: "Calibre-Semibold";
+src: url(fonts/fonts/Calibre-Semibold.otf) format("opentype");
+font-weight: 400;
+font-style: bold;
+}
+@font-face{
+font-family: "Calibre-Semibold-Italic";
+src: url(fonts/fonts/Calibre-SemiboldItalic.otf) format("opentype");
+font-weight: 400;
+  font-style: italic;
+  font-style: bold;
 }
 
 body{
     margin: 0;
-    font-family: calibre;
+    font-family: "calibre";
     color: #799DAB;
 }
 .navbar{
@@ -100,6 +169,7 @@ body{
 .white{
     color: white;
 }
+
 
 
 
@@ -312,6 +382,118 @@ body{
     color: white;
 }
 
+/* Global reach */
+
+.GlobalReachBox {
+font-family: "Calibre-Black";
+background-color: #C7EAF8;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+padding-top: 9vw;
+
+}
+
+.whitetext
+{
+    color: white;
+    font-family: "Calibre-Black";
+    font-weight: 700;
+    font-size: 5vw;
+    letter-spacing: -0,5vw;
+}
+
+.bluegrey
+{
+    color: #799DAB;
+    font-family: "Calibre-Regular";
+    font-size: 1.8vw;
+    letter-spacing: -0,2vw;
+    margin-top: 1.5vh;
+    margin-bottom: -0,5vh;
+}
+
+.worldmap
+{
+    width: 80vw;
+}
+
+.whitebox
+{
+    background-color: #fff;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.projects-text {
+    
+    padding-left: 10vw;
+}
+
+.projects-text > h1
+{
+    font-family: "Calibre-Bold" ;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 3vw;
+    
+}
+
+.projects
+{
+    font-size: 2vw;
+    
+}
+
+.small-projects-text 
+{
+    font-family: "Calibre-Light";
+    font-size: 1.2vw;
+    margin-left: -5.5vw;
+}
+
+    /* .vertical-line
+    {
+        background-color: #799DAB;
+        width: 1px;
+        height: 5vh;
+        margin-left: 5vw;
+    } */
+
+.brands-text {
+   
+}
+
+.brands-text > h1
+{
+    font-family: "Calibre-Bold" ;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 3vw;
+    
+}
+
+.brands
+{
+    font-size: 2vw;
+    
+}
+
+.small-brands-text 
+{
+    font-family: "Calibre-Light";
+    font-size: 1.2vw;
+    margin-left: -5.5vw;
+}
+
+
+
 
 
 
@@ -487,50 +669,3 @@ body{
     margin: 12px 12px;
 }
 
-body {
-font-family: "calibre";
-background-color: #C7EAF8;
-display: flex;
-grid-template-columns: repeat(12, 1fr);
-grid-template-rows: repeat(12, 1fr);
-justify-content: center;
-align-items: center;
-flex-direction: column;
-text-align: center;
-}
-
-main
-{
-    margin: 80px;
-}
-
-.white
-{
-    color: white;
-    font-family: "calibre";
-    font-weight: 700;
-    font-size: 90px;
-    letter-spacing: -2.3px;
-}
-
-.bluegrey
-{
-    color: #799DAB;
-    font-family: "calibre";
-    font-weight: 500;
-    font-size: 25px;
-    letter-spacing: -1px;
-    margin-top: -40px;
-}
-
-.worldmap
-{
-    width: 80vw;
-}
-
-.whitebox
-{
-    background-color: white;
-    width: 1fr;
-    height: 30vh
-}
