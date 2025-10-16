@@ -860,3 +860,52 @@ main
 }
 
 /* END of section : 404 page not found */
+
+
+/* cookie banner */
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #799dab;
+    color: white;
+    text-align: center;
+    padding: 25px 30px;
+    box-shadow: 0 -4px 3px rgba(84, 83, 83, 0.1);
+    z-index: 1000;
+}
+
+.cookie-banner h1 {
+    font-family: "calibre-bold";
+}
+
+.cookie-banner p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-size: 1.125rem;
+}
+
+.cookie-banner button {
+    border: none;
+    padding: 10px 30px;
+    margin: 0 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.accept-btn {
+    background-color: white;
+    color: #799dab;
+    border-radius: 50px;
+}
+
+.reject-btn {
+    background-color: white;
+    color: #799dab;
+    border-radius: 50px;
+}
+
+/* END of stlying - cookie banner */
