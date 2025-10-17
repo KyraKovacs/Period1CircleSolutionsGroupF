@@ -140,7 +140,143 @@ body{
 
 
 
+.golden-circle-section {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 80px 0;
+}
 
+.gc-heading {
+  font-size: 72px;
+  font-weight: 700;
+  color: #799dab;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+.gc-subtitle {
+  font-size: 54px;
+  font-weight: 700;
+  color: #c7eaf8;
+  margin: 5px 0;
+  text-transform: lowercase;
+}
+
+.gc-author {
+  font-size: 14px;
+  color: #799dab;
+  margin: 5px 0 60px;
+}
+
+.gc-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 120px;
+  flex-wrap: wrap;
+}
+
+.gc-item {
+  max-width: 260px;
+}
+
+.gc-image {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  background-color: #c7eaf8;
+  display: block;
+  margin: 0 auto 25px;
+}
+
+.gc-desc {
+  color: #799dab;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.next {
+  display: block;
+}
+
+/* -----------------------------
+   Spacer Between Sections
+----------------------------- */
+.section-divider {
+  height: 70px; /* creates smooth scroll space */
+  width: 100%;
+}
+
+/* -----------------------------
+   Vision & Mission Section Styles
+----------------------------- */
+.vision-mission {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+  padding-left: 80px;
+  padding-top: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.vision-section,
+.mission-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.vm-title {
+  font-size: 100px;
+  font-weight: 600;
+  color: #c7eaf8;
+  text-transform: lowercase;
+  margin: 0;
+  line-height: 1;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin-right: 100px;
+}
+
+.circle-img {
+  width: 45px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.text-area {
+  max-width: 480px;
+}
+
+.text-area h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #c7eaf8;
+  margin: 0 0 2px 0;
+  text-transform: lowercase;
+}
+
+.text-area p {
+  font-size: 20px;
+  color: #799dab;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.vision p {
+  border-top: 40px;
+}
 
 
 
