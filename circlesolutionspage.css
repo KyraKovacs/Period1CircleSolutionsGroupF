@@ -60,20 +60,20 @@ body{
     width: 50px;
     height: 50px;
 }
-.px130{
-    font-size: 120px;
+.px180{
+    font-size: 180px;
 }
-.px100{
-    font-size: 100px;
+.px150{
+    font-size: 150px;
 }
 .px80{
     font-size: 80px;
 }
-.px72{
-    font-size: 72px;
+.px70{
+    font-size: 70px;
 }
-.px30{
-    font-size: 30px;
+.px50{
+    font-size: 50px;
 }
 .px40{
     font-size: 40px;
@@ -110,10 +110,10 @@ body{
     justify-content: space-between;
     padding: 10px 30px;
     color: #799DAB;
-    font-size: 25px;
+    font-size: 35px;
     text-decoration: none;
 }
-.photo{
+.CEO{
     width: 75px;
     height: 75px;
 }

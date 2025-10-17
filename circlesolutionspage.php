@@ -66,10 +66,10 @@
         <!-- text left side -->
         <div class="welcometext">
             <div class="textleftside">
-                <h1 class="px130"><b>software</b></h1>
-                <h2 class="px100"><b>solutions</b></h2>
-                <h3 class="px40">serving worldwide</h3>
-                <h4 class="px30">just connect the dots</h4>
+                <h1 class="px180"><b>software</b></h1>
+                <h2 class="px150"><b>solutions</b></h2>
+                <h3 class="px70">serving worldwide</h3>
+                <h4 class="px50">just connect the dots</h4>
             </div>
             <!-- trusted across borders section -->
             <div>
@@ -79,7 +79,7 @@
                     <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                     <p class="px16">“circle solutions provides really good, dedicated talents that posses a strong work
                         ethic.”</p>
-                    <img class="photo" src="images\_WINDOWS\1-homepage\1-Jinyi Guo.png" alt="jinyiguo">
+                    <img class="CEO" src="images\_WINDOWS\1-homepage\1-Jinyi Guo.png" alt="jinyiguo">
                     <p class="px18"><b>Jinyi Guo</b></p>
                     <img class="company" src="images\_WINDOWS\1-homepage\Luckin Coffee.png" alt="luckincoffee">
                     <p class="px12">CEO | Luckin Coffee, China</p>
@@ -89,7 +89,7 @@
                     <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                     <p class="px16">“always understanding our requirements to the detail, designing and developing
                         high-quality software.”</p>
-                    <img class="photo" src="images\_WINDOWS\1-homepage\2-Andy Jassy.png" alt="andyjassy">
+                    <img class="CEO" src="images\_WINDOWS\1-homepage\2-Andy Jassy.png" alt="andyjassy">
                     <p class="px18"><b>Andy Jassy</b></p>
                     <img class="company" src="images\_WINDOWS\1-homepage\Amazon.png" alt="amazon">
                     <p class="px12">CEO | Amazon, USA</p>
@@ -99,7 +99,7 @@
                     <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                     <p class="px16">“this plugin has been great to work with. It has some really advanced functionality
                         and easy to modify”</p>
-                    <img class="photo" src="images\_WINDOWS\1-homepage\3-Oliver Zipse.png" alt="oliverzipse">
+                    <img class="CEO" src="images\_WINDOWS\1-homepage\3-Oliver Zipse.png" alt="oliverzipse">
                     <p class="px18"><b>Oliver Zipse</b></p>
                     <img class="company" src="images\_WINDOWS\1-homepage\BMW.png" alt="bmw">
                     <p class="px12">CEO | BMW, Germany</p>
@@ -112,40 +112,40 @@
         <div class="whitehomepage">
             <div class="firstrow">
                 <img class="reviews" src="images\_WINDOWS\1-homepage\Clutch Review.png" alt="clutchreview">
-
+                <div>
+                    <p class="px45"><b>15</b></p>
+                    <p class="px30"><b>years</b></p>
+                    <p class="px20">proven on track</p>
+                </div>
+                <div>
+                    <p class="px45"><b>2000+</b></p>
+                    <p class="px30"><b>projects</b></p>
+                    <p class="px20">successfully delivered</p>
+                </div>
+                <div>
+                    <p class="px45"><b>250+</b></p>
+                    <p class="px30"><b>experts</b></p>
+                    <p class="px20">on board</p>
+                </div>
+                <div>
+                    <p class="px45"><b>30+</b></p>
+                    <p class="px30"><b>countries</b></p>
+                    <p class="px20">on our delivery map</p>
+                </div>
             </div>
+            <p class="px35">trusted by 200+ leading brands worldwide</p>
+
+
+
+
+
+
+
+
+
+
+            
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
