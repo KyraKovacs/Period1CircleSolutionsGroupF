@@ -125,13 +125,62 @@
 
 
 
+    <div class="golden-circle-section">
 
+    <h1 class="gc-heading">about us</h1>
+    <h2 class="gc-subtitle">golden circle</h2>
+    <p class="gc-author">- by Simon Sinek -</p>
 
+    <div class="gc-container">
+        <div class="gc-item">
+        <img src="images/what.jpeg" alt="What" class="gc-image">
+        <p class="gc-desc">software solutions<span class="next">that fit the individual company</span></p>
+        </div>
 
+        <div class="gc-item">
+        <img src="images/how.jpeg" alt="How" class="gc-image">
+        <p class="gc-desc">developing software<span class="next">that make life easier</span></p>
+        </div>
 
+        <div class="gc-item">
+        <img src="images/why.jpeg" alt="Why" class="gc-image">
+        <p class="gc-desc">tasks should be no hassle</p>
+        </div>
+    </div>
+    </div>
 
+    <!-- Spacer Between Sections -->
+    <div class="section-divider"></div>
 
+    <!-- Vision & Mission Section -->
+    <div class="vision-mission">
+    <div class="vision-section">
+        <div class="left-side">
+        <h1 class="vm-title">vision</h1>
+        </div>
+        <div class="right-side">
+        <img src="images/circle.jpeg" alt="circle" class="circle-img">
+        <div class="text-area">
+            <h2>vision</h2>
+            <p>we love to keep things simple, no big gestures,<span class="next">no theatre or promising utopias.</span></p>
+        </div>
+        </div>
+    </div>
 
+    <div class="mission-section">
+        <div class="left-side">
+        <h1 class="vm-title">&amp; mission</h1>
+        </div>
+        <div class="right-side">
+        <img src="images/circle.jpeg" alt="circle" class="circle-img">
+        <div class="text-area">
+            <h2>mission</h2>
+            <p>to develop software that fit the individual qualities<span class="next">of individual needs</span></p><br>
+            <p class="vision">to empowering people and business<span class="next">with software solutions</span></p>
+        </div>
+        </div>
+    </div>
+    </div>
 
 
 
@@ -199,18 +248,13 @@
 
 
 
-        <main>
-            <h1 class="white">our global reach</h1>
-            <div class="bluegrey">trusted worldwide across 30+ countries</div>
-            <img class="worldmap" src="images/_WINDOWS/4-global presence/world map.png" alt="world map">
 
 
 
 
 
 
-        </main>
-
+       
 
 
 
@@ -416,7 +460,63 @@
         </script>
         >>>>>>> 541ecbea067f3a7e5d09eed896a5420131696095
 
+ <!--Global reach-->
+    <section>
+    <div class="GlobalReachBox">
+        <h1 class="whitetext">our global reach</h1>
+        <div class="bluegrey">trusted worldwide across 30+ countries</div>
+        <img class="worldmap" src="images/_WINDOWS/4-global presence/world map.png" alt="world map">
+        <div class="whitebox">
+            <div class="projects-text">
+                    <h1>2000+ <b class="projects">projects</b></h1> 
+                    <h3 class="small-projects-text">succesfully delivered</h3>
+            </div>
+            <div class="vertical-line"></div>
+                <div class="brands-text">
+                <h1>200+<b class="brands">brands</b></h1>
+                <h3 class="small-brands-text">trusted worldwide</h3>
+            </div>
+            <div class="vertical-line1"></div>
+            <div class="countries-text">
+                <h1>30+<b class="countries">countries</b></h1>
+                <h3 class="small-countries-text">on our delivery map</h3>
+            </div>
+             <div class="vertical-line2"></div>
+             <div class="country-flags">
+                <img src="images/_WINDOWS/4-global presence/1-US flag.png" alt="US flag">
+                <img src="images/_WINDOWS/4-global presence/2-China flag.png" alt="China flag">
+                <img src="images/_WINDOWS/4-global presence/3-Germany flag.png" alt="Germany flag">
+                <img src="images/_WINDOWS/4-global presence/4-France flag.png" alt="France flag">
+                <img src="images/_WINDOWS/4-global presence/5-India flag.png" alt="India flag">
+                <img class="japan-flag" src="images/_WINDOWS/4-global presence/7-Japan flag.png" alt="Japan flag">
+                <img src="images/_WINDOWS/4-global presence/6-UK flag.png" alt="UK flag">
+                <img src="images/_WINDOWS/4-global presence/8-Hungary flag.png" alt="Hungary flag">
+                <img src="images/_WINDOWS/4-global presence/9-Thailand flag.png" alt="Thailand">
+                <img src="images/_WINDOWS/4-global presence/10-Poland flag.png" alt="Poland flag">
+                <img src="images/_WINDOWS/4-global presence/11-Iran flag.png" alt="Iran flag">
+                <img src="images/_WINDOWS/4-global presence/12-Sierra Leone.png" alt="Sierra Leone">
+             </div>
+        </div>
+     </div>
+     </section>
 
+     <!--What We Build Page-->
+     <section>
+        <div class="WhatWeBuildBox">
+            <div class="WhatWeBuildBox-title">what we build</div>
+            <div class="WhatWeBuildBox-subtitle">explore how our solutions foster growth and digital discovery of your unique business</div>
+                <div class="circles-box">
+                    <img src="images/_WINDOWS/5-what we build/API.png" alt="API">
+                    <img src="images/_WINDOWS/5-what we build/cloud_dev.png" alt="cloud dev">  
+                    <img src="images/_WINDOWS/5-what we build/hire_developer.png" alt="hire developer">  
+                    <img src="images/_WINDOWS/5-what we build/mobileapp.png" alt="mobile app">  
+                    <img src="images/_WINDOWS/5-what we build/product_dev.png" alt="product dev">  
+                    <img src="images/_WINDOWS/5-what we build/software_testing.png" alt="software testing">  
+                    <img src="images/_WINDOWS/5-what we build/UX_UI.png" alt="UX/UI">  
+                    <img src="images/_WINDOWS/5-what we build/web_dev.png" alt="web dev">   
+                </div>
+        </div>
+     </section>
 
 
 
@@ -711,6 +811,44 @@
         ?>
     </section>
 </div>
+    
+<!-- cookie banner -->
+        <?php if (!isset($_COOKIE[$cookie_name])): ?>
+        <div class="cookie-banner">
+            <h1>we use cookies</h1>
+            <p>our website uses cookies to improve your browsing experience. by continuing, we assume your permission to
+                deploy cookies as detailed in our privacy policy.</p>
+            </p>
+            <form method="POST" style="display:inline;">
+                <button type="submit" name="accept_cookie" class="accept-btn">Accept all cookies</button>
+                <button type="submit" name="reject_cookie" class="reject-btn">Reject all</button>
+            </form>
+        </div>
+        <?php endif; ?>
+
+        <!-- CHECK : Cookie Consent Banner with Accept / Reject-->
+         
+        <?php
+         
+// Start PHP before *any* HTML is sent!
+$cookie_name = "user_cookie_consent";
+$cookie_time = 30 * 24 * 60 * 60; // 30 days
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accept_cookie'])) {
+        setcookie($cookie_name, "accepted", time() + $cookie_time, "/");
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
+    }
+
+    if (isset($_POST['reject_cookie'])) {
+        setcookie($cookie_name, "rejected", time() + $cookie_time, "/");
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
+    }
+}
+?>
+        <!-- END of cookie banner -->
 </body>
 
 </html>
