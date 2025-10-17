@@ -810,8 +810,8 @@
     </div>
     
 <!-- cookie banner -->
-        <?php //if (!isset($_COOKIE[$cookie_name])): ?>
-        <!-- <div class="cookie-banner">
+        <?php if (!isset($_COOKIE[$cookie_name])): ?>
+        <div class="cookie-banner">
             <h1>we use cookies</h1>
             <p>our website uses cookies to improve your browsing experience. by continuing, we assume your permission to
                 deploy cookies as detailed in our privacy policy.</p>
@@ -820,30 +820,30 @@
                 <button type="submit" name="accept_cookie" class="accept-btn">Accept all cookies</button>
                 <button type="submit" name="reject_cookie" class="reject-btn">Reject all</button>
             </form>
-        </div> -->
-        <?php //endif; ?>
+        </div>
+        <?php endif; ?>
 
         <!-- CHECK : Cookie Consent Banner with Accept / Reject-->
          
         <?php
          
 // Start PHP before *any* HTML is sent!
-// $cookie_name = "user_cookie_consent";
-// $cookie_time = 30 * 24 * 60 * 60; // 30 days
+$cookie_name = "user_cookie_consent";
+$cookie_time = 30 * 24 * 60 * 60; // 30 days
 
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     if (isset($_POST['accept_cookie'])) {
-//         setcookie($cookie_name, "accepted", time() + $cookie_time, "/");
-//         header("Location: " . $_SERVER['PHP_SELF']);
-//         exit();
-//     }
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accept_cookie'])) {
+        setcookie($cookie_name, "accepted", time() + $cookie_time, "/");
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
+    }
 
-//     if (isset($_POST['reject_cookie'])) {
-//         setcookie($cookie_name, "rejected", time() + $cookie_time, "/");
-//         header("Location: " . $_SERVER['PHP_SELF']);
-//         exit();
-//     }
-// }
+    if (isset($_POST['reject_cookie'])) {
+        setcookie($cookie_name, "rejected", time() + $cookie_time, "/");
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
+    }
+}
 ?>
         <!-- END of cookie banner -->
 

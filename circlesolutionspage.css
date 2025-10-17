@@ -248,14 +248,14 @@ body{
     color: #c7eaf8;
 }
 
-/* .values-section-right {
+.values-section-right {
     display: flex;
     flex: 2;
     align-items: center;
     justify-content: center;
     background-color: white;
     position: relative;
-} */
+}
 
 .values-section-right img {
     width: 680px;
