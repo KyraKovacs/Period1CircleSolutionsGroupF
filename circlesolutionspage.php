@@ -66,10 +66,10 @@
         <!-- text left side -->
         <div class="welcometext">
             <div class="textleftside">
-                <h1 class="px130"><b>software</b></h1>
-                <h2 class="px100"><b>solutions</b></h2>
-                <h3 class="px40">serving worldwide</h3>
-                <h4 class="px30">just connect the dots</h4>
+                <h1 class="px180"><b>software</b></h1>
+                <h2 class="px150"><b>solutions</b></h2>
+                <h3 class="px70">serving worldwide</h3>
+                <h4 class="px50">just connect the dots</h4>
             </div>
             <!-- trusted across borders section -->
             <div>
@@ -79,7 +79,7 @@
                     <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                     <p class="px16">“circle solutions provides really good, dedicated talents that posses a strong work
                         ethic.”</p>
-                    <img class="photo" src="images\_WINDOWS\1-homepage\1-Jinyi Guo.png" alt="jinyiguo">
+                    <img class="CEO" src="images\_WINDOWS\1-homepage\1-Jinyi Guo.png" alt="jinyiguo">
                     <p class="px18"><b>Jinyi Guo</b></p>
                     <img class="company" src="images\_WINDOWS\1-homepage\Luckin Coffee.png" alt="luckincoffee">
                     <p class="px12">CEO | Luckin Coffee, China</p>
@@ -89,7 +89,7 @@
                     <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                     <p class="px16">“always understanding our requirements to the detail, designing and developing
                         high-quality software.”</p>
-                    <img class="photo" src="images\_WINDOWS\1-homepage\2-Andy Jassy.png" alt="andyjassy">
+                    <img class="CEO" src="images\_WINDOWS\1-homepage\2-Andy Jassy.png" alt="andyjassy">
                     <p class="px18"><b>Andy Jassy</b></p>
                     <img class="company" src="images\_WINDOWS\1-homepage\Amazon.png" alt="amazon">
                     <p class="px12">CEO | Amazon, USA</p>
@@ -99,7 +99,7 @@
                     <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                     <p class="px16">“this plugin has been great to work with. It has some really advanced functionality
                         and easy to modify”</p>
-                    <img class="photo" src="images\_WINDOWS\1-homepage\3-Oliver Zipse.png" alt="oliverzipse">
+                    <img class="CEO" src="images\_WINDOWS\1-homepage\3-Oliver Zipse.png" alt="oliverzipse">
                     <p class="px18"><b>Oliver Zipse</b></p>
                     <img class="company" src="images\_WINDOWS\1-homepage\BMW.png" alt="bmw">
                     <p class="px12">CEO | BMW, Germany</p>
@@ -112,6 +112,37 @@
         <div class="whitehomepage">
             <div class="firstrow">
                 <img class="reviews" src="images\_WINDOWS\1-homepage\Clutch Review.png" alt="clutchreview">
+                <div>
+                    <p class="px45"><b>15</b></p>
+                    <p class="px30"><b>years</b></p>
+                    <p class="px20">proven on track</p>
+                </div>
+                <div>
+                    <p class="px45"><b>2000+</b></p>
+                    <p class="px30"><b>projects</b></p>
+                    <p class="px20">successfully delivered</p>
+                </div>
+                <div>
+                    <p class="px45"><b>250+</b></p>
+                    <p class="px30"><b>experts</b></p>
+                    <p class="px20">on board</p>
+                </div>
+                <div>
+                    <p class="px45"><b>30+</b></p>
+                    <p class="px30"><b>countries</b></p>
+                    <p class="px20">on our delivery map</p>
+                </div>
+            </div>
+            <p class="px35">trusted by 200+ leading brands worldwide</p>
+            <div class="trusted companies">
+                
+
+
+
+
+
+
+
 
             </div>
         </div>
@@ -224,38 +255,18 @@
 
 
 
+        <main>
+            <h1 class="white">our global reach</h1>
+            <div class="bluegrey">trusted worldwide across 30+ countries</div>
+            <img class="worldmap" src="images/_WINDOWS/4-global presence/world map.png" alt="world map">
 
 
 
 
 
 
+        </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
 
 
 
@@ -459,9 +470,7 @@
                 if (e.target === modal) modal.classList.remove('show');
             });
         </script>
-        >>>>>>> 541ecbea067f3a7e5d09eed896a5420131696095
-
- <!--Global reach-->
+        <!--Global reach-->
     <section>
     <div class="GlobalReachBox">
         <h1 class="whitetext">our global reach</h1>
@@ -651,6 +660,8 @@
 
 
 
+
+
  <!-- section : 404 page -->
 
 <section class="page404-section">
@@ -663,155 +674,196 @@
 
 
 <!-- FAQ PAGE -->
-<div class="faq-questions-container px30">
-    <div class="help-section-header px80">frequently asked questions</div>
-    <details>
-        <summary class="faq-question">What does Circle Solutions do?</summary>
-        <p class="faq-text">
-            We design and develop custom software that helps organizations work more efficiently.
-            Every solution is built around real needs — no unnecessary features, no clutter.
-            Just what's needed to make things work smoothly.
-        </p>
-    </details>
-    <details>
-        <summary class="faq-question">What types of software do you build?</summary>
-        <p class="faq-text">
-            Our work ranges from internal tools and workflow platforms to
-            data dashboards and integration systems. We build solutions that simplify daily operations
-            — especially for teams in business, logistics, and IT.
-        </p>
-    </details>
-    <details>
-        <summary class="faq-question">How do you approach new projects?</summary>
-        <p class="faq-text">
-            We start by understanding how your organization works and where things can be improved.
-            From there, we design and develop software that fits — not the other way around.
-            Throughout the process, you'll have one clear point of contact.
-        </p>
-    </details>
-    <details>
-        <summary class="faq-question">What makes Circle Solutions different?</summary>
-        <p class="faq-text">
-            Simplicity. We don't add complexity where it's not needed. Our software is clean,
-            functional, and reliable — focused on usability and long-term value.
-        </p>
-    </details>
-    <details>
-        <summary class="faq-question">Do you offer off-the-shelf products?</summary>
-        <p class="faq-text">
-            No. Every solution we create is custom-built for the client's specific context and goals.
-            This ensures that your software fits your processes — instead of forcing your processes to fit the
-            software.
-        </p>
-    </details>
-    <details>
-        <summary class="faq-question">How do you ensure quality and reliability?</summary>
-        <p class="faq-text">
-            We follow a clear, structured development process with built-in testing at every step.
-            Our code is maintainable, well-documented, and ready to grow with your organization.
-        </p>
-    </details>
-    <details>
-        <summary class="faq-question">What happens after delivery?</summary>
-        <p class="faq-text">
-            After launch, we stay available for support and further development.
-            Many of our clients continue working with us to refine or expand their systems as their needs
-            evolve.
-        </p>
-    </details>
-    <details>
-        <summary class="faq-question">How can we get started?</summary>
-        <p class="faq-text">
-        Simply reach out via the contact form below or send us an email at hi@circlesolutions.com. 
-        We'll plan a short call to discuss your needs and explore what kind of software could help your team work more efficiently.
-        </p>
-    </details>
-</div>
+    <div class="faq-questions-container px30">
+        <div class="help-section-header px80">frequently asked questions</div>
+        <details>
+            <summary class="faq-question">What does Circle Solutions do?</summary>
+            <p class="faq-text">
+                We design and develop custom software that helps organizations work more efficiently.
+                Every solution is built around real needs — no unnecessary features, no clutter.
+                Just what's needed to make things work smoothly.
+            </p>
+        </details>
+        <details>
+            <summary class="faq-question">What types of software do you build?</summary>
+            <p class="faq-text">
+                Our work ranges from internal tools and workflow platforms to
+                data dashboards and integration systems. We build solutions that simplify daily operations
+                — especially for teams in business, logistics, and IT.
+            </p>
+        </details>
+        <details>
+            <summary class="faq-question">How do you approach new projects?</summary>
+            <p class="faq-text">
+                We start by understanding how your organization works and where things can be improved.
+                From there, we design and develop software that fits — not the other way around.
+                Throughout the process, you'll have one clear point of contact.
+            </p>
+        </details>
+        <details>
+            <summary class="faq-question">What makes Circle Solutions different?</summary>
+            <p class="faq-text">
+                Simplicity. We don't add complexity where it's not needed. Our software is clean,
+                functional, and reliable — focused on usability and long-term value.
+            </p>
+        </details>
+        <details>
+            <summary class="faq-question">Do you offer off-the-shelf products?</summary>
+            <p class="faq-text">
+                No. Every solution we create is custom-built for the client's specific context and goals.
+                This ensures that your software fits your processes — instead of forcing your processes to fit the
+                software.
+            </p>
+        </details>
+        <details>
+            <summary class="faq-question">How do you ensure quality and reliability?</summary>
+            <p class="faq-text">
+                We follow a clear, structured development process with built-in testing at every step.
+                Our code is maintainable, well-documented, and ready to grow with your organization.
+            </p>
+        </details>
+        <details>
+            <summary class="faq-question">What happens after delivery?</summary>
+            <p class="faq-text">
+                After launch, we stay available for support and further development.
+                Many of our clients continue working with us to refine or expand their systems as their needs
+                evolve.
+            </p>
+        </details>
+        <details>
+            <summary class="faq-question">How can we get started?</summary>
+            <p class="faq-text">
+            Simply reach out via the contact form below or send us an email at hi@circlesolutions.com. 
+            We'll plan a short call to discuss your needs and explore what kind of software could help your team work more efficiently.
+            </p>
+        </details>
+    </div>
 <!-- CONTACT US PAGE -->
-<div class="contact-us-container px30">
-    <div class="contact-us-left-section">
-        <div class="contact-us-header-container">
-            <div class="help-section-header px72">contact us</div>
-            <div class="help-section-slogan">just connect the dots.</div>
-        </div>
-        <div class="contact-methods-downloads-container">
-            <div class="contact-methods">
-                <div class="contact-method">
-                    <img class="contact-method-icon" src="images/_WINDOWS/8-contact us/website.png">
-                    <div class="contact-method-text">www.circlesolutions.com</div>
+    <div class="contact-us-container px30">
+        <div class="contact-us-left-section">
+            <div class="contact-us-header-container">
+                <div class="help-section-header px72">contact us</div>
+                <div class="help-section-slogan">just connect the dots.</div>
+            </div>
+            <div class="contact-methods-downloads-container">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <img class="contact-method-icon" src="images/_WINDOWS/8-contact us/website.png">
+                        <div class="contact-method-text">www.circlesolutions.com</div>
+                    </div>
+                    <div class="contact-method">
+                        <img class="contact-method-icon" src="images/_WINDOWS/8-contact us/e-mail.png">
+                        <div class="contact-method-text">hi@circlesolutions.com</div>
+                    </div>
+                    <div class="contact-method">
+                        <img class="contact-method-icon" src="images/_WINDOWS/8-contact us/tel.png">
+                        <div class="contact-method-text">+316 12 34 56 78</div>
+                    </div>
                 </div>
-                <div class="contact-method">
-                    <img class="contact-method-icon" src="images/_WINDOWS/8-contact us/e-mail.png">
-                    <div class="contact-method-text">hi@circlesolutions.com</div>
-                </div>
-                <div class="contact-method">
-                    <img class="contact-method-icon" src="images/_WINDOWS/8-contact us/tel.png">
-                    <div class="contact-method-text">+316 12 34 56 78</div>
+                <div class="downloads">
+                    <div class="download-bold-text">download</div>
+                    <div class="downloads-container">
+                        <a class="download-lorem" href="lorem.txt" target="_blank" download="whitepaper">
+                            <img class="download-icon" src="images/_WINDOWS/8-contact us/download.png">
+                            <div class="download-option-text">
+                                whitepaper
+                            </div>
+                        </a>
+                        <div class="vertical-divider"></div>
+                        <a class="download-lorem" href="lorem.txt" target="_blank" download="brochure">
+                            <img class="download-icon" src="images/_WINDOWS/8-contact us/download.png">
+                            <div class="download-option-text">
+                                brochure
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="downloads">
-                <div class="download-bold-text">download</div>
-                <div class="downloads-container">
-                    <a class="download-lorem" href="lorem.txt" target="_blank" download="whitepaper">
-                        <img class="download-icon" src="images/_WINDOWS/8-contact us/download.png">
-                        <div class="download-option-text">
-                            whitepaper
+        </div>
+        <section class="contact-us-right-section" id="contact-form">
+            <form class="contact-form" action="<?php echo $_SERVER["PHP_SELF"] ?>#contact-form" method="POST">
+                <label class="form-label" for="name">name</label>
+                <input class="form-input" type="text" name="name" id="name">
+                <label class="form-label" for="company">company name</label>
+                <input class="form-input" type="text" name="company" id="company">
+                <label class="form-label" for="email">e-mail</label>
+                <input class="form-input" type="email" name="email" id="email">
+                <label class="form-label-message" for="message">how can we help?</label>
+                <textarea class="message" name="message" id="message" rows="5" cols="50"></textarea>
+                <div class="attach-container">
+                    <label class="attach-label" for="file">
+                        <img class="attach-img" src="images/_WINDOWS/8-contact us/attach file.png">
+                        <span>attach file</span>
+                        <div class="tooltip-container">
+                            <img class="tooltip-img" src="images/_WINDOWS/8-contact us/information.png">
+                            <div class="tooltip-text">Upload relevant documents or images from your device.</div>
                         </div>
-                    </a>
-                    <div class="vertical-divider"></div>
-                    <a class="download-lorem" href="lorem.txt" target="_blank" download="brochure">
-                        <img class="download-icon" src="images/_WINDOWS/8-contact us/download.png">
-                        <div class="download-option-text">
-                            brochure
-                        </div>
-                    </a>
+                    </label>
+                    <input type="file" id="file">
                 </div>
+                <div class="privacy-submit">
+                    <div class="privacy-policy-container">
+                        <input type="checkbox" name="privacy" id="privacy">
+                        <label class="form-label" for="privacy">i accept <u>privacy policy</u></label>
+                    </div>
+                    <input class="submit-img" type="image" src="images/_WINDOWS/8-contact us/connect.png">
+                </div>
+            </form>
+            <?php
+            if($_SERVER["REQUEST_METHOD"] == "POST") {
+                $output = validateInput();
+
+
+                foreach($output as $error)
+                {
+                    echo $error;
+                }
+            }
+            
+            ?>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-container">
+        <div class="footer-flex">
+            <div class="footer-left-section">
+                <div class="footer-company-title">circle solutions</div>
+                <div class="footer-socials">
+                    <img class="footer-social-img" src="images/_WINDOWS/9-footer/instagram.png">
+                    <img class="footer-social-img" src="images/_WINDOWS/9-footer/X.png">
+                    <img class="footer-social-img" src="images/_WINDOWS/9-footer/facebook.png">
+                </div>
+            </div>
+            <div class="footer-right-section">
+                <div class="footer-column">
+                    <div class="footer-title">company</div>
+                    <a class="footer-option" href="">about us</a>
+                    <a class="footer-option" href="">what we build</a>
+                    <a class="footer-option" href="">global reach</a>
+                    <a class="footer-option" href="">contact us</a>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-title">legal</div>
+                    <a class="footer-option" href="">privacy policy</a>
+                    <a class="footer-option" href="">terms of use</a>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-title">contact</div>
+                    <div class="footer-option">www.circlesolutions.com</div>
+                    <div class="footer-option">hi@circlesolutions.com</div>
+                    <div class="footer-option">+316 12 34 56 78</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-reserved-rights-container">
+            <hr class="footer-divider">
+            <div class="copyright">
+                2025 cirlce solutions. All rights reserved.
+                <img class="copyright-img" src="images/_WINDOWS/9-footer/copyright-white.png">
             </div>
         </div>
     </div>
-    <section class="contact-us-right-section" id="contact-form">
-        <form class="contact-form" action="<?php echo $_SERVER["PHP_SELF"] ?>#contact-form" method="POST">
-            <label class="form-label" for="name">name</label>
-            <input class="form-input" type="text" name="name" id="name">
-            <label class="form-label" for="company">company name</label>
-            <input class="form-input" type="text" name="company" id="company">
-            <label class="form-label" for="email">e-mail</label>
-            <input class="form-input" type="email" name="email" id="email">
-            <label class="form-label-message" for="message">how can we help?</label>
-            <textarea class="message" name="message" id="message" rows="5" cols="50"></textarea>
-            <div class="attach-container">
-                <label class="attach-label" for="file">
-                    <img class="attach-img" src="images/_WINDOWS/8-contact us/attach file.png">
-                    <span>attach file</span>
-                    <div class="tooltip-container">
-                        <img class="tooltip-img" src="images/_WINDOWS/8-contact us/information.png">
-                        <div class="tooltip-text">Upload relevant documents or images from your device.</div>
-                    </div>
-                </label>
-                <input type="file" id="file">
-            </div>
-            <div class="privacy-submit">
-                <div class="privacy-policy-container">
-                    <input type="checkbox" name="privacy" id="privacy">
-                    <label class="form-label" for="privacy">i accept <u>privacy policy</u></label>
-                </div>
-                <input class="submit-img" type="image" src="images/_WINDOWS/8-contact us/connect.png">
-            </div>
-        </form>
-        <?php
-        if($_SERVER["REQUEST_METHOD"] == "POST") {
-            $output = validateInput();
-
-
-            foreach($output as $error)
-            {
-                echo $error;
-            }
-        }
-        
-        ?>
-    </section>
-</div>
     
 <!-- cookie banner -->
         <?php if (!isset($_COOKIE[$cookie_name])): ?>
