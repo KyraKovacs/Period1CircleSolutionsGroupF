@@ -788,9 +788,11 @@ padding: 13vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 96px;
 }
 
 .contact-us-header-container {
+    width: 100%;
     max-width: 325px;
     flex-wrap: wrap;
     display: flex;
@@ -802,6 +804,8 @@ padding: 13vw;
 .contact-us-left-section, .contact-us-right-section {
     display: inline-block;
 }
+
+/* CONTACT METHODS AND WHITEPAPER DOWNLOADS */
 
 .contact-methods-downloads-container {
     max-width: 300px;
@@ -870,6 +874,8 @@ padding: 13vw;
     border: 0.1px solid #C7EAF8;
     margin: 12px 12px;
 }
+
+/* CONTACT FORM */
 
 .contact-form {
     display: grid;
@@ -1006,6 +1012,83 @@ textarea:-webkit-autofill:focus {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
+}
+
+/* FOOTER STYLING */
+
+.footer-container {
+    background-color: #799DAB;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 64px;
+}
+
+.footer-left-section {
+    min-width: 250px;
+}
+
+.footer-company-title {
+    font-family: Calibre-Bold;
+    color: white;
+    font-size: 40px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.footer-social-img {
+    height: 24px;
+}
+
+.footer-right-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    font-size: 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.footer-title {
+    font-family: Calibre-Bold;
+    color: white;
+}
+
+.footer-option {
+    color: white;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.footer-divider {
+    border: none;
+    height: 1px;
+    background-color: white;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    padding: 24px 24px;
+    margin-right: 96px;
+}
+
+.copyright-img {
+    height: 14px;
+    margin-right: 3px;
 }
 
 /* body {
