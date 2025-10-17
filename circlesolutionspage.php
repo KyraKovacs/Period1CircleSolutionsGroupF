@@ -165,17 +165,17 @@
 
     <div class="gc-container">
         <div class="gc-item">
-        <img src="images/what.jpeg" alt="What" class="gc-image">
+        <img src="images/_WINDOWS/3-about us/what.jpeg" alt="What" class="gc-image">
         <p class="gc-desc">software solutions<span class="next">that fit the individual company</span></p>
         </div>
 
         <div class="gc-item">
-        <img src="images/how.jpeg" alt="How" class="gc-image">
+        <img src="images/_WINDOWS/3-about us/how.jpeg" alt="How" class="gc-image">
         <p class="gc-desc">developing software<span class="next">that make life easier</span></p>
         </div>
 
         <div class="gc-item">
-        <img src="images/why.jpeg" alt="Why" class="gc-image">
+        <img src="images/_WINDOWS/3-about us/why.jpeg" alt="Why" class="gc-image">
         <p class="gc-desc">tasks should be no hassle</p>
         </div>
     </div>
@@ -191,7 +191,7 @@
         <h1 class="vm-title">vision</h1>
         </div>
         <div class="right-side">
-        <img src="images/circle.jpeg" alt="circle" class="circle-img">
+        <img src="images/_WINDOWS/3-about us/circle.jpeg" alt="circle" class="circle-img">
         <div class="text-area">
             <h2>vision</h2>
             <p>we love to keep things simple, no big gestures,<span class="next">no theatre or promising utopias.</span></p>
@@ -204,7 +204,7 @@
         <h1 class="vm-title">&amp; mission</h1>
         </div>
         <div class="right-side">
-        <img src="images/circle.jpeg" alt="circle" class="circle-img">
+        <img src="images/_WINDOWS/3-about us/circle.jpeg" alt="circle" class="circle-img">
         <div class="text-area">
             <h2>mission</h2>
             <p>to develop software that fit the individual qualities<span class="next">of individual needs</span></p><br>
