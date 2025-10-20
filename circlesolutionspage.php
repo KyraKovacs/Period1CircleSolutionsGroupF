@@ -156,7 +156,7 @@
 
 
 
-    <div class="golden-circle-section">
+    <div class="golden-circle-section" id="about-us">
 
     <h1 class="gc-heading">about us</h1>
     <h2 class="gc-subtitle">golden circle</h2>
@@ -471,7 +471,7 @@
         </script>
         <!--Global reach-->
     <section>
-    <div class="GlobalReachBox">
+    <div class="GlobalReachBox" id="global-reach">
         <h1 class="whitetext">our global reach</h1>
         <div class="bluegrey">trusted worldwide across 30+ countries</div>
         <img class="worldmap" src="images/_WINDOWS/4-global presence/world map.png" alt="world map">
@@ -511,7 +511,7 @@
 
      <!--What We Build Page-->
      <section>
-        <div class="WhatWeBuildBox">
+        <div class="WhatWeBuildBox" id="what-we-build">
             <div class="WhatWeBuildBox-title">what we build</div>
             <div class="WhatWeBuildBox-subtitle">explore how our solutions foster growth and digital discovery of your unique business</div>
                 <div class="circles-box">
@@ -669,81 +669,15 @@
     <button class="button-page404">go back home</button>
 </section>
 
-
-
-
-<!-- FAQ PAGE -->
-    <div class="faq-questions-container px30">
-        <div class="help-section-header">frequently asked questions</div>
-        <details>
-            <summary class="faq-question">What does Circle Solutions do?</summary>
-            <p class="faq-text">
-                We design and develop custom software that helps organizations work more efficiently.
-                Every solution is built around real needs — no unnecessary features, no clutter.
-                Just what's needed to make things work smoothly.
-            </p>
-        </details>
-        <details>
-            <summary class="faq-question">What types of software do you build?</summary>
-            <p class="faq-text">
-                Our work ranges from internal tools and workflow platforms to
-                data dashboards and integration systems. We build solutions that simplify daily operations
-                — especially for teams in business, logistics, and IT.
-            </p>
-        </details>
-        <details>
-            <summary class="faq-question">How do you approach new projects?</summary>
-            <p class="faq-text">
-                We start by understanding how your organization works and where things can be improved.
-                From there, we design and develop software that fits — not the other way around.
-                Throughout the process, you'll have one clear point of contact.
-            </p>
-        </details>
-        <details>
-            <summary class="faq-question">What makes Circle Solutions different?</summary>
-            <p class="faq-text">
-                Simplicity. We don't add complexity where it's not needed. Our software is clean,
-                functional, and reliable — focused on usability and long-term value.
-            </p>
-        </details>
-        <details>
-            <summary class="faq-question">Do you offer off-the-shelf products?</summary>
-            <p class="faq-text">
-                No. Every solution we create is custom-built for the client's specific context and goals.
-                This ensures that your software fits your processes — instead of forcing your processes to fit the
-                software.
-            </p>
-        </details>
-        <details>
-            <summary class="faq-question">How do you ensure quality and reliability?</summary>
-            <p class="faq-text">
-                We follow a clear, structured development process with built-in testing at every step.
-                Our code is maintainable, well-documented, and ready to grow with your organization.
-            </p>
-        </details>
-        <details>
-            <summary class="faq-question">What happens after delivery?</summary>
-            <p class="faq-text">
-                After launch, we stay available for support and further development.
-                Many of our clients continue working with us to refine or expand their systems as their needs
-                evolve.
-            </p>
-        </details>
-        <details>
-            <summary class="faq-question">How can we get started?</summary>
-            <p class="faq-text">
-            Simply reach out via the contact form below or send us an email at hi@circlesolutions.com. 
-            We'll plan a short call to discuss your needs and explore what kind of software could help your team work more efficiently.
-            </p>
-        </details>
-    </div>
 <!-- CONTACT US PAGE -->
-    <div class="contact-us-container px30">
+    <div class="contact-us-container" id="contact-us-page">
         <div class="contact-us-left-section">
+            <!-- title, slogan -->
             <div class="contact-us-header-container">
-                <div class="help-section-header">contact us</div>
-                <div class="help-section-slogan">just connect the dots.</div>
+                <div class="contact-header">contact us</div>
+                <div class="contact-slogan">just connect the dots.</div>
             </div>
+            <!-- direct contact info -->
             <div class="contact-methods-downloads-container">
                 <div class="contact-methods">
                     <div class="contact-method">
@@ -759,6 +693,7 @@
                         <div class="contact-method-text">+316 12 34 56 78</div>
                     </div>
                 </div>
+                <!-- downloadable whitepapers -->
                 <div class="downloads">
                     <div class="download-bold-text">download</div>
                     <div class="downloads-container">
@@ -779,6 +714,7 @@
                 </div>
             </div>
         </div>
+        <!-- contact form -->
         <section class="contact-us-right-section" id="contact-form">
             <form class="contact-form" action="<?php echo $_SERVER["PHP_SELF"] ?>#contact-form" method="POST">
                 <label class="form-label" for="name">name</label>
@@ -793,6 +729,7 @@
                     <label class="attach-label" for="file">
                         <img class="attach-img" src="images/_WINDOWS/8-contact us/attach file.png">
                         <span>attach file</span>
+                        <!-- tooltip -->
                         <div class="tooltip-container">
                             <img class="tooltip-img" src="images/_WINDOWS/8-contact us/information.png">
                             <div class="tooltip-text">Upload relevant documents or images from your device.</div>
@@ -800,14 +737,17 @@
                     </label>
                     <input type="file" id="file">
                 </div>
+                <!-- privacy submission -->
                 <div class="privacy-submit">
                     <div class="privacy-policy-container">
                         <input type="checkbox" name="privacy" id="privacy">
                         <label class="form-label" for="privacy">i accept <u>privacy policy</u></label>
                     </div>
+                    <!-- submission button -->
                     <input class="submit-img" type="image" src="images/_WINDOWS/8-contact us/connect.png">
                 </div>
             </form>
+            <!-- form data validation -->
             <?php
             if($_SERVER["REQUEST_METHOD"] == "POST") {
                 $output = validateInput();
@@ -828,19 +768,27 @@
         <div class="footer-flex">
             <div class="footer-left-section">
                 <div class="footer-company-title">circle solutions</div>
+                <!-- companys social medias -->
                 <div class="footer-socials">
-                    <img class="footer-social-img" src="images/_WINDOWS/9-footer/instagram.png">
-                    <img class="footer-social-img" src="images/_WINDOWS/9-footer/X.png">
-                    <img class="footer-social-img" src="images/_WINDOWS/9-footer/facebook.png">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="footer-social-img" src="images/_WINDOWS/9-footer/instagram.png">
+                    </a>
+                    <a href="https://x.com/" target="_blank">
+                        <img class="footer-social-img" src="images/_WINDOWS/9-footer/X.png">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="footer-social-img" src="images/_WINDOWS/9-footer/facebook.png">
+                    </a>
                 </div>
             </div>
             <div class="footer-right-section">
+                <!-- footer navbar -->
                 <div class="footer-column">
                     <div class="footer-title">company</div>
-                    <a class="footer-option" href="">about us</a>
-                    <a class="footer-option" href="">what we build</a>
-                    <a class="footer-option" href="">global reach</a>
-                    <a class="footer-option" href="">contact us</a>
+                    <a class="footer-option" href="#about-us">about us</a>
+                    <a class="footer-option" href="#global-reach">global reach</a>
+                    <a class="footer-option" href="#what-we-build">what we build</a>
+                    <a class="footer-option" href="#contact-us-page">contact us</a>
                 </div>
                 <div class="footer-column">
                     <div class="footer-title">legal</div>
@@ -856,6 +804,7 @@
                 </div>
             </div>
         </div>
+        <!-- bottom part of the footer -->
         <div class="footer-reserved-rights-container">
             <hr class="footer-divider">
             <div class="copyright">
