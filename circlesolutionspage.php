@@ -20,7 +20,7 @@
             Please enter a valid email address.
             </div>');
         }
-        if(strlen($message) < 10) {
+        if(empty($message) || strlen($message) < 10) {
             array_push($errors, '<div class="error">
             <img class="error-dot" src="images/_WINDOWS/8-contact us/dot.png">
             Please enter your message (at least 10 characters).
@@ -47,7 +47,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions</title>
     <link rel="stylesheet" href="circlesolutionspage.css">
-    <link rel="stylesheet" href="elo.css">
 </head>
 
 <body>
@@ -675,7 +674,7 @@
 
 <!-- FAQ PAGE -->
     <div class="faq-questions-container px30">
-        <div class="help-section-header px80">frequently asked questions</div>
+        <div class="help-section-header">frequently asked questions</div>
         <details>
             <summary class="faq-question">What does Circle Solutions do?</summary>
             <p class="faq-text">
@@ -742,7 +741,7 @@
     <div class="contact-us-container px30">
         <div class="contact-us-left-section">
             <div class="contact-us-header-container">
-                <div class="help-section-header px72">contact us</div>
+                <div class="help-section-header">contact us</div>
                 <div class="help-section-slogan">just connect the dots.</div>
             </div>
             <div class="contact-methods-downloads-container">
@@ -850,9 +849,10 @@
                 </div>
                 <div class="footer-column">
                     <div class="footer-title">contact</div>
-                    <div class="footer-option">www.circlesolutions.com</div>
-                    <div class="footer-option">hi@circlesolutions.com</div>
-                    <div class="footer-option">+316 12 34 56 78</div>
+                    <a class="footer-option" href="faqpage.html" target="_blank">FAQ</a>
+                    <div class="footer-noclick-option">www.circlesolutions.com</div>
+                    <div class="footer-noclick-option">hi@circlesolutions.com</div>
+                    <div class="footer-noclick-option">+316 12 34 56 78</div>
                 </div>
             </div>
         </div>

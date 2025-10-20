@@ -887,15 +887,18 @@ padding: 13vw;
 
 .help-section-header {
     font-family: Calibre-Bold;
+    font-size: 72px;
     color:#C7EAF8; 
     max-width: 510px;
 }
 
 .help-section-slogan {
+    font-size: 32px;
     color:#C7EAF8; 
 }
 
 .faq-question {
+    font-size: 32px;
     padding: 10px;
     outline: none;
     border: none;
@@ -1203,6 +1206,17 @@ textarea:-webkit-autofill:focus {
 }
 
 .footer-option {
+    color: white;
+    text-decoration: none;
+    text-wrap: nowrap;
+    transition: text-decoration 0.5s;
+}
+
+.footer-option:hover {
+    text-decoration: underline;
+}
+
+.footer-noclick-option {
     color: white;
     text-decoration: none;
     text-wrap: nowrap;
