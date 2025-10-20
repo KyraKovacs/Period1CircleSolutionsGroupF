@@ -135,17 +135,17 @@
             </div>
             <p class="px35">trusted by 200+ leading brands worldwide</p>
             <div class="trusted companies">
-                
-
-
-
-
-
-
-
-
+                <img src="images\_WINDOWS\2-partner brands\Amazon.png" alt="amazon">
+                <img src="images\_WINDOWS\2-partner brands\BMW.png" alt="bmw">
+                <img src="images\_WINDOWS\2-partner brands\Samsung.png" alt="samsung">
+                <img src="images\_WINDOWS\2-partner brands\KLM.png" alt="klm">
+                <img src="images\_WINDOWS\2-partner brands\Visa.png" alt="visa">
+                <img src="images\_WINDOWS\2-partner brands\Volkswagen.png" alt="volks">
+                <img src="images\_WINDOWS\2-partner brands\Nike.png" alt="nike">
+                <img src="images\_WINDOWS\2-partner brands\Hermes.png" alt="hermes">
             </div>
         </div>
+
 
 
 
