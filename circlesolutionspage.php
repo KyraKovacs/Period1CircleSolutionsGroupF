@@ -23,7 +23,7 @@
         if(empty($message) || strlen($message) < 10) {
             array_push($errors, '<div class="error">
             <img class="error-dot" src="images/_WINDOWS/8-contact us/dot.png">
-            Please enter your message (at least 10 characters).
+            Your message must have at least 10 characters.
             </div>');
         }
         if($privacy != "on") {
@@ -254,17 +254,6 @@
 
 
 
-        <main>
-            <h1 class="white">our global reach</h1>
-            <div class="bluegrey">trusted worldwide across 30+ countries</div>
-            <img class="worldmap" src="images/_WINDOWS/4-global presence/world map.png" alt="world map">
-
-
-
-
-
-
-        </main>
 
 
 
@@ -661,13 +650,6 @@
 
 
 
- <!-- section : 404 page -->
-
-<section class="page404-section">
-    <h1>404</h1>
-    <p>page not found</p>
-    <button class="button-page404">go back home</button>
-</section>
 
 <!-- CONTACT US PAGE -->
     <div class="contact-us-container" id="contact-us-page">
@@ -741,7 +723,7 @@
                 <div class="privacy-submit">
                     <div class="privacy-policy-container">
                         <input type="checkbox" name="privacy" id="privacy">
-                        <label class="form-label" for="privacy">i accept <u>privacy policy</u></label>
+                        <label class="form-label" for="privacy">i accept <a href="404page.html" class="privacy-link">privacy policy</a></label>
                     </div>
                     <!-- submission button -->
                     <input class="submit-img" type="image" src="images/_WINDOWS/8-contact us/connect.png">
