@@ -697,7 +697,7 @@
             </div>
         </div>
         <!-- contact form -->
-        <section class="contact-us-right-section" id="contact-form">
+        <div class="contact-us-right-section" id="contact-form">
             <form class="contact-form" action="<?php echo $_SERVER["PHP_SELF"] ?>#contact-form" method="POST">
                 <label class="form-label" for="name">name</label>
                 <input class="form-input" type="text" name="name" id="name">
@@ -725,9 +725,9 @@
                         <input type="checkbox" name="privacy" id="privacy">
                         <label class="form-label" for="privacy">i accept <a href="404page.html" class="privacy-link">privacy policy</a></label>
                     </div>
-                    <!-- submission button -->
-                    <input class="submit-img" type="image" src="images/_WINDOWS/8-contact us/connect.png">
                 </div>
+                <!-- submission button -->
+                <input class="submit-img" type="image" src="images/_WINDOWS/8-contact us/connect.png">
             </form>
             <!-- form data validation -->
             <?php
@@ -742,7 +742,7 @@
             }
             
             ?>
-        </section>
+        </div>
     </div>
 
     <!-- FOOTER -->
@@ -779,10 +779,10 @@
                 </div>
                 <div class="footer-column">
                     <div class="footer-title">contact</div>
-                    <a class="footer-option" href="faqpage.html" target="_blank">FAQ</a>
                     <div class="footer-noclick-option">www.circlesolutions.com</div>
                     <div class="footer-noclick-option">hi@circlesolutions.com</div>
                     <div class="footer-noclick-option">+316 12 34 56 78</div>
+                    <a class="footer-option" href="faqpage.html" target="_blank">FAQ</a>
                 </div>
             </div>
         </div>

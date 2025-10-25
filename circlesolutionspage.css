@@ -890,13 +890,16 @@ padding: 13vw;
 
 .contact-us-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin: 96px 96px;
+    margin-top: 96px;
+    margin-bottom: 96px
 }
 
 .contact-us-header-container {
     width: 100%;
+    min-width: 320px;
     max-width: 325px;
     flex-wrap: wrap;
     display: flex;
@@ -906,7 +909,10 @@ padding: 13vw;
 }
 
 .contact-us-left-section, .contact-us-right-section {
+    flex: 1;
     display: inline-block;
+    max-width: 320px;
+    margin-bottom: 32px;
 }
 
 /* CONTACT METHODS AND WHITEPAPER DOWNLOADS */
@@ -924,8 +930,10 @@ padding: 13vw;
 }
 
 .contact-methods-downloads-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     max-width: 300px;
-    margin-left: 64px
 }
 
 .contact-methods {
@@ -996,6 +1004,7 @@ padding: 13vw;
 .contact-form {
     display: grid;
     grid-template-columns: 1fr;
+    min-width: 320px;
 }
 
 .form-label {
@@ -1068,6 +1077,7 @@ textarea:-webkit-autofill:focus {
 }
 
 .privacy-policy-container {
+    min-width: 205px;
     cursor: pointer;
 }
 
@@ -1124,6 +1134,10 @@ textarea:-webkit-autofill:focus {
 }
 
 .submit-img {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 12px;
     height: 32px;
 }
 
@@ -1150,13 +1164,26 @@ textarea:-webkit-autofill:focus {
 
 .footer-flex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 64px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 .footer-left-section {
-    min-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 250px;
+}
+
+.footer-right-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    font-size: 20px;
+    margin-bottom: 32px;
 }
 
 .footer-company-title {
@@ -1171,17 +1198,11 @@ textarea:-webkit-autofill:focus {
     justify-content: center;
     align-items: center;
     column-gap: 24px;
+    margin-bottom: 32px;
 }
 
 .footer-social-img {
     height: 24px;
-}
-
-.footer-right-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
-    font-size: 20px;
 }
 
 .footer-column {
@@ -1224,7 +1245,7 @@ textarea:-webkit-autofill:focus {
     flex-direction: row-reverse;
     color: white;
     padding: 24px 24px;
-    margin-right: 96px;
+    justify-content: flex-start;
 }
 
 .copyright-img {
