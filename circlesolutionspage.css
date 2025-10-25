@@ -1118,6 +1118,11 @@ textarea:-webkit-autofill:focus {
     accent-color: #799DAB;
 }
 
+.privacy-link {
+    color: #799DAB;
+    text-decoration: underline;
+}
+
 .submit-img {
     height: 32px;
 }
@@ -1324,6 +1329,7 @@ main
     color: #ffffff;
     border-radius: 50px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .button-page404:hover {
@@ -1331,8 +1337,6 @@ main
     color: #799dab;
     border: 1px solid #ffffff;
 }
-
-/* END of section : 404 page not found */
 
 
 /* cookie banner */
