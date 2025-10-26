@@ -278,94 +278,56 @@
 
 
 
-        <!--section-values-->
-
+           <!-- section : values -->
         <section class="values-section">
             <div class="values-section-left">
                 <h1>values</h1>
             </div>
 
             <div class="values-section-right">
-                <img src="img-about us/values.png" alt="values">
+                <img src="images/_WINDOWS/3-about us/values.png" alt="values">
             </div>
         </section>
+        <!-- END section : values -->
 
 
         <!--section - executive team-->
-
         <section class="team-section">
             <h1>our executive team</h1>
 
             <div class="team-container">
                 <div class="team-member">
-                    <img src="img-about us/Pieter Bakker.png" alt="Pieter Bakker">
+                    <img src="images/_WINDOWS/3-about us/pieter bakker.png" alt="Pieter Bakker">
                     <h2>Pieter Bakker</h2>
                     <p>chief executive officer</p>
                     <button class="team-button" data-member="1">view profile</button>
                 </div>
 
-                <div class="values-section-right">
-                    <img src="images/_WINDOWS/3-about us/values.png" alt="values">
-                    <div class="team-member">
-                        <img src="img-about us/William Wisser.png" alt="William Wisser">
-                        <h2>William Wisser</h2>
-                        <p>chief technology officer</p>
-                        <button class="team-button" data-member="2">view profile</button>
-                    </div>
-
-                    <div class="team-member">
-                        <img src="img-about us/Jan van Dijk.png" alt="Jan van Dijk">
-                        <h2>Jan van Dijk</h2>
-                        <p>chief commercial officer</p>
-                        <button class="team-button" data-member="3">view profile</button>
-                    </div>
-
-                    <!--section - executive team-->
-
-                    <section class="team-section">
-                        <h1>our executive team</h1>
-
-                        <div class="team-container">
-                            <div class="team-member">
-                                <img src="images/_WINDOWS/3-about us/pieter bakker.png" alt="Pieter Bakker">
-                                <h2>Pieter Bakker</h2>
-                                <p>chief executive officer</p>
-                                <button class="team-button" data-member="1">view profile</button>
-                            </div>
-
-                            <div class="team-member">
-                                <img src="images/_WINDOWS/3-about us/william wisser.png" alt="William Wisser">
-                                <h2>William Wisser</h2>
-                                <p>chief technology officer</p>
-                                <button class="team-button" data-member="2">view profile</button>
-                            </div>
-
-                            <div class="team-member">
-                                <img src="images/_WINDOWS/3-about us/jan van dijk.png" alt="Jan van Dijk">
-                                <h2>Jan van Dijk</h2>
-                                <p>chief commercial officer</p>
-                                <button class="team-button" data-member="3">view profile</button>
-                            </div>
-
-                            <div class="team-member">
-                                <img src="images/_WINDOWS/3-about us/sarah kleinn.png" alt="Sarah Kleinn">
-                                <h2>Sarah Kleinn</h2>
-                                <p>chief application officer</p>
-                                <button class="team-button" data-member="4">view profile</button>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="team-member">
-                        <img src="img-about us/Sarah Kleinn.png" alt="Sarah Kleinn">
-                        <h2>Sarah Kleinn</h2>
-                        <p>chief application officer</p>
-                        <button class="team-button" data-member="4">view profile</button>
-                    </div>
+                <div class="team-member">
+                    <img src="images/_WINDOWS/3-about us/william wisser.png" alt="William Wisser">
+                    <h2>William Wisser</h2>
+                    <p>chief technology officer</p>
+                    <button class="team-button" data-member="2">view profile</button>
                 </div>
+
+                <div class="team-member">
+                    <img src="images/_WINDOWS/3-about us/jan van dijk.png" alt="Jan van Dijk">
+                    <h2>Jan van Dijk</h2>
+                    <p>chief commercial officer</p>
+                    <button class="team-button" data-member="3">view profile</button>
+                </div>
+
+                <div class="team-member">
+                    <img src="images/_WINDOWS/3-about us/sarah kleinn.png" alt="Sarah Kleinn">
+                    <h2>Sarah Kleinn</h2>
+                    <p>chief application officer</p>
+                    <button class="team-button" data-member="4">view profile</button>
+                </div>
+            </div>
         </section>
 
 
-        <!-- Modal -->
+        <!-- Modal for profile view -->
         <div id="modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -377,7 +339,7 @@
         <div id="memberProfiles" style="display:none;">
             <div class="modal-content">
                 <div data-member="1">
-                    <img class="data-member-img" src="img-about us/Pieter Bakker.png" alt="Pieter Bakker">
+                    <img class="data-member-img" src="images/_WINDOWS/3-about us/pieter bakker.png" alt="Pieter Bakker">
                     <h2>Pieter Bakker</h2>
                     <h3><strong>chief executive officer</strong></h3><br>
                     <p>Pieter Bakker has over 30 years of experience in digital strategy and enterprise transformation.
@@ -392,7 +354,7 @@
             </div>
 
             <div data-member="2">
-                <img class="data-member-img" src="img-about us/William Wisser.png" alt="William Wisser">
+                <img class="data-member-img" src="images/_WINDOWS/3-about us/william wisser.png" alt="William Wisser">
                 <h2>William Wissen</h2>
                 <h3><strong>chief technology officer</strong></h3><br>
                 <p>William Wissen brings over 15 years of experience in software architecture, cloud engineering,
@@ -407,7 +369,7 @@
             </div>
 
             <div data-member="3">
-                <img class="data-member-img" src="img-about us/Jan van Dijk.png" alt="Jan van Dijk">
+                <img class="data-member-img" src="images/_WINDOWS/3-about us/jan van dijk.png" alt="Jan van Dijk">
                 <h2>Jan van Dijk</h2>
                 <h3><strong>chief commercial officer</strong></h3><br>
                 <p>Jan van Dijk has more than 20 years of experience in international business development and client
@@ -422,7 +384,7 @@
             </div>
 
             <div data-member="4">
-                <img class="data-member-img" src="img-about us/Sarah Kleinn.png" alt="Sarah Kleinn">
+                <img class="data-member-img" src="images/_WINDOWS/3-about us/sarah kleinn.png" alt="Sarah Kleinn">
                 <h2>Sarah Kleinn</h2>
                 <h3><strong>chief application officer</strong></h3><br>
                 <p>Sarah Klein has over 20 years of experience in software development, UX design, and enterprise
@@ -435,6 +397,7 @@
             </div>
         </div>
 
+        <!-- Animation for Pop-up Profile View -->
         <script>
             // Modal logic
             const modal = document.getElementById('modal');
@@ -458,6 +421,10 @@
                 if (e.target === modal) modal.classList.remove('show');
             });
         </script>
+        <!--END section - executive team -->
+
+
+        
         <!--Global reach-->
     <section>
     <div class="GlobalReachBox" id="global-reach">
@@ -796,42 +763,19 @@
         </div>
     </div>
     
-<!-- cookie banner -->
+        <!-- cookie banner -->
         <?php if (!isset($_COOKIE[$cookie_name])): ?>
-        <div class="cookie-banner">
-            <h1>we use cookies</h1>
-            <p>our website uses cookies to improve your browsing experience. by continuing, we assume your permission to
-                deploy cookies as detailed in our privacy policy.</p>
-            </p>
-            <form method="POST" style="display:inline;">
-                <button type="submit" name="accept_cookie" class="accept-btn">Accept all cookies</button>
-                <button type="submit" name="reject_cookie" class="reject-btn">Reject all</button>
-            </form>
-        </div>
+            <div class="cookie-banner">
+                <h1>we use cookies</h1>
+                <p>our website uses cookies to improve your browsing experience.<br>
+                    by continuing, we assume your permission to deploy cookies as detailed in our <a href="404page.html">privacy policy.</a></p>
+
+                <form method="POST" style="display:inline;">
+                    <button type="submit" name="accept_cookie" class="accept-btn">Accept all cookies</button>
+                    <button type="submit" name="reject_cookie" class="reject-btn">Reject all</button>
+                </form>
+            </div>
         <?php endif; ?>
-
-        <!-- CHECK : Cookie Consent Banner with Accept / Reject-->
-         
-        <?php
-         
-// Start PHP before *any* HTML is sent!
-$cookie_name = "user_cookie_consent";
-$cookie_time = 30 * 24 * 60 * 60; // 30 days
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['accept_cookie'])) {
-        setcookie($cookie_name, "accepted", time() + $cookie_time, "/");
-        header("Location: " . $_SERVER['PHP_SELF']);
-        exit();
-    }
-
-    if (isset($_POST['reject_cookie'])) {
-        setcookie($cookie_name, "rejected", time() + $cookie_time, "/");
-        header("Location: " . $_SERVER['PHP_SELF']);
-        exit();
-    }
-}
-?>
         <!-- END of cookie banner -->
 </body>
 
