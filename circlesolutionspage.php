@@ -37,6 +37,26 @@
         }
         return $errors;
     }
+        
+// COOKIE SETUP
+$cookie_name = "user_cookie_consent";
+$cookie_time = 30 * 24 * 60 * 60; // 30 days
+
+// Handle POST request - COOKIE
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accept_cookie'])) {
+        setcookie($cookie_name, "accepted", time() + $cookie_time, "/");
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
+    }
+
+    if (isset($_POST['reject_cookie'])) {
+        setcookie($cookie_name, "rejected", time() + $cookie_time, "/");
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -278,7 +298,7 @@
 
 
 
-           <!-- section : values -->
+<!-- section : values -->
         <section class="values-section">
             <div class="values-section-left">
                 <h1>values</h1>
@@ -763,7 +783,7 @@
         </div>
     </div>
     
-        <!-- cookie banner -->
+    <!-- cookie banner -->
         <?php if (!isset($_COOKIE[$cookie_name])): ?>
             <div class="cookie-banner">
                 <h1>we use cookies</h1>
