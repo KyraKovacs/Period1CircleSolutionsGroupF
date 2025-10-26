@@ -1384,6 +1384,130 @@ textarea:-webkit-autofill:focus {
     margin-right: 3px;
 }
 
+/* FAQ styling */
+
+:root {
+    interpolate-size: allow-keywords;
+}
+
+summary {
+    font-family: Calibre-Medium;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+details {
+    overflow: hidden;
+}
+
+details::details-content {
+    margin-inline: 32px;
+    block-size: 0;
+    transition: block-size 0.5s,
+    content-visibility 0.5s;
+    transition-behavior: allow-discrete;
+}
+
+details[open]::details-content {
+    block-size: auto;
+}
+
+summary::marker {
+    content: none;
+}
+
+summary::before {
+    content: "\004F";
+    margin-right: 16px;
+}
+
+.faq-button {
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Calibre-Regular;
+    background: none;
+    outline: none;
+    border: none;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.faq-button:hover {
+    text-decoration: underline;
+}
+
+.faq-question {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.faq-text {
+    font-size: 20px;
+}
+
+.faq {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: 1px solid #799DAB;
+    z-index: 1000;
+    background-color: white;
+    width: 600px;
+    max-width: 80%;
+}
+
+.faq.active {
+    transform: translate(-50%, -50%) scale(1);
+    animation: fadeIn 0.3s forwards;
+}
+
+.faq-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-header .faq-title {
+    font-family: Calibre-Bold;
+    font-size: 40px;
+}
+
+.faq-header .close-faq {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 32px;
+    font-family: Calibre-Bold;
+    color: #799DAB;
+}
+
+.faq-body {
+    padding: 10px 15px;
+}
+
+#faqOverlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+}
+
+#faqOverlay.active {
+    opacity: 1;
+    pointer-events: all;
+    animation: fadeIn 0.3s forwards;
+}
+
 /* body {
 font-family: "calibre";
 background-color: #C7EAF8;
