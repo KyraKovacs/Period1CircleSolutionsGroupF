@@ -367,10 +367,14 @@ body{
 
 .values-section {
     display: flex;
-    overflow: hidden; /* prevent scrollbars */
-    max-width: 100%;
-    min-height: 100vh;
+    max-width: 1920px;  
+    width: 100%;        
+    margin: 0 auto;    
+    overflow: hidden;  
+    height: 1080px;
     padding-top: 70px;
+    box-sizing: border-box; 
+    background-color: white;
 }
 
 .values-section-left {
@@ -402,14 +406,50 @@ body{
     height: auto;
 }
 
+/* mobile responsiveness Values */
+@media (max-width: 480px) {
+    .values-section {
+        flex-direction: column; /* stack vertically */
+        padding-top: 30px;
+    }
+
+    .values-section-left {
+        order: 1; /* left section on top */
+        width: 100%;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .values-section-right {
+        order: 2; /* right section below */
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+
+    .values-section-left h1 {
+        font-size: 50px;
+        margin-bottom: 0px;
+    }
+
+    .values-section-right img {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+    }
+}
 /* END of section : Values */
 
 
 /* Section : executive team */
 
 .team-section {
-    max-width: 100%;
+    max-width: 1920px;  
+    width: 100%;        /* scale down on smaller screens */
     min-height: 100vh;
+    margin: 0 auto;   
     background: linear-gradient(#C7eaf8 50%, white 50%);
     display: flex;
     flex-wrap: wrap;
@@ -418,41 +458,47 @@ body{
     justify-content: center;
     padding-top: 100px;
     gap: 20px;
+    box-sizing: border-box;
 }
 
 .team-section h1 {
     font-family: "Calibre-Bold";
-    font-size: 5rem;
+    font-size: 80px;
     color: white;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .team-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;         /* allow wrapping on smaller screens */
     justify-content: center;
     align-items: flex-start;
     gap: 80px;
-    max-width: 1080px;
+    max-width: 1080px;       
+    width: 100%;            
+    box-sizing: border-box;
 }
 
 .team-member {
     text-align: center;
     width: 200px;
     margin-bottom: 50px;
+    box-sizing: border-box;
 }
 
 .team-member img {
-    width: 200px;
-    height: 200px;
+    width: 100%;       
+    max-width: 200px;   
+    height: auto;      
     object-fit: cover;
     margin-top: 30px;
     margin-bottom: 5px;
 }
 
 .team-member h2 {
-    font-family: "Calibre-Bold";
-    font-size: 1.2rem;
+    font-family: "Calibre-Regular";
+    font-size: 25px;
     margin-top: 40px;
     color: #799dab;
 }
@@ -481,12 +527,12 @@ body{
     color: white;
 }
 
-/* modal profile data */
+/* modal profile view data */
 
 .modal {
     display: none;
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -516,12 +562,12 @@ body{
     justify-items: center;
     justify-content: center;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.2;
     background: white;
     color: #799dab;
     padding: 30px;
     border-radius: 15px;
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
     overflow-y: 90vh;
     position: relative;
@@ -543,11 +589,7 @@ body{
     transition: color 0.3s;
 }
 
-.close:hover {
-    color: #ed4747;
-}
-
-/* 🌟 ANIMATIONS */
+/* ANIMATIONS for Profile View */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -573,6 +615,95 @@ body{
         transform: translateY(0);
     }
 }
+
+/* Mobile Responsiveness for Section : Our Executive Team */
+
+@media only screen and (max-width: 430px) { 
+    
+    .team-section {
+        padding-top: 60px;
+        gap: 15px;
+        background: white;
+    }
+
+    .team-section h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+        color: #C7eaf8;
+    }
+
+    .team-container {
+        flex-direction: column; /* stack members vertically */
+        gap: 30px;
+        max-width: 100%;
+    }
+
+    .team-member {
+        width: 90%; 
+        margin-bottom: 30px;
+    }
+
+    .team-member img {
+        max-width: 150px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .team-member h2 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .team-member p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .team-button {
+        padding: 5px 15px;
+        font-size: 12px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    /* MODAL - mobile responsiveness */
+    .modal {
+        padding: 10px;
+        overflow-y: auto;
+        text-align: center;
+    }
+
+    .modal-content {
+        padding: 20px;
+        max-width: 300px;
+        max-height: 70vh; 
+        overflow-y: auto; 
+        transform: translateY(-5px);
+    }
+
+    .modal-content h2 {
+        font-size: 20px;
+    }
+
+    .modal-content p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .close {
+        top: 10px;
+        right: 15px;
+        font-size: 1.5rem;
+    }
+
+    .data-member-img {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+}
+
+
 
 /* END of section : Our Executive Team */
 
@@ -1364,26 +1495,36 @@ main
 
 .cookie-banner {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: 30px;         
+    left: 50%;    
+    transform: translateX(-50%); /* center the element */
+    width: 50%;
     background-color: #799dab;
     color: white;
+    border:1px solid #C7eaf8;
     text-align: center;
     padding: 25px 30px;
-    box-shadow: 0 -4px 3px rgba(84, 83, 83, 0.1);
+    border-radius: 15px;   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(121, 157, 171, 0.9); 
     z-index: 1000;
 }
 
 .cookie-banner h1 {
-    font-family: "calibre-bold";
+    font-family: "calibre-regular";
+    font-weight: bold;
 }
 
 .cookie-banner p {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     line-height: 1.5;
-    font-size: 1.125rem;
+    font-size: 18px;
+}
+
+.cookie-banner a{
+    color: white;
+    font-weight: bold;
 }
 
 .cookie-banner button {
@@ -1392,18 +1533,23 @@ main
     margin: 0 8px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .accept-btn {
     background-color: white;
     color: #799dab;
     border-radius: 50px;
+    border: none;
+    cursor: pointer;
 }
 
 .reject-btn {
     background-color: white;
     color: #799dab;
     border-radius: 50px;
+    border: none;
+    cursor: pointer;
 }
 
 /* END of stlying - cookie banner */
