@@ -761,15 +761,61 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
                 <div class="footer-column">
                     <div class="footer-title">legal</div>
-                    <a class="footer-option" href="">privacy policy</a>
-                    <a class="footer-option" href="">terms of use</a>
+                    <a class="footer-option" href="404page.html">privacy policy</a>
+                    <a class="footer-option" href="404page.html">terms of use</a>
                 </div>
                 <div class="footer-column">
                     <div class="footer-title">contact</div>
                     <div class="footer-noclick-option">www.circlesolutions.com</div>
                     <div class="footer-noclick-option">hi@circlesolutions.com</div>
                     <div class="footer-noclick-option">+316 12 34 56 78</div>
-                    <a class="footer-option" href="faqpage.html" target="_blank">FAQ</a>
+                    <!-- FAQ -->
+                    <button data-faq-target="#faq" class="faq-button">FAQ</button>
+                    <div class="faq" id="faq">
+                        <div class="faq-header">
+                            <div class="faq-title">FAQ</div>
+                            <button data-faq-close-button class="close-faq">&times;</button>
+                        </div>
+                        <div class="faq-body">
+                            <details>
+                                <summary class="faq-question">What does Circle Solutions do?</summary>
+                                <p class="faq-text">
+                                    Circle Solutions develops custom software designed to help organizations work more efficiently. 
+                                    Our focus is on simplicity and functionality — delivering only what truly adds value.
+                                </p>
+                            </details>
+                            <details>
+                                <summary class="faq-question">Who are your solutions for?</summary>
+                                <p class="faq-text">
+                                    We serve businesses and institutions seeking reliable, 
+                                    user-focused software that aligns with their operational goals and supports long-term growth.
+                                </p>
+                            </details>
+                            <details>
+                                <summary class="faq-question">What makes Circle Solutions different?</summary>
+                                <p class="faq-text">
+                                    We eliminate unnecessary complexity. Our software is clear, 
+                                    efficient, and built around real user needs — ensuring technology serves the business, 
+                                    not the other way around.
+                                </p>
+                            </details>
+                            <details>
+                                <summary class="faq-question">Can I see examples of your work?</summary>
+                                <p class="faq-text">
+                                    Yes. Our "what we build" page showcases software by sector and use case, 
+                                    giving insight into the types of projects we deliver.
+                                </p>
+                            </details>
+                            <details>
+                                <summary class="faq-question">How can I contact Circle Solutions?</summary>
+                                <p class="faq-text">
+                                    You can reach our team via the contact form on our website or directly by 
+                                    email at hi@circlesolutions.com. We aim to respond promptly to all inquiries.
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+                    <div id="faqOverlay"></div>
                 </div>
             </div>
         </div>
@@ -782,6 +828,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </div>
     </div>
+
+    <!-- FAQ script -->
+     <script>
+        const openFaqButton = document.querySelectorAll('[data-faq-target]')
+        const closeFaqButton = document.querySelectorAll('[data-faq-close-button]')
+        const faqOverlay = document.getElementById('faqOverlay')
+
+        openFaqButton.forEach(button => {
+            button.addEventListener('click', () => {
+                const faq = document.querySelector(button.dataset.faqTarget)
+                openFaq(faq)
+            })
+        })
+
+        faqOverlay.addEventListener('click', () => {
+            const faqs = document.querySelectorAll('.faq.active')
+            faqs.forEach(faq => {
+                closeFaq(faq)
+            })
+        })
+
+        closeFaqButton.forEach(button => {
+            button.addEventListener('click', () => {
+                const faq = button.closest('.faq')
+                closeFaq(faq)
+            })
+        })
+
+        function openFaq(faq) {
+            if (faq == null) return
+            faq.classList.add('active')
+            faqOverlay.classList.add('active')
+        }
+
+        function closeFaq(faq) {
+            if (faq == null) return
+            faq.classList.remove('active')
+            faqOverlay.classList.remove('active')
+        }
+     </script>
     
     <!-- cookie banner -->
         <?php if (!isset($_COOKIE[$cookie_name])): ?>
