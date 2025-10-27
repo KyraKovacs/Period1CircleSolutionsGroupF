@@ -474,18 +474,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
              <div class="vertical-line2"></div>
              <div class="country-flags">
-                <img src="images/_WINDOWS/4-global presence/1-US flag.png" alt="US flag">
-                <img src="images/_WINDOWS/4-global presence/2-China flag.png" alt="China flag">
-                <img src="images/_WINDOWS/4-global presence/3-Germany flag.png" alt="Germany flag">
-                <img src="images/_WINDOWS/4-global presence/4-France flag.png" alt="France flag">
-                <img src="images/_WINDOWS/4-global presence/5-India flag.png" alt="India flag">
-                <img class="japan-flag" src="images/_WINDOWS/4-global presence/7-Japan flag.png" alt="Japan flag">
-                <img src="images/_WINDOWS/4-global presence/6-UK flag.png" alt="UK flag">
-                <img src="images/_WINDOWS/4-global presence/8-Hungary flag.png" alt="Hungary flag">
-                <img src="images/_WINDOWS/4-global presence/9-Thailand flag.png" alt="Thailand">
-                <img src="images/_WINDOWS/4-global presence/10-Poland flag.png" alt="Poland flag">
-                <img src="images/_WINDOWS/4-global presence/11-Iran flag.png" alt="Iran flag">
-                <img src="images/_WINDOWS/4-global presence/12-Sierra Leone.png" alt="Sierra Leone">
+                <div class="country-flags-track">
+                    <img src="images/_WINDOWS/4-global presence/1-US flag.png" alt="US flag">
+                    <img src="images/_WINDOWS/4-global presence/2-China flag.png" alt="China flag">
+                    <img src="images/_WINDOWS/4-global presence/3-Germany flag.png" alt="Germany flag">
+                    <img src="images/_WINDOWS/4-global presence/4-France flag.png" alt="France flag">
+                    <img src="images/_WINDOWS/4-global presence/5-India flag.png" alt="India flag">
+                    <img class="japan-flag" src="images/_WINDOWS/4-global presence/7-Japan flag.png" alt="Japan flag">
+                    <img src="images/_WINDOWS/4-global presence/6-UK flag.png" alt="UK flag">
+                    <img src="images/_WINDOWS/4-global presence/8-Hungary flag.png" alt="Hungary flag">
+                    <img src="images/_WINDOWS/4-global presence/9-Thailand flag.png" alt="Thailand">
+                    <img src="images/_WINDOWS/4-global presence/10-Poland flag.png" alt="Poland flag">
+                    <img src="images/_WINDOWS/4-global presence/11-Iran flag.png" alt="Iran flag">
+                    <img src="images/_WINDOWS/4-global presence/12-Sierra Leone.png" alt="Sierra Leone">
+                    <img src="images/_WINDOWS/4-global presence/1-US flag.png" alt="US flag">
+                    <img src="images/_WINDOWS/4-global presence/2-China flag.png" alt="China flag">
+                    <img src="images/_WINDOWS/4-global presence/3-Germany flag.png" alt="Germany flag">
+                    <img src="images/_WINDOWS/4-global presence/4-France flag.png" alt="France flag">
+                    <img src="images/_WINDOWS/4-global presence/5-India flag.png" alt="India flag">
+                    <img class="japan-flag" src="images/_WINDOWS/4-global presence/7-Japan flag.png" alt="Japan flag">
+                    <img src="images/_WINDOWS/4-global presence/6-UK flag.png" alt="UK flag">
+                    <img src="images/_WINDOWS/4-global presence/8-Hungary flag.png" alt="Hungary flag">
+                    <img src="images/_WINDOWS/4-global presence/9-Thailand flag.png" alt="Thailand">
+                    <img src="images/_WINDOWS/4-global presence/10-Poland flag.png" alt="Poland flag">
+                    <img src="images/_WINDOWS/4-global presence/11-Iran flag.png" alt="Iran flag">
+                    <img src="images/_WINDOWS/4-global presence/12-Sierra Leone.png" alt="Sierra Leone">
+                </div>
              </div>
         </div>
      </div>
