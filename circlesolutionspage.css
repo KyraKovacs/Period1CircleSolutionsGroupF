@@ -1051,18 +1051,10 @@ padding: 13vw;
 
 
 
+/* DO NOT USE GLOBAL TAGS IN STYLING (WORK ON YOUR CLASS NAMES) */
 
 
-
-
-body {
-    background-color: #C7EAF8;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-h1 {
+/* h1 {
     color: #799DAB;
     text-align: center;
     font-size: 100px;
@@ -1075,7 +1067,7 @@ p {
     text-align: center;
     font-size: 30px;
     margin-bottom: 100px;
-}
+} */
 
 .container {
     display: flex;
