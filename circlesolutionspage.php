@@ -20,10 +20,10 @@
             Please enter a valid email address.
             </div>');
         }
-        if(strlen($message) < 10) {
+        if(empty($message) || strlen($message) < 10) {
             array_push($errors, '<div class="error">
             <img class="error-dot" src="images/_WINDOWS/8-contact us/dot.png">
-            Please enter your message (at least 10 characters).
+            Your message must have at least 10 characters.
             </div>');
         }
         if($privacy != "on") {
@@ -37,6 +37,26 @@
         }
         return $errors;
     }
+        
+// COOKIE SETUP
+$cookie_name = "user_cookie_consent";
+$cookie_time = 30 * 24 * 60 * 60; // 30 days
+
+// Handle POST request - COOKIE
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accept_cookie'])) {
+        setcookie($cookie_name, "accepted", time() + $cookie_time, "/");
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
+    }
+
+    if (isset($_POST['reject_cookie'])) {
+        setcookie($cookie_name, "rejected", time() + $cookie_time, "/");
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +67,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions</title>
     <link rel="stylesheet" href="circlesolutionspage.css">
-    <link rel="stylesheet" href="elo.css">
 </head>
 
 <body>
@@ -55,7 +74,7 @@
     <div class="bluehomepage">
         <!-- navbar -->
         <div class="navbar">
-            <img class="logo" src="images\logo\logo\circle solutions_logo_01(bluetext_blank background).png" alt="logo">
+            <img class="logonav" src="images\logo\logo\circle solutions_logo_01(bluetext_blank background).png" alt="logo">
             <a href="language"> <img class="language" src="images\_WINDOWS\1-homepage\language select icon.png"
                     alt="languageselect">EN</a>
             <a href="contactus">contact us</a>
@@ -66,44 +85,46 @@
         <!-- text left side -->
         <div class="welcometext">
             <div class="textleftside">
-                <h1 class="px180"><b>software</b></h1>
-                <h2 class="px150"><b>solutions</b></h2>
-                <h3 class="px70">serving worldwide</h3>
-                <h4 class="px50">just connect the dots</h4>
+                <h1 class="px180 bigspacewelc"><b>software</b></h1>
+                <h2 class="px150 bigspacewelc"><b>solutions</b></h2>
+                <h3 class="px70 littlespacewelc">serving worldwide</h3>
+                <h4 class="px50 littlespacewelc">just connect the dots</h4>
             </div>
             <!-- trusted across borders section -->
             <div>
                 <h4 class="px30"><b>trusted across borders</b></h4>
                 <!-- card divclasses are for the white little cards -->
-                <div class="card">
-                    <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
-                    <p class="px16">“circle solutions provides really good, dedicated talents that posses a strong work
+                <div class="card-collection"> 
+                    <div class="card">
+                        <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
+                        <p class="px16">“circle solutions provides really good, dedicated talents that posses a strong work
                         ethic.”</p>
-                    <img class="CEO" src="images\_WINDOWS\1-homepage\1-Jinyi Guo.png" alt="jinyiguo">
-                    <p class="px18"><b>Jinyi Guo</b></p>
-                    <img class="company" src="images\_WINDOWS\1-homepage\Luckin Coffee.png" alt="luckincoffee">
-                    <p class="px12">CEO | Luckin Coffee, China</p>
-                    <img class="flag" src="images\_WINDOWS\1-homepage\1-China flag.png" alt="chinaflag">
-                </div>
-                <div class="card">
-                    <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
-                    <p class="px16">“always understanding our requirements to the detail, designing and developing
+                        <img class="CEO" src="images\_WINDOWS\1-homepage\1-Jinyi Guo.png" alt="jinyiguo">
+                        <p class="px18"><b>Jinyi Guo</b></p>
+                        <img class="company" src="images\_WINDOWS\1-homepage\Luckin Coffee.png" alt="luckincoffee">
+                        <p class="px12">CEO | Luckin Coffee, China</p>
+                        <img class="flag" src="images\_WINDOWS\1-homepage\1-China flag.png" alt="chinaflag">
+                    </div>
+                    <div class="card">
+                        <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
+                        <p class="px16">“always understanding our requirements to the detail, designing and developing
                         high-quality software.”</p>
-                    <img class="CEO" src="images\_WINDOWS\1-homepage\2-Andy Jassy.png" alt="andyjassy">
-                    <p class="px18"><b>Andy Jassy</b></p>
-                    <img class="company" src="images\_WINDOWS\1-homepage\Amazon.png" alt="amazon">
-                    <p class="px12">CEO | Amazon, USA</p>
-                    <img class="flag" src="images\_WINDOWS\1-homepage\2-US flag.png" alt="usflag">
-                </div>
-                <div class="card">
-                    <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
-                    <p class="px16">“this plugin has been great to work with. It has some really advanced functionality
+                        <img class="CEO" src="images\_WINDOWS\1-homepage\2-Andy Jassy.png" alt="andyjassy">
+                        <p class="px18"><b>Andy Jassy</b></p>
+                        <img class="company" src="images\_WINDOWS\1-homepage\Amazon.png" alt="amazon">
+                        <p class="px12">CEO | Amazon, USA</p>
+                        <img class="flag" src="images\_WINDOWS\1-homepage\2-US flag.png" alt="usflag">
+                    </div>
+                    <div class="card">
+                        <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
+                        <p class="px16">“this plugin has been great to work with. It has some really advanced functionality
                         and easy to modify”</p>
-                    <img class="CEO" src="images\_WINDOWS\1-homepage\3-Oliver Zipse.png" alt="oliverzipse">
-                    <p class="px18"><b>Oliver Zipse</b></p>
-                    <img class="company" src="images\_WINDOWS\1-homepage\BMW.png" alt="bmw">
-                    <p class="px12">CEO | BMW, Germany</p>
-                    <img class="flag" src="images\_WINDOWS\1-homepage\3-Germany flag.png" alt="usflag">
+                        <img class="CEO" src="images\_WINDOWS\1-homepage\3-Oliver Zipse.png" alt="oliverzipse">
+                        <p class="px18"><b>Oliver Zipse</b></p>
+                        <img class="company" src="images\_WINDOWS\1-homepage\BMW.png" alt="bmw">
+                        <p class="px12">CEO | BMW, Germany</p>
+                        <img class="flag" src="images\_WINDOWS\1-homepage\3-Germany flag.png" alt="usflag">
+                    </div>
                 </div>
                 <a href="globalreach"><img class="globalreach"
                         src="images\_WINDOWS\1-homepage\explore global reach button.png" alt=""></a>
@@ -112,38 +133,41 @@
         <div class="whitehomepage">
             <div class="firstrow">
                 <img class="reviews" src="images\_WINDOWS\1-homepage\Clutch Review.png" alt="clutchreview">
-                <div>
+                <div class="vertical-line"></div>
+                <div class="sectionwelc">
                     <p class="px45"><b>15</b></p>
                     <p class="px30"><b>years</b></p>
                     <p class="px20">proven on track</p>
                 </div>
-                <div>
+                <div class="vertical-line"></div>
+                <div class="sectionwelc">
                     <p class="px45"><b>2000+</b></p>
                     <p class="px30"><b>projects</b></p>
                     <p class="px20">successfully delivered</p>
                 </div>
-                <div>
+                <div class="vertical-line"></div>
+                <div class="sectionwelc">
                     <p class="px45"><b>250+</b></p>
                     <p class="px30"><b>experts</b></p>
                     <p class="px20">on board</p>
                 </div>
-                <div>
+                <div class="vertical-line"></div>
+                <div class="sectionwelc">
                     <p class="px45"><b>30+</b></p>
                     <p class="px30"><b>countries</b></p>
                     <p class="px20">on our delivery map</p>
                 </div>
             </div>
             <p class="px35">trusted by 200+ leading brands worldwide</p>
-            <div class="trusted companies">
-                
-
-
-
-
-
-
-
-
+            <div class="trusted-companies">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Amazon.png" alt="amazon">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\BMW.png" alt="bmw">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Samsung.png" alt="samsung">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KLM.png" alt="klm">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Visa.png" alt="visa">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Volkswagen.png" alt="volks">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Nike.png" alt="nike">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Hermes.png" alt="hermes">
             </div>
         </div>
 
@@ -158,13 +182,62 @@
 
 
 
+    <div class="golden-circle-section" id="about-us">
 
+    <h1 class="gc-heading">about us</h1>
+    <h2 class="gc-subtitle">golden circle</h2>
+    <p class="gc-author">- by Simon Sinek -</p>
 
+    <div class="gc-container">
+        <div class="gc-item">
+        <img src="images/_WINDOWS/3-about us/what.jpeg" alt="What" class="gc-image">
+        <p class="gc-desc">software solutions<span class="next">that fit the individual company</span></p>
+        </div>
 
+        <div class="gc-item">
+        <img src="images/_WINDOWS/3-about us/how.jpeg" alt="How" class="gc-image">
+        <p class="gc-desc">developing software<span class="next">that make life easier</span></p>
+        </div>
 
+        <div class="gc-item">
+        <img src="images/_WINDOWS/3-about us/why.jpeg" alt="Why" class="gc-image">
+        <p class="gc-desc">tasks should be no hassle</p>
+        </div>
+    </div>
+    </div>
 
+    <!-- Spacer Between Sections -->
+    <div class="section-divider"></div>
 
+    <!-- Vision & Mission Section -->
+    <div class="vision-mission">
+    <div class="vision-section">
+        <div class="left-side">
+        <h1 class="vm-title">vision</h1>
+        </div>
+        <div class="right-side">
+        <img src="images/_WINDOWS/3-about us/circle.jpeg" alt="circle" class="circle-img">
+        <div class="text-area">
+            <h2>vision</h2>
+            <p>we love to keep things simple, no big gestures,<span class="next">no theatre or promising utopias.</span></p>
+        </div>
+        </div>
+    </div>
 
+    <div class="mission-section">
+        <div class="left-side">
+        <h1 class="vm-title">&amp; mission</h1>
+        </div>
+        <div class="right-side">
+        <img src="images/_WINDOWS/3-about us/circle.jpeg" alt="circle" class="circle-img">
+        <div class="text-area">
+            <h2>mission</h2>
+            <p>to develop software that fit the individual qualities<span class="next">of individual needs</span></p><br>
+            <p class="vision">to empowering people and business<span class="next">with software solutions</span></p>
+        </div>
+        </div>
+    </div>
+    </div>
 
 
 
@@ -199,17 +272,12 @@
 
 
 
-        <main>
-            <h1 class="white">our global reach</h1>
-            <div class="bluegrey">trusted worldwide across 30+ countries</div>
-            <img class="worldmap" src="images/_WINDOWS/4-global presence/world map.png" alt="world map">
 
 
 
 
 
 
-        </main>
 
 
 
@@ -234,94 +302,58 @@
 
 
 
-        <!--section-values-->
 
+
+<!-- section : values -->
         <section class="values-section">
             <div class="values-section-left">
                 <h1>values</h1>
             </div>
 
             <div class="values-section-right">
-                <img src="img-about us/values.png" alt="values">
+                <img src="images/_WINDOWS/3-about us/values.png" alt="values">
             </div>
         </section>
+        <!-- END section : values -->
 
 
         <!--section - executive team-->
-
         <section class="team-section">
             <h1>our executive team</h1>
 
             <div class="team-container">
                 <div class="team-member">
-                    <img src="img-about us/Pieter Bakker.png" alt="Pieter Bakker">
+                    <img src="images/_WINDOWS/3-about us/pieter bakker.png" alt="Pieter Bakker">
                     <h2>Pieter Bakker</h2>
                     <p>chief executive officer</p>
                     <button class="team-button" data-member="1">view profile</button>
                 </div>
 
-                <div class="values-section-right">
-                    <img src="images/_WINDOWS/3-about us/values.png" alt="values">
-                    <div class="team-member">
-                        <img src="img-about us/William Wisser.png" alt="William Wisser">
-                        <h2>William Wisser</h2>
-                        <p>chief technology officer</p>
-                        <button class="team-button" data-member="2">view profile</button>
-                    </div>
-
-                    <div class="team-member">
-                        <img src="img-about us/Jan van Dijk.png" alt="Jan van Dijk">
-                        <h2>Jan van Dijk</h2>
-                        <p>chief commercial officer</p>
-                        <button class="team-button" data-member="3">view profile</button>
-                    </div>
-
-                    <!--section - executive team-->
-
-                    <section class="team-section">
-                        <h1>our executive team</h1>
-
-                        <div class="team-container">
-                            <div class="team-member">
-                                <img src="images/_WINDOWS/3-about us/pieter bakker.png" alt="Pieter Bakker">
-                                <h2>Pieter Bakker</h2>
-                                <p>chief executive officer</p>
-                                <button class="team-button" data-member="1">view profile</button>
-                            </div>
-
-                            <div class="team-member">
-                                <img src="images/_WINDOWS/3-about us/william wisser.png" alt="William Wisser">
-                                <h2>William Wisser</h2>
-                                <p>chief technology officer</p>
-                                <button class="team-button" data-member="2">view profile</button>
-                            </div>
-
-                            <div class="team-member">
-                                <img src="images/_WINDOWS/3-about us/jan van dijk.png" alt="Jan van Dijk">
-                                <h2>Jan van Dijk</h2>
-                                <p>chief commercial officer</p>
-                                <button class="team-button" data-member="3">view profile</button>
-                            </div>
-
-                            <div class="team-member">
-                                <img src="images/_WINDOWS/3-about us/sarah kleinn.png" alt="Sarah Kleinn">
-                                <h2>Sarah Kleinn</h2>
-                                <p>chief application officer</p>
-                                <button class="team-button" data-member="4">view profile</button>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="team-member">
-                        <img src="img-about us/Sarah Kleinn.png" alt="Sarah Kleinn">
-                        <h2>Sarah Kleinn</h2>
-                        <p>chief application officer</p>
-                        <button class="team-button" data-member="4">view profile</button>
-                    </div>
+                <div class="team-member">
+                    <img src="images/_WINDOWS/3-about us/william wisser.png" alt="William Wisser">
+                    <h2>William Wisser</h2>
+                    <p>chief technology officer</p>
+                    <button class="team-button" data-member="2">view profile</button>
                 </div>
+
+                <div class="team-member">
+                    <img src="images/_WINDOWS/3-about us/jan van dijk.png" alt="Jan van Dijk">
+                    <h2>Jan van Dijk</h2>
+                    <p>chief commercial officer</p>
+                    <button class="team-button" data-member="3">view profile</button>
+                </div>
+
+                <div class="team-member">
+                    <img src="images/_WINDOWS/3-about us/sarah kleinn.png" alt="Sarah Kleinn">
+                    <h2>Sarah Kleinn</h2>
+                    <p>chief application officer</p>
+                    <button class="team-button" data-member="4">view profile</button>
+                </div>
+            </div>
         </section>
 
 
-        <!-- Modal -->
+        <!-- Modal for profile view -->
         <div id="modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -333,7 +365,7 @@
         <div id="memberProfiles" style="display:none;">
             <div class="modal-content">
                 <div data-member="1">
-                    <img class="data-member-img" src="img-about us/Pieter Bakker.png" alt="Pieter Bakker">
+                    <img class="data-member-img" src="images/_WINDOWS/3-about us/pieter bakker.png" alt="Pieter Bakker">
                     <h2>Pieter Bakker</h2>
                     <h3><strong>chief executive officer</strong></h3><br>
                     <p>Pieter Bakker has over 30 years of experience in digital strategy and enterprise transformation.
@@ -348,7 +380,7 @@
             </div>
 
             <div data-member="2">
-                <img class="data-member-img" src="img-about us/William Wisser.png" alt="William Wisser">
+                <img class="data-member-img" src="images/_WINDOWS/3-about us/william wisser.png" alt="William Wisser">
                 <h2>William Wissen</h2>
                 <h3><strong>chief technology officer</strong></h3><br>
                 <p>William Wissen brings over 15 years of experience in software architecture, cloud engineering,
@@ -363,7 +395,7 @@
             </div>
 
             <div data-member="3">
-                <img class="data-member-img" src="img-about us/Jan van Dijk.png" alt="Jan van Dijk">
+                <img class="data-member-img" src="images/_WINDOWS/3-about us/jan van dijk.png" alt="Jan van Dijk">
                 <h2>Jan van Dijk</h2>
                 <h3><strong>chief commercial officer</strong></h3><br>
                 <p>Jan van Dijk has more than 20 years of experience in international business development and client
@@ -378,7 +410,7 @@
             </div>
 
             <div data-member="4">
-                <img class="data-member-img" src="img-about us/Sarah Kleinn.png" alt="Sarah Kleinn">
+                <img class="data-member-img" src="images/_WINDOWS/3-about us/sarah kleinn.png" alt="Sarah Kleinn">
                 <h2>Sarah Kleinn</h2>
                 <h3><strong>chief application officer</strong></h3><br>
                 <p>Sarah Klein has over 20 years of experience in software development, UX design, and enterprise
@@ -391,6 +423,7 @@
             </div>
         </div>
 
+        <!-- Animation for Pop-up Profile View -->
         <script>
             // Modal logic
             const modal = document.getElementById('modal');
@@ -414,9 +447,13 @@
                 if (e.target === modal) modal.classList.remove('show');
             });
         </script>
+        <!--END section - executive team -->
+
+
+        
         <!--Global reach-->
     <section>
-    <div class="GlobalReachBox">
+    <div class="GlobalReachBox" id="global-reach">
         <h1 class="whitetext">our global reach</h1>
         <div class="bluegrey">trusted worldwide across 30+ countries</div>
         <img class="worldmap" src="images/_WINDOWS/4-global presence/world map.png" alt="world map">
@@ -456,7 +493,7 @@
 
      <!--What We Build Page-->
      <section>
-        <div class="WhatWeBuildBox">
+        <div class="WhatWeBuildBox" id="what-we-build">
             <div class="WhatWeBuildBox-title">what we build</div>
             <div class="WhatWeBuildBox-subtitle">explore how our solutions foster growth and digital discovery of your unique business</div>
                 <div class="circles-box">
@@ -606,89 +643,16 @@
 
 
 
- <!-- section : 404 page -->
 
-<section class="page404-section">
-    <h1>404</h1>
-    <p>page not found</p>
-    <button class="button-page404">go back home</button>
-</section>
-
-
-
-
-<!-- FAQ PAGE -->
-    <div class="faq-questions-container px30">
-        <div class="help-section-header px80">frequently asked questions</div>
-        <details>
-            <summary class="faq-question">What does Circle Solutions do?</summary>
-            <p class="faq-text">
-                We design and develop custom software that helps organizations work more efficiently.
-                Every solution is built around real needs — no unnecessary features, no clutter.
-                Just what's needed to make things work smoothly.
-            </p>
-        </details>
-        <details>
-            <summary class="faq-question">What types of software do you build?</summary>
-            <p class="faq-text">
-                Our work ranges from internal tools and workflow platforms to
-                data dashboards and integration systems. We build solutions that simplify daily operations
-                — especially for teams in business, logistics, and IT.
-            </p>
-        </details>
-        <details>
-            <summary class="faq-question">How do you approach new projects?</summary>
-            <p class="faq-text">
-                We start by understanding how your organization works and where things can be improved.
-                From there, we design and develop software that fits — not the other way around.
-                Throughout the process, you'll have one clear point of contact.
-            </p>
-        </details>
-        <details>
-            <summary class="faq-question">What makes Circle Solutions different?</summary>
-            <p class="faq-text">
-                Simplicity. We don't add complexity where it's not needed. Our software is clean,
-                functional, and reliable — focused on usability and long-term value.
-            </p>
-        </details>
-        <details>
-            <summary class="faq-question">Do you offer off-the-shelf products?</summary>
-            <p class="faq-text">
-                No. Every solution we create is custom-built for the client's specific context and goals.
-                This ensures that your software fits your processes — instead of forcing your processes to fit the
-                software.
-            </p>
-        </details>
-        <details>
-            <summary class="faq-question">How do you ensure quality and reliability?</summary>
-            <p class="faq-text">
-                We follow a clear, structured development process with built-in testing at every step.
-                Our code is maintainable, well-documented, and ready to grow with your organization.
-            </p>
-        </details>
-        <details>
-            <summary class="faq-question">What happens after delivery?</summary>
-            <p class="faq-text">
-                After launch, we stay available for support and further development.
-                Many of our clients continue working with us to refine or expand their systems as their needs
-                evolve.
-            </p>
-        </details>
-        <details>
-            <summary class="faq-question">How can we get started?</summary>
-            <p class="faq-text">
-            Simply reach out via the contact form below or send us an email at hi@circlesolutions.com. 
-            We'll plan a short call to discuss your needs and explore what kind of software could help your team work more efficiently.
-            </p>
-        </details>
-    </div>
 <!-- CONTACT US PAGE -->
-    <div class="contact-us-container px30">
+    <div class="contact-us-container" id="contact-us-page">
         <div class="contact-us-left-section">
+            <!-- title, slogan -->
             <div class="contact-us-header-container">
-                <div class="help-section-header px72">contact us</div>
-                <div class="help-section-slogan">just connect the dots.</div>
+                <div class="contact-header">contact us</div>
+                <div class="contact-slogan">just connect the dots.</div>
             </div>
+            <!-- direct contact info -->
             <div class="contact-methods-downloads-container">
                 <div class="contact-methods">
                     <div class="contact-method">
@@ -704,6 +668,7 @@
                         <div class="contact-method-text">+316 12 34 56 78</div>
                     </div>
                 </div>
+                <!-- downloadable whitepapers -->
                 <div class="downloads">
                     <div class="download-bold-text">download</div>
                     <div class="downloads-container">
@@ -724,7 +689,8 @@
                 </div>
             </div>
         </div>
-        <section class="contact-us-right-section" id="contact-form">
+        <!-- contact form -->
+        <div class="contact-us-right-section" id="contact-form">
             <form class="contact-form" action="<?php echo $_SERVER["PHP_SELF"] ?>#contact-form" method="POST">
                 <label class="form-label" for="name">name</label>
                 <input class="form-input" type="text" name="name" id="name">
@@ -738,6 +704,7 @@
                     <label class="attach-label" for="file">
                         <img class="attach-img" src="images/_WINDOWS/8-contact us/attach file.png">
                         <span>attach file</span>
+                        <!-- tooltip -->
                         <div class="tooltip-container">
                             <img class="tooltip-img" src="images/_WINDOWS/8-contact us/information.png">
                             <div class="tooltip-text">Upload relevant documents or images from your device.</div>
@@ -745,14 +712,17 @@
                     </label>
                     <input type="file" id="file">
                 </div>
+                <!-- privacy submission -->
                 <div class="privacy-submit">
                     <div class="privacy-policy-container">
                         <input type="checkbox" name="privacy" id="privacy">
-                        <label class="form-label" for="privacy">i accept <u>privacy policy</u></label>
+                        <label class="form-label" for="privacy">i accept <a href="404page.html" class="privacy-link">privacy policy</a></label>
                     </div>
-                    <input class="submit-img" type="image" src="images/_WINDOWS/8-contact us/connect.png">
                 </div>
+                <!-- submission button -->
+                <input class="submit-img" type="image" src="images/_WINDOWS/8-contact us/connect.png">
             </form>
+            <!-- form data validation -->
             <?php
             if($_SERVER["REQUEST_METHOD"] == "POST") {
                 $output = validateInput();
@@ -765,7 +735,7 @@
             }
             
             ?>
-        </section>
+        </div>
     </div>
 
     <!-- FOOTER -->
@@ -773,33 +743,89 @@
         <div class="footer-flex">
             <div class="footer-left-section">
                 <div class="footer-company-title">circle solutions</div>
+                <!-- companys social medias -->
                 <div class="footer-socials">
-                    <img class="footer-social-img" src="images/_WINDOWS/9-footer/instagram.png">
-                    <img class="footer-social-img" src="images/_WINDOWS/9-footer/X.png">
-                    <img class="footer-social-img" src="images/_WINDOWS/9-footer/facebook.png">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="footer-social-img" src="images/_WINDOWS/9-footer/instagram.png">
+                    </a>
+                    <a href="https://x.com/" target="_blank">
+                        <img class="footer-social-img" src="images/_WINDOWS/9-footer/X.png">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="footer-social-img" src="images/_WINDOWS/9-footer/facebook.png">
+                    </a>
                 </div>
             </div>
             <div class="footer-right-section">
+                <!-- footer navbar -->
                 <div class="footer-column">
                     <div class="footer-title">company</div>
-                    <a class="footer-option" href="">about us</a>
-                    <a class="footer-option" href="">what we build</a>
-                    <a class="footer-option" href="">global reach</a>
-                    <a class="footer-option" href="">contact us</a>
+                    <a class="footer-option" href="#about-us">about us</a>
+                    <a class="footer-option" href="#global-reach">global reach</a>
+                    <a class="footer-option" href="#what-we-build">what we build</a>
+                    <a class="footer-option" href="#contact-us-page">contact us</a>
                 </div>
                 <div class="footer-column">
                     <div class="footer-title">legal</div>
-                    <a class="footer-option" href="">privacy policy</a>
-                    <a class="footer-option" href="">terms of use</a>
+                    <a class="footer-option" href="404page.html">privacy policy</a>
+                    <a class="footer-option" href="404page.html">terms of use</a>
                 </div>
                 <div class="footer-column">
                     <div class="footer-title">contact</div>
-                    <div class="footer-option">www.circlesolutions.com</div>
-                    <div class="footer-option">hi@circlesolutions.com</div>
-                    <div class="footer-option">+316 12 34 56 78</div>
+                    <div class="footer-noclick-option">www.circlesolutions.com</div>
+                    <div class="footer-noclick-option">hi@circlesolutions.com</div>
+                    <div class="footer-noclick-option">+316 12 34 56 78</div>
+                    <!-- FAQ -->
+                    <button data-faq-target="#faq" class="faq-button">FAQ</button>
+                    <div class="faq" id="faq">
+                        <div class="faq-header">
+                            <div class="faq-title">FAQ</div>
+                            <button data-faq-close-button class="close-faq">&times;</button>
+                        </div>
+                        <div class="faq-body">
+                            <details>
+                                <summary class="faq-question">What does Circle Solutions do?</summary>
+                                <p class="faq-text">
+                                    Circle Solutions develops custom software designed to help organizations work more efficiently. 
+                                    Our focus is on simplicity and functionality — delivering only what truly adds value.
+                                </p>
+                            </details>
+                            <details>
+                                <summary class="faq-question">Who are your solutions for?</summary>
+                                <p class="faq-text">
+                                    We serve businesses and institutions seeking reliable, 
+                                    user-focused software that aligns with their operational goals and supports long-term growth.
+                                </p>
+                            </details>
+                            <details>
+                                <summary class="faq-question">What makes Circle Solutions different?</summary>
+                                <p class="faq-text">
+                                    We eliminate unnecessary complexity. Our software is clear, 
+                                    efficient, and built around real user needs — ensuring technology serves the business, 
+                                    not the other way around.
+                                </p>
+                            </details>
+                            <details>
+                                <summary class="faq-question">Can I see examples of your work?</summary>
+                                <p class="faq-text">
+                                    Yes. Our "what we build" page showcases software by sector and use case, 
+                                    giving insight into the types of projects we deliver.
+                                </p>
+                            </details>
+                            <details>
+                                <summary class="faq-question">How can I contact Circle Solutions?</summary>
+                                <p class="faq-text">
+                                    You can reach our team via the contact form on our website or directly by 
+                                    email at hi@circlesolutions.com. We aim to respond promptly to all inquiries.
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+                    <div id="faqOverlay"></div>
                 </div>
             </div>
         </div>
+        <!-- bottom part of the footer -->
         <div class="footer-reserved-rights-container">
             <hr class="footer-divider">
             <div class="copyright">
@@ -808,46 +834,61 @@
             </div>
         </div>
     </div>
+
+    <!-- FAQ script -->
+     <script>
+        const openFaqButton = document.querySelectorAll('[data-faq-target]')
+        const closeFaqButton = document.querySelectorAll('[data-faq-close-button]')
+        const faqOverlay = document.getElementById('faqOverlay')
+
+        openFaqButton.forEach(button => {
+            button.addEventListener('click', () => {
+                const faq = document.querySelector(button.dataset.faqTarget)
+                openFaq(faq)
+            })
+        })
+
+        faqOverlay.addEventListener('click', () => {
+            const faqs = document.querySelectorAll('.faq.active')
+            faqs.forEach(faq => {
+                closeFaq(faq)
+            })
+        })
+
+        closeFaqButton.forEach(button => {
+            button.addEventListener('click', () => {
+                const faq = button.closest('.faq')
+                closeFaq(faq)
+            })
+        })
+
+        function openFaq(faq) {
+            if (faq == null) return
+            faq.classList.add('active')
+            faqOverlay.classList.add('active')
+        }
+
+        function closeFaq(faq) {
+            if (faq == null) return
+            faq.classList.remove('active')
+            faqOverlay.classList.remove('active')
+        }
+     </script>
     
-<!-- cookie banner -->
+    <!-- cookie banner -->
         <?php if (!isset($_COOKIE[$cookie_name])): ?>
-        <div class="cookie-banner">
-            <h1>we use cookies</h1>
-            <p>our website uses cookies to improve your browsing experience. by continuing, we assume your permission to
-                deploy cookies as detailed in our privacy policy.</p>
-            </p>
-            <form method="POST" style="display:inline;">
-                <button type="submit" name="accept_cookie" class="accept-btn">Accept all cookies</button>
-                <button type="submit" name="reject_cookie" class="reject-btn">Reject all</button>
-            </form>
-        </div>
+            <div class="cookie-banner">
+                <h1>we use cookies</h1>
+                <p>our website uses cookies to improve your browsing experience.<br>
+                    by continuing, we assume your permission to deploy cookies as detailed in our <a href="404page.html">privacy policy.</a></p>
+
+                <form method="POST" style="display:inline;">
+                    <button type="submit" name="accept_cookie" class="accept-btn">Accept all cookies</button>
+                    <button type="submit" name="reject_cookie" class="reject-btn">Reject all</button>
+                </form>
+            </div>
         <?php endif; ?>
-
-        <!-- CHECK : Cookie Consent Banner with Accept / Reject-->
-         
-        <?php
-         
-// Start PHP before *any* HTML is sent!
-$cookie_name = "user_cookie_consent";
-$cookie_time = 30 * 24 * 60 * 60; // 30 days
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['accept_cookie'])) {
-        setcookie($cookie_name, "accepted", time() + $cookie_time, "/");
-        header("Location: " . $_SERVER['PHP_SELF']);
-        exit();
-    }
-
-    if (isset($_POST['reject_cookie'])) {
-        setcookie($cookie_name, "rejected", time() + $cookie_time, "/");
-        header("Location: " . $_SERVER['PHP_SELF']);
-        exit();
-    }
-}
-?>
         <!-- END of cookie banner -->
-
-
 </body>
 
 </html>
