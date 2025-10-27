@@ -50,7 +50,7 @@ body{
     z-index: 1000;
 }
 
-.logo{
+.logonav{
     width: 200px;
     height: auto;
     display: flex;
@@ -85,6 +85,15 @@ body{
 .px24{
     font-size: 24px;
 }
+.px45{
+    font-size: 45px;
+}
+.px30{
+    font-size: 30px;
+}
+.px20{
+    font-size: 20px;
+}
 .textleftside{
     padding: 6rem;
     line-height: 100px;
@@ -100,12 +109,20 @@ body{
     align-content: space-between;
     justify-content: flex-start;
 }
+.card-collection{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
 
+}
 .card{
     background-color: white;
-    display: flex;
-    align-content:center;
-    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
 }
 .navbar a{
     float: inline-end;
@@ -142,7 +159,39 @@ body{
     color: white;
 }
 
+.reviews{
+    width: 300px;
+    height: auto;
+}
 
+.firstrow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.sectionwelc{
+    padding: 10px 20px;
+    text-align: center;
+    flex: 1 1 150px;
+    min-width: 150px;
+}
+
+
+@media (min-width: 600px) {
+      .vertical-line {
+        display: inline-block;
+        border-left: 1px solid #799DAB;
+        height: 50px;
+        margin: 0 10px;
+      }
+    }
+
+.trustedcompaniesimg{
+    width: 200px;
+    height: auto;
+}
 
 .golden-circle-section {
   text-align: center;
