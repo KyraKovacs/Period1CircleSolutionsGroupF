@@ -91,11 +91,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <h4 class="px50 littlespacewelc">just connect the dots</h4>
             </div>
             <!-- trusted across borders section -->
-            <div>
+            <div class="bluerightsidewelc">
                 <h4 class="px30"><b>trusted across borders</b></h4>
                 <!-- card divclasses are for the white little cards -->
                 <div class="card-collection"> 
-                    <div class="card">
+                    <div class="cardwelc">
                         <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                         <p class="px16">“circle solutions provides really good, dedicated talents that posses a strong work
                         ethic.”</p>
@@ -105,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <p class="px12">CEO | Luckin Coffee, China</p>
                         <img class="flag" src="images\_WINDOWS\1-homepage\1-China flag.png" alt="chinaflag">
                     </div>
-                    <div class="card">
+                    <div class="cardwelc">
                         <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                         <p class="px16">“always understanding our requirements to the detail, designing and developing
                         high-quality software.”</p>
@@ -115,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <p class="px12">CEO | Amazon, USA</p>
                         <img class="flag" src="images\_WINDOWS\1-homepage\2-US flag.png" alt="usflag">
                     </div>
-                    <div class="card">
+                    <div class="cardwelc">
                         <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                         <p class="px16">“this plugin has been great to work with. It has some really advanced functionality
                         and easy to modify”</p>
@@ -126,14 +126,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img class="flag" src="images\_WINDOWS\1-homepage\3-Germany flag.png" alt="usflag">
                     </div>
                 </div>
-                <a href="globalreach"><img class="globalreach"
-                        src="images\_WINDOWS\1-homepage\explore global reach button.png" alt=""></a>
+                <a href="globalreach"> <img class="globalreach" src="images\_WINDOWS\1-homepage\explore global reach button.png" alt="globalreach"></a>
             </div>
         </div>
         <div class="whitehomepage">
-            <div class="firstrow">
+            <div class="firstrowwelc">
                 <img class="reviews" src="images\_WINDOWS\1-homepage\Clutch Review.png" alt="clutchreview">
-                <div class="vertical-line"></div>
                 <div class="sectionwelc">
                     <p class="px45"><b>15</b></p>
                     <p class="px30"><b>years</b></p>
@@ -168,6 +166,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Volkswagen.png" alt="volks">
                 <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Nike.png" alt="nike">
                 <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Hermes.png" alt="hermes">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Grab.png" alt="grab">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\HCSC.png" alt="hcsc">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KFC.png" alt="kfc">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\MINI.png" alt="mini">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Paypal.png" alt="paypal">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Puma.png" alt="puma">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\TESCO.png" alt="tesco">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Amazon.png" alt="amazon">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\BMW.png" alt="bmw">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Samsung.png" alt="samsung">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KLM.png" alt="klm">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Visa.png" alt="visa">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Volkswagen.png" alt="volks">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Nike.png" alt="nike">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Hermes.png" alt="hermes">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Grab.png" alt="grab">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\HCSC.png" alt="hcsc">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KFC.png" alt="kfc">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\MINI.png" alt="mini">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Paypal.png" alt="paypal">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Puma.png" alt="puma">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\TESCO.png" alt="tesco">
             </div>
         </div>
 
