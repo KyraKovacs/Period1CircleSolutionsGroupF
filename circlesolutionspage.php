@@ -91,11 +91,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <h4 class="px50 littlespacewelc">just connect the dots</h4>
             </div>
             <!-- trusted across borders section -->
-            <div>
+            <div class="bluerightsidewelc">
                 <h4 class="px30"><b>trusted across borders</b></h4>
                 <!-- card divclasses are for the white little cards -->
                 <div class="card-collection"> 
-                    <div class="card">
+                    <div class="cardwelc">
                         <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                         <p class="px16">“circle solutions provides really good, dedicated talents that posses a strong work
                         ethic.”</p>
@@ -105,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <p class="px12">CEO | Luckin Coffee, China</p>
                         <img class="flag" src="images\_WINDOWS\1-homepage\1-China flag.png" alt="chinaflag">
                     </div>
-                    <div class="card">
+                    <div class="cardwelc">
                         <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                         <p class="px16">“always understanding our requirements to the detail, designing and developing
                         high-quality software.”</p>
@@ -115,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <p class="px12">CEO | Amazon, USA</p>
                         <img class="flag" src="images\_WINDOWS\1-homepage\2-US flag.png" alt="usflag">
                     </div>
-                    <div class="card">
+                    <div class="cardwelc">
                         <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                         <p class="px16">“this plugin has been great to work with. It has some really advanced functionality
                         and easy to modify”</p>
@@ -126,14 +126,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img class="flag" src="images\_WINDOWS\1-homepage\3-Germany flag.png" alt="usflag">
                     </div>
                 </div>
-                <a href="globalreach"><img class="globalreach"
-                        src="images\_WINDOWS\1-homepage\explore global reach button.png" alt=""></a>
+                <a href="globalreach"> <img class="globalreach" src="images\_WINDOWS\1-homepage\explore global reach button.png" alt="globalreach"></a>
             </div>
         </div>
         <div class="whitehomepage">
-            <div class="firstrow">
+            <div class="firstrowwelc">
                 <img class="reviews" src="images\_WINDOWS\1-homepage\Clutch Review.png" alt="clutchreview">
-                <div class="vertical-line"></div>
                 <div class="sectionwelc">
                     <p class="px45"><b>15</b></p>
                     <p class="px30"><b>years</b></p>
@@ -168,6 +166,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Volkswagen.png" alt="volks">
                 <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Nike.png" alt="nike">
                 <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Hermes.png" alt="hermes">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Grab.png" alt="grab">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\HCSC.png" alt="hcsc">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KFC.png" alt="kfc">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\MINI.png" alt="mini">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Paypal.png" alt="paypal">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Puma.png" alt="puma">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\TESCO.png" alt="tesco">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Amazon.png" alt="amazon">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\BMW.png" alt="bmw">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Samsung.png" alt="samsung">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KLM.png" alt="klm">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Visa.png" alt="visa">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Volkswagen.png" alt="volks">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Nike.png" alt="nike">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Hermes.png" alt="hermes">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Grab.png" alt="grab">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\HCSC.png" alt="hcsc">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KFC.png" alt="kfc">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\MINI.png" alt="mini">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Paypal.png" alt="paypal">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Puma.png" alt="puma">
+                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\TESCO.png" alt="tesco">
             </div>
         </div>
 
@@ -550,6 +570,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
+<!-- Amin -->
 
 
 
@@ -562,6 +583,181 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
+    <h1>our global cases</h1>
+    <p>successful projects we delivered across borders</p>
+
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="fin-tech.jpg" alt="fin tech">
+            </div>
+            <div class="label">fin tech</div>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="e-commerce.jpg" alt="e-commerce">
+            </div>
+            <div class="label">e-commerce</div>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="food&drinks.jpg" alt="food & drinks">
+            </div>
+            <div class="label">food & drinks</div>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="real-estate.jpg" alt="real estate">
+            </div>
+            <div class="label">real estate</div>
+        </div>
+    </div>
+    <div class="explore-btn">
+        <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&oq=goo&gs_lcrp=EgZjaHJvbWUqDQgBEC4YxwEY0QMYgAQyBggAEEUYOTINCAEQLhjHARjRAxiABDIMCAIQIxgnGIAEGIoFMgYIAxBFGDwyBggEEEUYQTIGCAUQRRhBMgYIBhBFGEEyBggHEEUYPNIBCDI5MzFqMGo3qAIIsAIB8QXm6ydBWxvpePEF5usnQVsb6Xg&sourceid=chrome&ie=UTF-8"
+            class="explore-more" target="_blank" rel="noopener noreferrer">
+            explore more &gt;
+        </a>
+    </div>
+
+
+    <h1 id="clients">
+        what our clients say
+    </h1>
+
+     <p>
+        siccess stories from our clints around the world
+    </p>
+
+    <div class="section">
+        <button class="nav-btn prev-btn">❮</button>
+        <div class="slider">
+            <div class="track">
+                <!-- 1 -->
+                <div class="card2">
+                    <div class="flag">
+                        <img src="china.flag.png" alt="china flag">
+                    </div>
+
+                     <p class="text">"Circle solutions provides—really good, dedicated talents that possess a strong work ethic."</p>
+
+                    <div class="profile-pic">
+                        <img src="chinese-people.jpg" alt="client">
+                    </div>
+
+                     <h3>Jinyi Guo</h3>
+
+                     <p class="role">CEO</p>
+
+                    <div class="company-info">
+                        <img src="luckin-coffee.png" alt="Luckin logo">
+                        <span>Luckin Coffee, China</span>
+                    </div>
+
+                     <button class="explore">explore</button>
+
+                </div>
+
+                <!-- 2 -->
+                <div class="card2">
+                    <div class="flag">
+                        <img src="usa.flag.png" alt="usa flag">
+                    </div>
+
+                    <p class="text">
+                        "Always understanding our requirements to the detail, designing and developing high-quality software."
+                    </p>
+                    <div class="profile-pic">
+                        <img src="usa-people.jpeg" alt="client">
+                    </div>
+                    <h3>
+                        Andy Jassy
+                    </h3>
+                    <p class="role">
+                        CEO
+                    </p>
+                    <div class="company-info">
+                        <img src="amazon.png" alt="amazon logo">
+                        <span>
+                            Amazon.com, USA
+                        </span>
+                    </div>
+                    <button class="explore">explore</button>
+                </div>
+
+                <!-- 3 -->
+                <div class="card2">
+                    <div class="flag"><img src="germany.flag.png" alt="germany flag"></div>
+                    <p class="text">"This plugin has been great to work with. It has some really advanced functionality and easy to modify."</p>
+                    <div class="profile-pic"><img src="germany-people.jpeg" alt="client"></div>
+                    <h3>Oliver Zipse</h3>
+                    <p class="role">CEO</p>
+                    <div class="company-info">
+                        <img src="bmw.png" alt="bmw logo">
+                        <span>BMW Group, Germany</span>
+                    </div>
+                    <button class="explore">explore</button>
+                </div>
+
+                <!-- 4 -->
+                <div class="card2">
+                    <div class="flag"><img src="netherlands.flag.png" alt="netherlands flag"></div>
+                    <p class="text">"Amazing collaboration and top-notch results. Highly recommended!"</p>
+                    <div class="profile-pic"><img src="dutch-people.jpeg" alt="client"></div>
+                    <h3>Jasper van Dijk</h3>
+                    <p class="role">Software Developer</p>
+                    <div class="company-info">
+                        <img src="philips.png" alt="sony logo">
+                        <span>Philips, netherlands</span>
+                    </div>
+                    <button class="explore" onclick="window.location.href='www.google.com'">explore</button>
+                </div>
+
+                <!-- 5 -->
+                <div class="card2">
+                    <div class="flag"><img src="france.flag.png" alt="france flag"></div>
+                    <p class="text">"Circle Solution exceeded our expectations with their creativity and dedication."</p>
+                    <div class="profile-pic"><img src="french-people.jpeg" alt="client"></div>
+                    <h3>Marie Dubois</h3>
+                    <p class="role">Product Manager</p>
+                    <div class="company-info">
+                        <img src="loreal.png" alt="loreal logo">
+                        <spam>L'Oréal, France</spam>
+                    </div>
+                    <button class="explore" onclick="window.location.href='www.google.com'">explore</button>
+                </div>
+            </div>
+        </div>
+        <button class="nav-btn next-btn">❯</button>
+    </div>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.track');
+    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn');
+
+    let index = 0;
+    const totalCards = document.querySelectorAll('.card2').length;
+    const visibleCards = 3; 
+    const maxIndex = totalCards - visibleCards;
+
+    nextBtn.addEventListener('click', () => {
+        if (index < maxIndex) {
+            index++;
+            track.style.transform = "translateX(-" + (index * (100 / visibleCards)) + "%)";
+        }
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (index > 0) {
+            index--;
+            track.style.transform = "translateX(-" + (index * (100 / visibleCards)) + "%)";
+        }
+    });
+});
+</script>
 
 
 
@@ -890,5 +1086,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php endif; ?>
         <!-- END of cookie banner -->
 </body>
-
+<!-- elo -->
 </html>

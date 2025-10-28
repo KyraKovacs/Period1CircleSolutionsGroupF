@@ -109,6 +109,12 @@ body{
     align-content: space-between;
     justify-content: flex-start;
 }
+
+.bluerightsidewelc{
+    align-items: center;
+    justify-content: center;
+}
+
 .card-collection{
     display: flex;
     justify-content: space-between;
@@ -116,7 +122,7 @@ body{
     padding: 20px;
 
 }
-.card{
+.cardwelc{
     background-color: white;
     border-radius: 10px;
     padding: 20px;
@@ -155,7 +161,7 @@ body{
     height: auto;
 }
 
-.white{
+.whitehomepage{
     color: white;
 }
 
@@ -164,7 +170,7 @@ body{
     height: auto;
 }
 
-.firstrow{
+.firstrowwelc{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -176,6 +182,7 @@ body{
     text-align: center;
     flex: 1 1 150px;
     min-width: 150px;
+    color:#799DAB;
 }
 
 
@@ -188,9 +195,31 @@ body{
       }
     }
 
+.trusted-companies{
+    width: 100%;
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+    margin-left: 200px;
+
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
 .trustedcompaniesimg{
     width: 200px;
     height: auto;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .golden-circle-section {
@@ -330,6 +359,13 @@ body{
 .vision p {
   border-top: 40px;
 }
+
+
+
+
+
+
+
 
 
 
@@ -1044,10 +1080,209 @@ padding: 13vw;
 
 
 
+/* DO NOT USE GLOBAL TAGS IN STYLING (WORK ON YOUR CLASS NAMES) */
 
 
+/* h1 {
+    color: #799DAB;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
+p {
+    color: #799DAB;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 100px;
+} */
 
+/* .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 277px;
+    height: 380px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    border-radius: 20px;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.icon {
+    background-color: #ffffff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img {
+    width: 200px;
+    height: 200px;
+}
+
+.label {
+    background-color: #799DAB;
+    color: white;
+    font-size: 40px;
+    text-transform: lowercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 109px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 20px 20px;
+}
+
+.explore-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.explore-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: #799DAB;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.explore-more:hover {
+    background-color: #49738b;
+    transform: translateY(-7px);
+}
+
+#clients {
+    margin-top: 180px;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto 150px;
+    width: 100%;
+}
+
+.slider {
+    width: 70%;
+    overflow: hidden;
+}
+
+.track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.6s ease;
+}
+
+.card2 {
+    flex: 0 0 27%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+}
+
+.flag img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card2 h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.role {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.company-info img {
+    width: 25px;
+    height: 25px;
+}
+
+.explore {
+    background-color: #49738b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 22px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.explore:hover {
+    background-color: #2f576d;
+    transform: translateY(-3px);
+}
+
+.nav-btn {
+    background-color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    color: #49738b;
+    transition: background 0.3s;
+} */
 
 
 
