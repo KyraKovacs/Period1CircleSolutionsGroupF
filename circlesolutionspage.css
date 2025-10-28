@@ -941,7 +941,7 @@ padding-top: 9vw;
 }
 
 .country-flags-track{
-    animation: scroll 10s linear infinite;
+    animation: scroll 20s linear infinite;
     display: flex;
     width: max-content;
     gap: 1rem;
@@ -962,26 +962,6 @@ padding-top: 9vw;
     border: solid black 0.5px;
     border-radius: 90%;
 }
-
-/* .country-flags-track
-{
-    display: flex;
-    width: max-content;
-} */
-
-/* .country-flags::-webkit-scrollbar
-{
-    
-} */
-
-/* .country-flags::scroll-button(right){
-    content: ">";
-    border: none;
-    background-color: white;
-    color: #799DAB;
-    font-size: 2.5vw;
-    
-} */
 
 /*What We Build Page*/
 

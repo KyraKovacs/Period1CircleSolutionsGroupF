@@ -451,7 +451,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
         
-        <!--Global reach-->
+        <!--Global reach page-->
     <section>
     <div class="GlobalReachBox" id="global-reach">
         <h1 class="whitetext">our global reach</h1>
