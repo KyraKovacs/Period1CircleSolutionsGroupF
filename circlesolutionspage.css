@@ -960,37 +960,43 @@ padding-top: 9vw;
 .country-flags
 {
     grid-area: 2/7/3/10;
-    display: flex;
+    width: 110%;
     margin-left: -7vw;
-    gap: 1.7em;
+    overflow: hidden;
 }
 
-.country-flags> img
+
+.country-flags-track > img
 {
-    width: 100%;
-    overflow-x: auto;
+    width: 2vw;
     height: 5vh;
     flex: 0 0 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.country-flags-track{
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: max-content;
+    gap: 1rem;
+}
+
+@keyframes scroll {
+ 0%
+ {
+ transform: translateX(0);
+ }
+ 100%{
+    transform: translateX(-50%);
+ }
 }
 
 .japan-flag
 {
     border: solid black 0.5px;
     border-radius: 90%;
-}
-
-/* .country-flags::-webkit-scrollbar
-{
-    
-} */
-
-.country-flags::scroll-button(right){
-    content: ">";
-    border: none;
-    background-color: white;
-    color: #799DAB;
-    font-size: 2.5vw;
-    
 }
 
 /*What We Build Page*/
@@ -1026,18 +1032,10 @@ padding: 13vw;
     margin-bottom: -0,5vh;
 }
 
-.white-circle1
-{
-    background-color: white;
-    width: 10vw;
-    height: 10vh;
-    border-radius: 90%;
-}
-
 .circles-box > img
 {
     width: 17vw;
-    height: 31vh;
+    height: auto;
 }
 
 .circles-box
@@ -1649,6 +1647,9 @@ textarea:-webkit-autofill:focus {
     text-wrap: nowrap;
 }
 
+
+
+
 .footer-divider {
     border: none;
     height: 1px;
@@ -1790,54 +1791,6 @@ summary::before {
     opacity: 1;
     pointer-events: all;
     animation: fadeIn 0.3s forwards;
-}
-
-/* body {
-font-family: "calibre";
-background-color: #C7EAF8;
-display: flex;
-grid-template-columns: repeat(12, 1fr);
-grid-template-rows: repeat(12, 1fr);
-justify-content: center;
-align-items: center;
-flex-direction: column;
-text-align: center;
-} */
-
-main
-{
-    margin: 80px;
-}
-
-.white
-{
-    color: white;
-    font-family: "calibre";
-    font-weight: 700;
-    font-size: 90px;
-    letter-spacing: -2.3px;
-}
-
-.bluegrey
-{
-    color: #799DAB;
-    font-family: "calibre";
-    font-weight: 500;
-    font-size: 25px;
-    letter-spacing: -1px;
-    margin-top: -40px;
-}
-
-.worldmap
-{
-    width: 80vw;
-}
-
-.whitebox
-{
-    background-color: white;
-    width: 1fr;
-    height: 30vh
 }
 
 /* section : 404 page not found */
