@@ -158,37 +158,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <p class="px35">trusted by 200+ leading brands worldwide</p>
             <div class="trusted-companies">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Amazon.png" alt="amazon">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\BMW.png" alt="bmw">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Samsung.png" alt="samsung">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KLM.png" alt="klm">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Visa.png" alt="visa">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Volkswagen.png" alt="volks">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Nike.png" alt="nike">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Hermes.png" alt="hermes">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Grab.png" alt="grab">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\HCSC.png" alt="hcsc">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KFC.png" alt="kfc">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\MINI.png" alt="mini">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Paypal.png" alt="paypal">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Puma.png" alt="puma">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\TESCO.png" alt="tesco">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Amazon.png" alt="amazon">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\BMW.png" alt="bmw">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Samsung.png" alt="samsung">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KLM.png" alt="klm">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Visa.png" alt="visa">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Volkswagen.png" alt="volks">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Nike.png" alt="nike">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Hermes.png" alt="hermes">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Grab.png" alt="grab">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\HCSC.png" alt="hcsc">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KFC.png" alt="kfc">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\MINI.png" alt="mini">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Paypal.png" alt="paypal">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Puma.png" alt="puma">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\TESCO.png" alt="tesco">
+                <div class="trusted-companies-track">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Amazon.png" alt="amazon">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\BMW.png" alt="bmw">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Samsung.png" alt="samsung">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KLM.png" alt="klm">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Visa.png" alt="visa">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Volkswagen.png" alt="volks">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Nike.png" alt="nike">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Hermes.png" alt="hermes">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Grab.png" alt="grab">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\HCSC.png" alt="hcsc">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KFC.png" alt="kfc">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\MINI.png" alt="mini">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Paypal.png" alt="paypal">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Puma.png" alt="puma">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\TESCO.png" alt="tesco">
+                </div>
             </div>
+        
         </div>
 
 
