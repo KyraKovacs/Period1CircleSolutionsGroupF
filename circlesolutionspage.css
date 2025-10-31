@@ -41,6 +41,7 @@ body{
     margin: 0;
     font-family: Calibre-Regular;
     color: #799DAB;
+    overflow-x: hidden;
 }
 .navbar{
     position: sticky;
@@ -70,8 +71,14 @@ body{
 .px150{
     font-size: 150px;
 }
-.px80{
-    font-size: 80px;
+.px16{
+    font-size: 16px;
+}
+.px18{
+    font-size: 18px;
+}
+.px12{
+    font-size: 12px;
 }
 .px70{
     font-size: 70px;
@@ -82,8 +89,8 @@ body{
 .px40{
     font-size: 40px;
 }
-.px24{
-    font-size: 24px;
+.px35{
+    font-size: 35px;
 }
 .px45{
     font-size: 45px;
@@ -96,7 +103,10 @@ body{
 }
 .textleftside{
     padding: 6rem;
-    line-height: 100px;
+    line-height: 125px;
+}
+.littlespacewelc{
+    line-height: 75px;
 }
 .language{
     width: 20px;
@@ -198,11 +208,16 @@ body{
 .trusted-companies{
     width: 100%;
     display: flex;
-    width: max-content;
-    animation: scroll 20s linear infinite;
-    margin-left: 200px;
-
+    overflow: hidden;
 }
+
+.trusted-companies-track{
+     animation: scroll 20s linear infinite;
+    display: flex;
+    width: max-content;
+    gap: 1rem;
+}
+
 
 @keyframes scroll{
     0%{
@@ -986,7 +1001,7 @@ padding-top: 9vw;
 @keyframes scroll {
  0%
  {
- transform: translateX(0);
+    transform: translateX(0);
  }
  100%{
     transform: translateX(-50%);
