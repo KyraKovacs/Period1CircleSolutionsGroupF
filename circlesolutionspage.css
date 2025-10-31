@@ -1456,15 +1456,15 @@ p {
     margin-bottom: 20px;
 }
 
+
+/* change the input text while autofilling form and delete the background*/
+/* found the solutions on stackoverflow */
 input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0 1000px none inset !important;
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
     -webkit-text-fill-color: #799DAB !important;
-    transition: background-color 5000s ease-in-out 0s;
 }
 
 .form-input:focus {
@@ -1662,9 +1662,6 @@ textarea:-webkit-autofill:focus {
     text-wrap: nowrap;
 }
 
-
-
-
 .footer-divider {
     border: none;
     height: 1px;
@@ -1686,6 +1683,7 @@ textarea:-webkit-autofill:focus {
 
 /* FAQ styling */
 
+/* allows for the smooth animations */
 :root {
     interpolate-size: allow-keywords;
 }
