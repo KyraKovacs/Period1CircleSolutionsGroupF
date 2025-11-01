@@ -237,24 +237,32 @@ body{
     justify-content: center;
 }
 
+/* UMARU */
+
 .golden-circle-section {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
   padding: 80px 0;
 }
 
+/* Headings */
 .gc-heading {
   font-size: 72px;
-  font-weight: 700;
+  font: bold;
   color: #799dab;
+  font-weight: 700;
   margin: 0;
   text-transform: lowercase;
 }
 
+.next { 
+  display: block;
+}
+
 .gc-subtitle {
   font-size: 54px;
-  font-weight: 700;
+  font: bold;
   color: #c7eaf8;
+  font-weight: 700;
   margin: 5px 0;
   text-transform: lowercase;
 }
@@ -265,6 +273,7 @@ body{
   margin: 5px 0 60px;
 }
 
+/* Circle layout */
 .gc-container {
   display: flex;
   justify-content: center;
@@ -280,12 +289,14 @@ body{
 .gc-image {
   width: 230px;
   height: 230px;
+  
   object-fit: cover;
   background-color: #c7eaf8;
   display: block;
   margin: 0 auto 25px;
 }
 
+/* Text under each circle */
 .gc-desc {
   color: #799dab;
   font-size: 14px;
@@ -293,28 +304,74 @@ body{
   margin: 0;
 }
 
-.next {
-  display: block;
+/* === Enhancements for responsiveness and hover effects === */
+
+/* Make circles perfectly round */
+.gc-image {
+  border-radius: 50%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* -----------------------------
-   Spacer Between Sections
------------------------------ */
-.section-divider {
-  height: 70px; /* creates smooth scroll space */
-  width: 100%;
+/* Hover effects */
+.gc-item:hover .gc-image {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* -----------------------------
-   Vision & Mission Section Styles
------------------------------ */
+/* Slight text animation on hover */
+.gc-item:hover .gc-desc {
+  color: #5b7f8d;
+  transition: color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .gc-container {
+    gap: 60px;
+  }
+  .gc-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gc-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .gc-item {
+    max-width: 80%;
+  }
+  .gc-image {
+    width: 180px;
+    height: 180px;
+  }
+  .gc-heading {
+    font-size: 48px;
+  }
+  .gc-subtitle {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gc-image {
+    width: 150px;
+    height: 150px;
+  }
+  .gc-desc {
+    font-size: 13px;
+  }
+}
+
 .vision-mission {
   display: flex;
   flex-direction: column;
   gap: 160px;
-  padding-left: 80px;
+  padding-left: 80px; /* keeps the left text from touching the edge */
   padding-top: 100px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .vision-section,
@@ -328,9 +385,13 @@ body{
   flex: 1;
 }
 
+.next {
+  display: block;
+}
+
 .vm-title {
-  font-size: 100px;
-  font-weight: 600;
+  font-size: 5rem;
+  font-family: "Calibre-Bold";
   color: #c7eaf8;
   text-transform: lowercase;
   margin: 0;
@@ -356,8 +417,12 @@ body{
   max-width: 480px;
 }
 
+.vision p {
+ border-top: 40px;
+
+}
 .text-area h2 {
-  font-size: 40px;
+  font-size: 40px;  
   font-weight: 600;
   color: #c7eaf8;
   margin: 0 0 2px 0;
@@ -371,85 +436,89 @@ body{
   margin: 0;
 }
 
-.vision p {
-  border-top: 40px;
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 1200px) {
+  .vision-mission {
+    padding-left: 40px;
+    gap: 120px;
+    padding-top: 60px;
+  }
+
+  .vm-title {
+    font-size: 70px;
+  }
+
+  .text-area {
+    max-width: 400px;
+  }
+
+  .right-side {
+    margin-right: 50px;
+    gap: 15px;
+  }
+
+  .text-area h2 {
+    font-size: 32px;
+  }
+
+  .text-area p {
+    font-size: 18px;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 900px) {
+  .vision-section,
+  .mission-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right-side {
+    margin-right: 0;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .circle-img {
+    width: 35px;
+  }
+
+  .vm-title {
+    font-size: 60px;
+  }
+
+  .text-area h2 {
+    font-size: 28px;
+  }
+
+  .text-area p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vision-mission {
+    padding-left: 20px;
+    padding-top: 40px;
+    gap: 80px;
+  }
+
+  .vm-title {
+    font-size: 45px;
+  }
+
+  .text-area h2 {
+    font-size: 24px;
+  }
+
+  .text-area p {
+    font-size: 14px;
+  }
+
+  .circle-img {
+    width: 30px;
+  }
+}
 
 * {
     margin: 0;
