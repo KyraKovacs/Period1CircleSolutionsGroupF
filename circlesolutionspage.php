@@ -585,8 +585,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-    <h1>our global cases</h1>
-    <p>successful projects we delivered across borders</p>
+  <div class="the-our-global-cases-part">
+
+    <h1 class="header1-our-global-cases-part">our global cases</h1>
+    <p class="paragraph-our-global-cases-part">successful projects we delivered across borders</p>
 
     <div class="container">
         <div class="card">
@@ -625,11 +627,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
 
-    <h1 id="clients">
+    <h1 id="clients", class="header1-our-global-cases-part">
         what our clients say
     </h1>
 
-     <p>
+     <p class="paragraph-our-global-cases-part">
         siccess stories from our clints around the world
     </p>
 
@@ -643,7 +645,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="china.flag.png" alt="china flag">
                     </div>
 
-                     <p class="text">"Circle solutions provides—really good, dedicated talents that possess a strong work ethic."</p>
+                     <p class="text" , class="paragraph-our-global-cases-part">"Circle solutions provides—really good, dedicated talents that possess a strong work ethic."</p>
 
                     <div class="profile-pic">
                         <img src="chinese-people.jpg" alt="client">
@@ -651,7 +653,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                      <h3>Jinyi Guo</h3>
 
-                     <p class="role">CEO</p>
+                     <p class="role" , class="paragraph-our-global-cases-part">CEO</p>
 
                     <div class="company-info">
                         <img src="luckin-coffee.png" alt="Luckin logo">
@@ -668,7 +670,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="usa.flag.png" alt="usa flag">
                     </div>
 
-                    <p class="text">
+                    <p class="text" , class="paragraph-our-global-cases-part">
                         "Always understanding our requirements to the detail, designing and developing high-quality software."
                     </p>
                     <div class="profile-pic">
@@ -677,7 +679,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <h3>
                         Andy Jassy
                     </h3>
-                    <p class="role">
+                    <p class="role" , class="paragraph-our-global-cases-part">
                         CEO
                     </p>
                     <div class="company-info">
@@ -692,10 +694,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- 3 -->
                 <div class="card2">
                     <div class="flag"><img src="germany.flag.png" alt="germany flag"></div>
-                    <p class="text">"This plugin has been great to work with. It has some really advanced functionality and easy to modify."</p>
+                    <p class="text" , class="paragraph-our-global-cases-part">"This plugin has been great to work with. It has some really advanced functionality and easy to modify."</p>
                     <div class="profile-pic"><img src="germany-people.jpeg" alt="client"></div>
                     <h3>Oliver Zipse</h3>
-                    <p class="role">CEO</p>
+                    <p class="role" , class="paragraph-our-global-cases-part">CEO</p>
                     <div class="company-info">
                         <img src="bmw.png" alt="bmw logo">
                         <span>BMW Group, Germany</span>
@@ -706,10 +708,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- 4 -->
                 <div class="card2">
                     <div class="flag"><img src="netherlands.flag.png" alt="netherlands flag"></div>
-                    <p class="text">"Amazing collaboration and top-notch results. Highly recommended!"</p>
+                    <p class="text", class="paragraph-our-global-cases-part">"Amazing collaboration and top-notch results. Highly recommended!"</p>
                     <div class="profile-pic"><img src="dutch-people.jpeg" alt="client"></div>
                     <h3>Jasper van Dijk</h3>
-                    <p class="role">Software Developer</p>
+                    <p class="role" , class="paragraph-our-global-cases-part">Software Developer</p>
                     <div class="company-info">
                         <img src="philips.png" alt="sony logo">
                         <span>Philips, netherlands</span>
@@ -720,10 +722,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- 5 -->
                 <div class="card2">
                     <div class="flag"><img src="france.flag.png" alt="france flag"></div>
-                    <p class="text">"Circle Solution exceeded our expectations with their creativity and dedication."</p>
+                    <p class="text" , class="paragraph-our-global-cases-part">"Circle Solution exceeded our expectations with their creativity and dedication."</p>
                     <div class="profile-pic"><img src="french-people.jpeg" alt="client"></div>
                     <h3>Marie Dubois</h3>
-                    <p class="role">Product Manager</p>
+                    <p class="role" class="paragraph-our-global-cases-part">Product Manager</p>
                     <div class="company-info">
                         <img src="loreal.png" alt="loreal logo">
                         <spam>L'Oréal, France</spam>
@@ -733,6 +735,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </div>
         <button class="nav-btn next-btn">❯</button>
+    </div>
     </div>
 <script>
 window.addEventListener('DOMContentLoaded', () => {
@@ -760,7 +763,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 </script>
-
 
 
 
