@@ -436,6 +436,87 @@ body{
   margin: 0;
 }
 
+/* === CENTERING FIX (add at end of visionnew.css) === */
+.vision-mission {
+  box-sizing: border-box;
+  max-width: 1180px;     /* keeps the whole section centered and constrained */
+  margin: 0 auto;        
+  padding-left: 0;       
+  padding-right: 0;
+  width: 100%;
+}
+
+/* Keep left and right columns spaced but centered as a whole */
+.vision-section,
+.mission-section {
+  width: 100%;
+  max-width: 1100px;     
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  gap: 40px;             
+  box-sizing: border-box;
+}
+
+/* Give left and right predictable column sizes so they don't collapse together */
+.left-side,
+.right-side {
+  flex: 0 0 48%;         
+  min-width: 220px;      
+  box-sizing: border-box;
+}
+
+/* Ensure text-area doesn't overflow and wraps nicely */
+.text-area {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Keep the circle image positioned nicely inside the right column */
+.circle-img {
+  flex-shrink: 0;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Responsive adjustments that preserve spacing on smaller screens */
+@media (max-width: 1100px) {
+  .vision-section,
+  .mission-section {
+    gap: 30px;
+    max-width: 920px;
+  }
+  .left-side,
+  .right-side {
+    flex: 0 0 46%;
+  }
+}
+
+@media (max-width: 900px) {
+  /* your existing mobile rules already switch to column layout;
+     keep them but ensure there's spacing between stacked blocks */
+  .vision-section,
+  .mission-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .left-side,
+  .right-side {
+    flex: 0 0 auto;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .vision-mission {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 /* RESPONSIVE ADJUSTMENTS */
 @media (max-width: 1200px) {
   .vision-mission {
@@ -1166,7 +1247,7 @@ padding: 13vw;
 
 
 .the-our-global-cases-part {
-    background-color: #C7EAF8;
+    background-color: #C7EAF8 !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -1187,7 +1268,7 @@ padding: 13vw;
     margin-bottom: 100px;
 }
 
-.container {
+.container-global-cases-part {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -1195,7 +1276,7 @@ padding: 13vw;
     margin-bottom: 50px;
 }
 
-.card {
+.card-global-cases-part {
     width: 277px;
     height: 380px;
     background-color: white;
@@ -1206,11 +1287,11 @@ padding: 13vw;
     border-radius: 20px;
 }
 
-.card:hover {
+.card-global-cases-part:hover {
     transform: translateY(-7px);
 }
 
-.icon {
+.icon-global-cases-part {
     background-color: #ffffff;
     padding: 50px 0;
     display: flex;
@@ -1218,12 +1299,12 @@ padding: 13vw;
     align-items: center;
 }
 
-.icon img {
+.icon-global-cases-part img {
     width: 200px;
     height: 200px;
 }
 
-.label {
+.label-global-cases-part {
     background-color: #799DAB;
     color: white;
     font-size: 40px;
@@ -1238,7 +1319,7 @@ padding: 13vw;
     border-radius: 0 0 20px 20px;
 }
 
-.explore-btn {
+.explore-btn-global-cases-part {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -1263,11 +1344,11 @@ padding: 13vw;
     transform: translateY(-7px);
 }
 
-#clients {
+#clients-global-cases-part {
     margin-top: 180px;
 }
 
-.section {
+.section-global-cases-part {
     position: relative;
     display: flex;
     justify-content: center;
@@ -1276,18 +1357,18 @@ padding: 13vw;
     width: 100%;
 }
 
-.slider {
+.slider-global-cases-part {
     width: 70%;
     overflow: hidden;
 }
 
-.track {
+.track-global-cases-part {
     display: flex;
     gap: 20px;
     transition: transform 0.6s ease;
 }
 
-.card2 {
+.card2-global-cases-part {
     flex: 0 0 27%;
     background-color: white;
     border-radius: 20px;
@@ -1296,40 +1377,40 @@ padding: 13vw;
     text-align: center;
 }
 
-.flag img {
+.flag-global-cases-part img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
-.text {
+.text-global-cases-part {
     font-size: 18px;
     color: #555;
     margin-bottom: 20px;
     line-height: 1.6;
 }
 
-.profile-pic img {
+.profile-pic-global-cases-part img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
 
-.card2 h3 {
+.card2-global-cases-part h3 {
     font-size: 22px;
     color: #333;
     margin-bottom: 4px;
 }
 
-.role {
+.role-global-cases-part {
     font-size: 16px;
     color: #888;
     margin-bottom: 15px;
 }
 
-.company-info {
+.company-info-global-cases-part {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1339,12 +1420,12 @@ padding: 13vw;
     margin-bottom: 15px;
 }
 
-.company-info img {
+.company-info-global-cases-part img {
     width: 25px;
     height: 25px;
 }
 
-.explore {
+.explore-global-cases-part {
     background-color: #49738b;
     color: white;
     border: none;
@@ -1355,7 +1436,7 @@ padding: 13vw;
     transition: background 0.3s, transform 0.3s;
 }
 
-.explore:hover {
+.explore-global-cases-part:hover {
     background-color: #2f576d;
     transform: translateY(-3px);
 }
