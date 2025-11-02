@@ -436,6 +436,87 @@ body{
   margin: 0;
 }
 
+/* === CENTERING FIX (add at end of visionnew.css) === */
+.vision-mission {
+  box-sizing: border-box;
+  max-width: 1180px;     /* keeps the whole section centered and constrained */
+  margin: 0 auto;        
+  padding-left: 0;       
+  padding-right: 0;
+  width: 100%;
+}
+
+/* Keep left and right columns spaced but centered as a whole */
+.vision-section,
+.mission-section {
+  width: 100%;
+  max-width: 1100px;     
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  gap: 40px;             
+  box-sizing: border-box;
+}
+
+/* Give left and right predictable column sizes so they don't collapse together */
+.left-side,
+.right-side {
+  flex: 0 0 48%;         
+  min-width: 220px;      
+  box-sizing: border-box;
+}
+
+/* Ensure text-area doesn't overflow and wraps nicely */
+.text-area {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Keep the circle image positioned nicely inside the right column */
+.circle-img {
+  flex-shrink: 0;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Responsive adjustments that preserve spacing on smaller screens */
+@media (max-width: 1100px) {
+  .vision-section,
+  .mission-section {
+    gap: 30px;
+    max-width: 920px;
+  }
+  .left-side,
+  .right-side {
+    flex: 0 0 46%;
+  }
+}
+
+@media (max-width: 900px) {
+  /* your existing mobile rules already switch to column layout;
+     keep them but ensure there's spacing between stacked blocks */
+  .vision-section,
+  .mission-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .left-side,
+  .right-side {
+    flex: 0 0 auto;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .vision-mission {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 /* RESPONSIVE ADJUSTMENTS */
 @media (max-width: 1200px) {
   .vision-mission {
