@@ -593,7 +593,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="container-global-cases-part">
         <div class="card-global-cases-part">
             <div class="icon-global-cases-part">
-                <img src="images/-windows/6-memberProfiles/fin tech.png" alt="fin tech">
+                <img src="images/-windows/6-memberProfiles/fin-tech.png" alt="fin tech">
             </div>
             <div class="label-global-cases-part">fin tech</div>
         </div>
@@ -607,14 +607,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <div class="card-global-cases-part">
             <div class="icon-global-cases-part">
-                <img src="images/-windows/6-memberProfiles/food and drinks.png" alt="food & drinks">
+                <img src="images/-windows/6-memberProfiles/food-and-drinks.png" alt="food & drinks">
             </div>
             <div class="label-global-cases-part">food & drinks</div>
         </div>
 
         <div class="card-global-cases-part">
             <div class="icon-global-cases-part">
-                <img src="images/-windows/6-memberProfiles/real estate.png" alt="real estate">
+                <img src="images/-windows/6-memberProfiles/real-estate.png" alt="real estate">
             </div>
             <div class="label-global-cases-part">real estate</div>
         </div>
