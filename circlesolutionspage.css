@@ -1166,7 +1166,7 @@ padding: 13vw;
 
 
 .the-our-global-cases-part {
-    background-color: #C7EAF8;
+    background-color: #C7EAF8 !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
