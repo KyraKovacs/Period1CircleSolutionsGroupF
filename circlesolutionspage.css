@@ -436,6 +436,87 @@ body{
   margin: 0;
 }
 
+/* === CENTERING FIX (add at end of visionnew.css) === */
+.vision-mission {
+  box-sizing: border-box;
+  max-width: 1180px;     /* keeps the whole section centered and constrained */
+  margin: 0 auto;        
+  padding-left: 0;       
+  padding-right: 0;
+  width: 100%;
+}
+
+/* Keep left and right columns spaced but centered as a whole */
+.vision-section,
+.mission-section {
+  width: 100%;
+  max-width: 1100px;     
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  gap: 40px;             
+  box-sizing: border-box;
+}
+
+/* Give left and right predictable column sizes so they don't collapse together */
+.left-side,
+.right-side {
+  flex: 0 0 48%;         
+  min-width: 220px;      
+  box-sizing: border-box;
+}
+
+/* Ensure text-area doesn't overflow and wraps nicely */
+.text-area {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Keep the circle image positioned nicely inside the right column */
+.circle-img {
+  flex-shrink: 0;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Responsive adjustments that preserve spacing on smaller screens */
+@media (max-width: 1100px) {
+  .vision-section,
+  .mission-section {
+    gap: 30px;
+    max-width: 920px;
+  }
+  .left-side,
+  .right-side {
+    flex: 0 0 46%;
+  }
+}
+
+@media (max-width: 900px) {
+  /* your existing mobile rules already switch to column layout;
+     keep them but ensure there's spacing between stacked blocks */
+  .vision-section,
+  .mission-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .left-side,
+  .right-side {
+    flex: 0 0 auto;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .vision-mission {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 /* RESPONSIVE ADJUSTMENTS */
 @media (max-width: 1200px) {
   .vision-mission {
@@ -1132,6 +1213,125 @@ padding: 13vw;
     margin-top: 7vh;
 }
 
+/*Mobile responsiveness for Global reach page and What We Build page*/
+
+@media (max-width: 768px) {
+    /*Global reach page*/
+  .GlobalReachBox 
+  {
+    padding-top: 5vw;
+  }
+
+  .whitetext 
+  {
+    font-size: 9vw; 
+    letter-spacing: -0.1vw; 
+  }
+
+  .bluegrey 
+  {
+    font-size: 5vw;
+    letter-spacing: -0.1vw; 
+    margin-top: 1vh;
+    margin-bottom: 0;
+  }
+
+  .worldmap 
+  {
+    width: 100vw; 
+  }
+
+  .whitebox 
+  {
+    height: auto; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(9, auto); 
+  }
+
+  .projects-text,
+  .brands-text,
+  .countries-text,
+  .country-flags 
+  {
+    margin-left: 0;
+    margin-top: 20px;
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .projects-text > h1,
+  .brands-text > h1,
+  .countries-text > h1 
+  {
+    font-size: 6vw;
+  }
+
+  .projects,
+  .brands,
+  .countries 
+  {
+    font-size: 5vw;
+    padding-left: 0;
+  }
+
+  .small-projects-text,
+  .small-brands-text,
+  .small-countries-text 
+  {
+    font-size: 4.5vw;
+    margin-left: 0;
+  }
+
+  .vertical-line,
+  .vertical-line1,
+  .vertical-line2 
+  {
+        display: none; 
+  }
+
+  .country-flags
+  {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 4vh;
+  }
+
+  .country-flags-track > img 
+  {
+    height: auto;
+  }
+
+  /*What We Build page*/
+  .circles-box 
+  {
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: repeat(8, auto);
+    margin-top: 3vh;
+    column-gap: 10vw;
+    margin-bottom: -10vh;
+  }
+
+  .circles-box > img 
+  {
+    width: 40vw;
+    height: auto;
+  }
+
+  .WhatWeBuildBox 
+  {
+    padding: 6vw;
+  }
+
+  .WhatWeBuildBox-title
+  {
+    font-size: 7vw !important;
+  }
+
+  .WhatWeBuildBox-subtitle
+  {
+    font-size: 5vw;
+  }
+}
 
 
 
@@ -1161,17 +1361,12 @@ padding: 13vw;
 
 
 
-
-
-
-
-
-//*body {
+/*body {
     background-color: #C7EAF8;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}*//
+}*/
 
 .h1-amin-css {
     color: #799DAB;
@@ -1412,8 +1607,14 @@ padding: 13vw;
 .contact-us-left-section, .contact-us-right-section {
     flex: 1;
     display: inline-block;
-    max-width: 320px;
+    max-width: 500px;
     margin-bottom: 32px;
+}
+
+.contact-us-left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* CONTACT METHODS AND WHITEPAPER DOWNLOADS */
@@ -1505,7 +1706,7 @@ padding: 13vw;
 .contact-form {
     display: grid;
     grid-template-columns: 1fr;
-    min-width: 320px;
+    min-width: 400px;
 }
 
 .form-label {
