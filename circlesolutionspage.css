@@ -1492,8 +1492,14 @@ padding: 13vw;
 .contact-us-left-section, .contact-us-right-section {
     flex: 1;
     display: inline-block;
-    max-width: 320px;
+    max-width: 500px;
     margin-bottom: 32px;
+}
+
+.contact-us-left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* CONTACT METHODS AND WHITEPAPER DOWNLOADS */
@@ -1585,7 +1591,7 @@ padding: 13vw;
 .contact-form {
     display: grid;
     grid-template-columns: 1fr;
-    min-width: 320px;
+    min-width: 400px;
 }
 
 .form-label {
