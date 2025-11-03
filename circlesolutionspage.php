@@ -735,7 +735,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="images/_WINDOWS/7-testimonials/4-Netherlands flag.png" alt="netherlands flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
-                        "Amazing collaboration and top-notch results. Highly recommended!"
+                        "Amazing collaboration and top-notch and very good results. Highly recommended circle solutions!"
                     </p>
                     <div class="profile-pic-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/4-Jasper van Dijk.jpeg" alt="client">
@@ -744,7 +744,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         Jasper van Dijk
                     </h3>
                     <p class="role-global-cases-part Paragraph-for-our-global-cases-page">
-                        Software Developer
+                        CEO
                     </p>
                     <div class="company-info-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/philips.png" alt="philips logo">
@@ -763,7 +763,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="images/_WINDOWS/7-testimonials/france.flag.png" alt="france flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
-                        "Circle Solution exceeded our expectation s with their creativity and dedication."
+                        "Circle Solution exceeded our expectation s with their creativity and dedication very good circle solution."
                     </p>
                     <div class="profile-pic-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/IMG_5901.JPG" alt="client">
@@ -772,7 +772,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         Marie Dubois
                     </h3>
                     <p class="role-global-cases-part Paragraph-for-our-global-cases-page">
-                        Product Manager
+                        CEO
                     </p>
                     <div class="company-info-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/loreal.png" alt="loreal logo">
@@ -796,9 +796,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const visibleCards = 3;
 
     function updateSlider() {
-        const cardWidth = cards[0].offsetWidth + 20;
-        track.style.transform = `translateX(-${index * cardWidth}px)`;
-    }
+    const cardWidth = cards[0].offsetWidth + 20;
+    track.style.transform = `translateX(-${index * cardWidth}px)`; 
+     }
 
     nextBtn.addEventListener('click', () => {
         if (index < cards.length - visibleCards) {
