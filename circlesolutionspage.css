@@ -1213,11 +1213,125 @@ padding: 13vw;
     margin-top: 7vh;
 }
 
+/*Mobile responsiveness for Global reach page and What We Build page*/
 
+@media (max-width: 768px) {
+    /*Global reach page*/
+  .GlobalReachBox 
+  {
+    padding-top: 5vw;
+  }
 
+  .whitetext 
+  {
+    font-size: 9vw; 
+    letter-spacing: -0.1vw; 
+  }
 
+  .bluegrey 
+  {
+    font-size: 5vw;
+    letter-spacing: -0.1vw; 
+    margin-top: 1vh;
+    margin-bottom: 0;
+  }
 
+  .worldmap 
+  {
+    width: 100vw; 
+  }
 
+  .whitebox 
+  {
+    height: auto; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(9, auto); 
+  }
+
+  .projects-text,
+  .brands-text,
+  .countries-text,
+  .country-flags 
+  {
+    margin-left: 0;
+    margin-top: 20px;
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .projects-text > h1,
+  .brands-text > h1,
+  .countries-text > h1 
+  {
+    font-size: 6vw;
+  }
+
+  .projects,
+  .brands,
+  .countries 
+  {
+    font-size: 5vw;
+    padding-left: 0;
+  }
+
+  .small-projects-text,
+  .small-brands-text,
+  .small-countries-text 
+  {
+    font-size: 4.5vw;
+    margin-left: 0;
+  }
+
+  .vertical-line,
+  .vertical-line1,
+  .vertical-line2 
+  {
+        display: none; 
+  }
+
+  .country-flags
+  {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: -5vh;
+  }
+
+  .country-flags-track > img 
+  {
+    height: auto;
+  }
+
+  /*What We Build page*/
+  .circles-box 
+  {
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: repeat(8, auto);
+    margin-top: 3vh;
+    column-gap: 10vw;
+    margin-bottom: -10vh;
+  }
+
+  .circles-box > img 
+  {
+    width: 40vw;
+    height: auto;
+  }
+
+  .WhatWeBuildBox 
+  {
+    padding: 6vw;
+  }
+
+  .WhatWeBuildBox-title
+  {
+    font-size: 7vw !important;
+  }
+
+  .WhatWeBuildBox-subtitle
+  {
+    font-size: 5vw;
+  }
+}
 
 
 
