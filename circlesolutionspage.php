@@ -593,28 +593,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="container-global-cases-part">
         <div class="card-global-cases-part">
             <div class="icon-global-cases-part">
-                <img src="/public/images/6-memberProfiles/fin-tech.png" alt="fin tech">
+                <img src="images/_WINDOWS/6-case-studies/fin-tech.png" alt="fin tech">
             </div>
             <div class="label-global-cases-part">fin tech</div>
         </div>
 
         <div class="card-global-cases-part">
             <div class="icon-global-cases-part">
-                <img src="/public/images/6-memberProfiles/e-commerce.png" alt="e-commerce">
+                <img src="images/_WINDOWS/6-case-studies/e-commerce.png" alt="e-commerce">
             </div>
             <div class="label-global-cases-part">e-commerce</div>
         </div>
 
         <div class="card-global-cases-part">
             <div class="icon-global-cases-part">
-                <img src="/public/images/6-memberProfiles/food-and-drinks.png" alt="food & drinks">
+                <img src="images/_WINDOWS/6-case-studies/food-and-drinks.png" alt="food & drinks">
             </div>
             <div class="label-global-cases-part">food & drinks</div>
         </div>
 
         <div class="card-global-cases-part">
             <div class="icon-global-cases-part">
-                <img src="/public/images/6-memberProfiles/real-estate.png" alt="real estate">
+                <img src="images/_WINDOWS/6-case-studies/real-estate.png" alt="real estate">
             </div>
             <div class="label-global-cases-part">real estate</div>
         </div>
@@ -664,7 +664,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <span>Luckin Coffee, China</span>
                     </div>
 
-                     <button class="explore-global-cases-part">explore</button>
+                     <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">
+                        explore
+                    </button>
 
                 </div>
 
@@ -692,7 +694,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             Amazon.com, USA
                         </span>
                     </div>
-                    <button class="explore-global-cases-part">explore</button>
+                    <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">
+                        explore
+                    </button>
                 </div>
 
                 <!-- 3 -->
@@ -718,7 +722,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             BMW Group, Germany
                         </span>
                     </div>
-                    <button class="explore-global-cases-part">
+                    <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">
                         explore
                     </button>
                 </div>
