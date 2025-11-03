@@ -11,29 +11,29 @@
         if(empty($name) || strlen($name) < 2) {
             array_push($errors, '<div class="error">
             <img class="error-dot" src="images/_WINDOWS/8-contact us/dot.png">
-            Please enter your full name.
+            Vul uw volledige naam in.
             </div>');
         }
         if(empty($email)) {
             array_push($errors, '<div class="error">
             <img class="error-dot" src="images/_WINDOWS/8-contact us/dot.png">
-            Please enter a valid email address.
+            Voer een geldig e-mailadres in.
             </div>');
         }
         if(empty($message) || strlen($message) < 10) {
             array_push($errors, '<div class="error">
             <img class="error-dot" src="images/_WINDOWS/8-contact us/dot.png">
-            Your message must have at least 10 characters.
+            Uw bericht moet minimaal 10 tekens bevatten.
             </div>');
         }
         if($privacy != "on") {
             array_push($errors, '<div class="error">
             <img class="error-dot" src="images/_WINDOWS/8-contact us/dot.png">
-            You must agree to the privacy policy to continue.
+            U moet akkoord gaan met het privacybeleid om door te gaan.
             </div>');
         }
         if (empty($errors)) {
-            array_push($errors, '<p class="message-success">Your message has been sent successfully.</p>');
+            array_push($errors, '<p class="message-success">Je bericht is succesvol verstuurd.</p>');
         }
         return $errors;
     }
@@ -75,30 +75,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- navbar -->
         <div class="navbar">
             <img class="logonav" src="images\logo\logo\circle solutions_logo_01(bluetext_blank background).png" alt="logo">
-            <a href="#home">home</a>
-            <a href="#aboutus">about us</a>
-            <a href="#what-we-build">what we build</a>
-            <a href="#contact-us-page">contact us</a>
+            <a href="#home">start</a>
+            <a href="#aboutus">over ons</a>
+            <a href="#what-we-build">wat we bouwen</a>
+            <a href="#contact-us-page">contact ons</a>
             <a href="blog.html">blog</a>
-            <a href="circlesolutionsdutchpage.php"> <img class="language" src="images\_WINDOWS\1-homepage\language select icon.png" alt="languageselect">EN</a>
+            <a href="circlesolutionspage.php"> <img class="language" src="images\_WINDOWS\1-homepage\language select icon.png" alt="languageselect">NL</a>
         </div>
         <!-- text left side -->
         <div id="home" class="welcometext">
             <div class="textleftside">
                 <h1 class="px180 bigspacewelc"><b>software</b></h1>
-                <h2 class="px150 bigspacewelc"><b>solutions</b></h2>
-                <h3 class="px70 littlespacewelc">serving worldwide</h3>
-                <h4 class="px50 littlespacewelc">just connect the dots</h4>
+                <h2 class="px150 bigspacewelc"><b>oplossingen</b></h2>
+                <h3 class="px70 littlespacewelc">wereldwijd actief</h3>
+                <h4 class="px50 littlespacewelc">verbind gewoon de punten</h4>
             </div>
             <!-- trusted across borders section -->
             <div class="bluerightsidewelc">
-                <h4 class="px40 trustedwelc"><b>trusted across borders</b></h4>
+                <h4 class="px40 trustedwelc"><b>vertrouwd over de grenzen heen</b></h4>
                 <!-- card divclasses are for the white little cards -->
                 <div class="card-collection"> 
                     <div class="cardwelc">
                         <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
-                        <p class="px16">“circle solutions provides really good, dedicated talents that posses a strong work
-                        ethic.”</p>
+                        <p class="px16">“Circle Solutions levert zeer goede, toegewijde talenten met een sterke werkethiek.”</p>
                         <img class="CEO" src="images\_WINDOWS\1-homepage\1-Jinyi Guo.png" alt="jinyiguo">
                         <p class="px18"><b>Jinyi Guo</b></p>
                         <img class="company" src="images\_WINDOWS\1-homepage\Luckin Coffee.png" alt="luckincoffee">
@@ -107,8 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                     <div class="cardwelc">
                         <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
-                        <p class="px16">“always understanding our requirements to the detail, designing and developing
-                        high-quality software.”</p>
+                        <p class="px16">“altijd onze vereisten tot in detail begrijpen, hoogwaardige software ontwerpen en ontwikkelen.”</p>
                         <img class="CEO" src="images\_WINDOWS\1-homepage\2-Andy Jassy.png" alt="andyjassy">
                         <p class="px18"><b>Andy Jassy</b></p>
                         <img class="company" src="images\_WINDOWS\1-homepage\Amazon.png" alt="amazon">
@@ -117,12 +115,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                     <div class="cardwelc">
                         <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
-                        <p class="px16">“this plugin has been great to work with. It has some really advanced functionality
-                        and easy to modify”</p>
+                        <p class="px16">“Deze plug-in werkt geweldig. Hij heeft een aantal zeer geavanceerde functies en is eenvoudig aan te passen.”</p>
                         <img class="CEO" src="images\_WINDOWS\1-homepage\3-Oliver Zipse.png" alt="oliverzipse">
                         <p class="px18"><b>Oliver Zipse</b></p>
                         <img class="company" src="images\_WINDOWS\1-homepage\BMW.png" alt="bmw">
-                        <p class="px12">CEO | BMW, Germany</p>
+                        <p class="px12">CEO | BMW, Duitsland</p>
                         <img class="flag" src="images\_WINDOWS\1-homepage\3-Germany flag.png" alt="usflag">
                     </div>
                 </div>
@@ -136,29 +133,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <img class="reviews" src="images\_WINDOWS\1-homepage\Clutch Review.png" alt="clutchreview">
                 <div class="sectionwelc">
                     <p class="px45"><b>15</b></p>
-                    <p class="px30"><b>years</b></p>
-                    <p class="px20">proven on track</p>
+                    <p class="px30"><b>jaren</b></p>
+                    <p class="px20">bewezen op het circuit</p>
                 </div>
                 <div class="vertical-line"></div>
                 <div class="sectionwelc">
                     <p class="px45"><b>2000+</b></p>
-                    <p class="px30"><b>projects</b></p>
-                    <p class="px20">successfully delivered</p>
+                    <p class="px30"><b>projecten</b></p>
+                    <p class="px20">succesvol geleverd</p>
                 </div>
                 <div class="vertical-line"></div>
                 <div class="sectionwelc">
                     <p class="px45"><b>250+</b></p>
-                    <p class="px30"><b>experts</b></p>
-                    <p class="px20">on board</p>
+                    <p class="px30"><b>deskundigen</b></p>
+                    <p class="px20">aan boord</p>
                 </div>
                 <div class="vertical-line"></div>
                 <div class="sectionwelc">
                     <p class="px45"><b>30+</b></p>
-                    <p class="px30"><b>countries</b></p>
-                    <p class="px20">on our delivery map</p>
+                    <p class="px30"><b>landen</b></p>
+                    <p class="px20">op onze bezorgkaart</p>
                 </div>
             </div>
-            <p class="px35">trusted by 200+ leading brands worldwide</p>
+            <p class="px35">vertrouwd door meer dan 200 toonaangevende merken wereldwijd</p>
             <div class="trusted-companies">
                 <div class="trusted-companies-track">
                     <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Amazon.png" alt="amazon">
@@ -182,24 +179,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     <div class="golden-circle-section" id="about-us">
     
-    <h1 id="aboutus" class="gc-heading">about us</h1>
-    <h2 class="gc-subtitle">golden circle</h2>
-    <p class="gc-author">- by Simon Sinek -</p>
+    <h1 id="aboutus" class="gc-heading">over ons</h1>
+    <h2 class="gc-subtitle">gouden cirkel</h2>
+    <p class="gc-author">- door Simon Sinek -</p>
 
     <div class="gc-container">
         <div class="gc-item">
         <img src="images/_WINDOWS/3-about us/what.jpeg" alt="What" class="gc-image">
-        <p class="gc-desc">software solutions<span class="next">that fit the individual company</span></p>
+        <p class="gc-desc">softwareoplossingen<span class="next">die passen bij het individuele bedrijf</span></p>
         </div>
 
         <div class="gc-item">
         <img src="images/_WINDOWS/3-about us/how.jpeg" alt="How" class="gc-image">
-        <p class="gc-desc">developing software<span class="next">that make life easier</span></p>
+        <p class="gc-desc">software ontwikkelen<span class="next">die het leven gemakkelijker maken</span></p>
         </div>
 
         <div class="gc-item">
         <img src="images/_WINDOWS/3-about us/why.jpeg" alt="Why" class="gc-image">
-        <p class="gc-desc">tasks should be no hassle</p>
+        <p class="gc-desc">taken moeten geen gedoe zijn</p>
         </div>
     </div>
     </div>
@@ -211,27 +208,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="vision-mission">
     <div class="vision-section">
         <div class="left-side">
-        <h1 class="vm-title">vision</h1>
+        <h1 class="vm-title">visie</h1>
         </div>
         <div class="right-side">
         <img src="images/_WINDOWS/3-about us/circle.jpeg" alt="circle" class="circle-img">
         <div class="text-area">
-            <h2>vision</h2>
-            <p>we love to keep things simple, no big gestures,<span class="next">no theatre or promising utopias.</span></p>
+            <h2>visie</h2>
+            <p>we houden ervan om dingen eenvoudig te houden, geen grote gebaren,<span class="next">geen theater of veelbelovende utopieën.</span></p>
         </div>
         </div>
     </div>
 
     <div class="mission-section">
         <div class="left-side">
-        <h1 class="vm-title">&amp; mission</h1>
+        <h1 class="vm-title">&amp; missie</h1>
         </div>
         <div class="right-side">
         <img src="images/_WINDOWS/3-about us/circle.jpeg" alt="circle" class="circle-img">
         <div class="text-area">
-            <h2>mission</h2>
-            <p>to develop software that fit the individual qualities<span class="next">of individual needs</span></p><br>
-            <p class="vision">to empowering people and business<span class="next">with software solutions</span></p>
+            <h2>missie</h2>
+            <p>software ontwikkelen die aansluit bij de individuele kwaliteiten<span class="next">van individuele behoeften</span></p><br>
+            <p class="vision">om mensen en bedrijven te versterken<span class="next">met softwareoplossingen</span></p>
         </div>
         </div>
     </div>
@@ -240,7 +237,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!-- section : values -->
         <section class="values-section">
             <div class="values-section-left">
-                <h1>values</h1>
+                <h1>waarden</h1>
             </div>
 
             <div class="values-section-right">
@@ -252,35 +249,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <!--section - executive team-->
         <section class="team-section">
-            <h1>our executive team</h1>
+            <h1>ons directieteam</h1>
 
             <div class="team-container">
                 <div class="team-member">
                     <img src="images/_WINDOWS/3-about us/pieter bakker.png" alt="Pieter Bakker">
                     <h2>Pieter Bakker</h2>
-                    <p>chief executive officer</p>
-                    <button class="team-button" data-member="1">view profile</button>
+                    <p>algemeen directeur</p>
+                    <button class="team-button" data-member="1">profiel bekijken</button>
                 </div>
 
                 <div class="team-member">
                     <img src="images/_WINDOWS/3-about us/william wisser.png" alt="William Wisser">
                     <h2>William Wisser</h2>
-                    <p>chief technology officer</p>
-                    <button class="team-button" data-member="2">view profile</button>
+                    <p>hoofd technologie</p>
+                    <button class="team-button" data-member="2">profiel bekijken</button>
                 </div>
 
                 <div class="team-member">
                     <img src="images/_WINDOWS/3-about us/jan van dijk.png" alt="Jan van Dijk">
                     <h2>Jan van Dijk</h2>
-                    <p>chief commercial officer</p>
-                    <button class="team-button" data-member="3">view profile</button>
+                    <p>commercieel directeur</p>
+                    <button class="team-button" data-member="3">profiel bekijken</button>
                 </div>
 
                 <div class="team-member">
                     <img src="images/_WINDOWS/3-about us/sarah kleinn.png" alt="Sarah Kleinn">
                     <h2>Sarah Kleinn</h2>
-                    <p>chief application officer</p>
-                    <button class="team-button" data-member="4">view profile</button>
+                    <p>hoofd applicatiebeheer</p>
+                    <button class="team-button" data-member="4">profiel bekijken</button>
                 </div>
             </div>
         </section>
@@ -300,59 +297,59 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div data-member="1">
                     <img class="data-member-img" src="images/_WINDOWS/3-about us/pieter bakker.png" alt="Pieter Bakker">
                     <h2>Pieter Bakker</h2>
-                    <h3><strong>chief executive officer</strong></h3><br>
-                    <p>Pieter Bakker has over 30 years of experience in digital strategy and enterprise transformation.
-                        Before founding Circle Solutions in 2010, he served as Regional Director at a leading European
-                        consulting firm,
-                        managing IT and operations projects across 10 countries. Under his leadership,
-                        Circle Solutions has delivered solutions in more than 30 countries with over 2,000 projects
-                        across sectors such as finance, energy, e-commerce, and education.
-                        His vision is to establish Circle Solutions as a trusted global partner—developing software that
-                        simplifies complexity and drives sustainable digital growth.</p>
+                    <h3><strong>algemeen directeur</strong></h3><br>
+                    <p>Pieter Bakker heeft meer dan 30 jaar ervaring in digitale strategie en bedrijfstransformatie.
+                        Voordat hij in 2010 Circle Solutions oprichtte, was hij regionaal directeur bij een toonaangevend Europees
+                        adviesbureau,
+                        waar hij IT- en operationele projecten in tien landen leidde. Onder zijn leiding
+                        heeft Circle Solutions oplossingen geleverd in meer dan 30 landen met meer dan 2000 projecten
+                        in sectoren als financiën, energie, e-commerce en onderwijs.
+                        Zijn visie is om Circle Solutions te vestigen als een betrouwbare wereldwijde partner die software ontwikkelt die
+                        complexiteit vereenvoudigt en duurzame digitale groei stimuleert.</p>
                 </div>
             </div>
 
             <div data-member="2">
                 <img class="data-member-img" src="images/_WINDOWS/3-about us/william wisser.png" alt="William Wisser">
                 <h2>William Wissen</h2>
-                <h3><strong>chief technology officer</strong></h3><br>
-                <p>William Wissen brings over 15 years of experience in software architecture, cloud engineering,
-                    and enterprise systems integration. Before joining Circle Solutions in 2015, he led technology
-                    innovation
-                    at a major IT services company, overseeing the development of scalable digital platforms for global
-                    clients.
-                    At Circle Solutions, William drives the company's technology strategy, focusing on performance,
-                    security, and sustainable innovation. His leadership ensures that every solution is built on
-                    reliable,
-                    future-ready technology that empowers businesses to grow efficiently.</p>
+                <h3><strong>hoofd technologie</strong></h3><br>
+                <p>William Wissen heeft meer dan 15 jaar ervaring in softwarearchitectuur, cloud engineering
+                    en integratie van bedrijfssystemen. Voordat hij in 2015 bij Circle Solutions kwam werken, gaf hij leiding aan technologische
+                    innovatie
+                    bij een groot IT-dienstverleningsbedrijf, waar hij toezicht hield op de ontwikkeling van schaalbare digitale platforms voor internationale
+                    klanten.
+                    Bij Circle Solutions stuurt William de technologiestrategie van het bedrijf aan, waarbij hij zich richt op prestaties,
+                    beveiliging en duurzame innovatie. Zijn leiderschap zorgt ervoor dat elke oplossing is gebaseerd op
+                    betrouwbare,
+                    toekomstbestendige technologie die bedrijven in staat stelt om efficiënt te groeien.</p>
             </div>
 
             <div data-member="3">
                 <img class="data-member-img" src="images/_WINDOWS/3-about us/jan van dijk.png" alt="Jan van Dijk">
                 <h2>Jan van Dijk</h2>
-                <h3><strong>chief commercial officer</strong></h3><br>
-                <p>Jan van Dijk has more than 20 years of experience in international business development and client
-                    relations. Prior to joining Circle Solutions in 2011, he managed strategic partnerships across
-                    Europe and
-                    America for a multinational consultancy, expanding its market presence and revenue growth. At Circle
-                    Solutions,
-                    Jan leads the global commercial strategy, building long-term relationships with clients and
+                <h3><strong>commercieel directeur</strong></h3><br>
+                <p>Jan van Dijk heeft meer dan 20 jaar ervaring in internationale bedrijfsontwikkeling en klantrelaties.
+                    Voordat hij in 2011 bij Circle Solutions in dienst trad, beheerde hij strategische partnerschappen in
+                    Europa en
+                    Amerika voor een multinationaal adviesbureau, waar hij de marktaanwezigheid en omzetgroei uitbreidde. Bij Circle
+                    Solutions
+                    leidt Jan de wereldwijde commerciële strategie en bouwt hij langdurige relaties op met klanten en
                     partners.
-                    His goal is to strengthen Circle Solutions's position as a trusted and quality-driven brand in the
-                    global digital market.</p>
+                    Zijn doel is om de positie van Circle Solutions als een vertrouwd en kwaliteitsgericht merk op de
+                    wereldwijde digitale markt te versterken.</p>
             </div>
 
             <div data-member="4">
                 <img class="data-member-img" src="images/_WINDOWS/3-about us/sarah kleinn.png" alt="Sarah Kleinn">
                 <h2>Sarah Kleinn</h2>
-                <h3><strong>chief application officer</strong></h3><br>
-                <p>Sarah Klein has over 20 years of experience in software development, UX design, and enterprise
-                    application management. Before joining Circle Solutions in 2014, she directed application strategy
-                    at
-                    a leading European tech firm, delivering high-performance solutions for industries such as finance,
-                    logistics, and retail. At Circle Solutions, Sarah oversees the design and delivery of all
-                    client applications—ensuring that every product is intuitive,
-                    user-friendly, and aligned with the company’s values of simplicity and quality.</p>
+                <h3><strong>hoofd applicatiebeheer</strong></h3><br>
+                <p>Sarah Klein heeft meer dan 20 jaar ervaring in softwareontwikkeling, UX-ontwerp en bedrijfsapplicatiebeheer.
+                    Voordat ze in 2014 bij Circle Solutions kwam werken, gaf ze leiding aan de applicatiestrategie
+                    bij
+                    een toonaangevend Europees technologiebedrijf, waar ze hoogwaardige oplossingen leverde voor sectoren als financiën,
+                    logistiek en detailhandel. Bij Circle Solutions houdt Sarah toezicht op het ontwerp en de levering van alle
+                    klantapplicaties. Ze zorgt ervoor dat elk product intuïtief en
+                    gebruiksvriendelijk is en aansluit bij de waarden van het bedrijf: eenvoud en kwaliteit.</p>
             </div>
         </div>
 
@@ -387,23 +384,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!--Global reach page-->
     <section>
     <div class="GlobalReachBox" id="global-reach">
-        <h1 class="whitetext">our global reach</h1>
-        <div class="bluegrey">trusted worldwide across 30+ countries</div>
+        <h1 class="whitetext">ons wereldwijde bereik</h1>
+        <div class="bluegrey">wereldwijd vertrouwd in meer dan 30 landen</div>
         <img class="worldmap" src="images/_WINDOWS/4-global presence/world map.png" alt="world map">
         <div class="whitebox">
             <div class="projects-text">
-                    <h1>2000+ <b class="projects">projects</b></h1> 
-                    <h3 class="small-projects-text">succesfully delivered</h3>
+                    <h1>2000+ <b class="projects">projecten</b></h1> 
+                    <h3 class="small-projects-text">succesvol geleverd</h3>
             </div>
             <div class="vertical-line"></div>
                 <div class="brands-text">
-                <h1>200+<b class="brands">brands</b></h1>
-                <h3 class="small-brands-text">trusted worldwide</h3>
+                <h1>200+<b class="brands">merken</b></h1>
+                <h3 class="small-brands-text">wereldwijd vertrouwd</h3>
             </div>
             <div class="vertical-line1"></div>
             <div class="countries-text">
-                <h1>30+<b class="countries">countries</b></h1>
-                <h3 class="small-countries-text">on our delivery map</h3>
+                <h1>30+<b class="countries">landen</b></h1>
+                <h3 class="small-countries-text">op onze bezorgkaart</h3>
             </div>
              <div class="vertical-line2"></div>
              <div class="country-flags">
@@ -440,8 +437,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
      <!--What We Build Page-->
         <div class="WhatWeBuildBox" id="what-we-build">
-            <div class="WhatWeBuildBox-title">what we build</div>
-            <div class="WhatWeBuildBox-subtitle">explore how our solutions foster growth and digital discovery of your unique business</div>
+            <div class="WhatWeBuildBox-title">wat we bouwen</div>
+            <div class="WhatWeBuildBox-subtitle">Ontdek hoe onze oplossingen de groei en digitale ontdekking van uw unieke bedrijf bevorderen.</div>
                 <div class="circles-box">
                     <img src="images/_WINDOWS/5-what we build/API.png" alt="API">
                     <img src="images/_WINDOWS/5-what we build/cloud_dev.png" alt="cloud dev">  
@@ -458,8 +455,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <div class="amin-global-cases-part">
 
-    <h1 class="h1-amin-css">our global cases</h1>
-    <p class="Paragraph-for-our-global-cases-page">successful projects we delivered across borders</p>
+    <h1 class="h1-amin-css">onze wereldwijde zaken</h1>
+    <p class="Paragraph-for-our-global-cases-page">succesvolle projecten die we over de grenzen heen hebben gerealiseerd</p>
 
 
 
@@ -468,7 +465,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="icon-global-cases-part">
                 <img src="images/_WINDOWS/6-case studies/fin-tech.png" alt="fin tech">
             </div>
-            <div class="label-global-cases-part">fin tech</div>
+            <div class="label-global-cases-part">fintech</div>
         </div>
 
         <div class="card-global-cases-part">
@@ -482,30 +479,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="icon-global-cases-part">
                 <img src="images/_WINDOWS/6-case studies/food-and-drinks.png" alt="food & drinks">
             </div>
-            <div class="label-global-cases-part">food & drinks</div>
+            <div class="label-global-cases-part">eten & drinken</div>
         </div>
 
         <div class="card-global-cases-part">
             <div class="icon-global-cases-part">
                 <img src="images/_WINDOWS/6-case studies/real-estate.png" alt="real estate">
             </div>
-            <div class="label-global-cases-part">real estate</div>
+            <div class="label-global-cases-part">onroerend goed</div>
         </div>
     </div>
     <div class="explore-btn-global-cases-part">
         <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&oq=goo&gs_lcrp=EgZjaHJvbWUqDQgBEC4YxwEY0QMYgAQyBggAEEUYOTINCAEQLhjHARjRAxiABDIMCAIQIxgnGIAEGIoFMgYIAxBFGDwyBggEEEUYQTIGCAUQRRhBMgYIBhBFGEEyBggHEEUYPNIBCDI5MzFqMGo3qAIIsAIB8QXm6ydBWxvpePEF5usnQVsb6Xg&sourceid=chrome&ie=UTF-8"
             class="explore-more" target="_blank" rel="noopener noreferrer">
-            explore more &gt;
+            meer ontdekken &gt;
         </a>
     </div>
 
 
     <h1 id="clients" class="h1-amin-css">
-        what our clients say
+        wat onze klanten zeggen
     </h1>
 
      <p class="Paragraph-for-our-global-cases-page">
-        success stories from our clients around the world
+        succesverhalen van onze klanten over de hele wereld
     </p>
 
     <div class="section-global-cases-part">
@@ -519,7 +516,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
 
                      <p class="text-global-cases-part Paragraph-for-our-global-cases-page"> 
-                        "Circle solutions provides—really good, dedicated talents that possess a strong work ethic."
+                        "Circle Solutions biedt uitstekende, toegewijde talenten met een sterke werkethiek."
                      </p>
 
                     <div class="profile-pic-global-cases-part">
@@ -538,7 +535,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
 
                      <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">
-                        explore
+                        verkennen
                     </button>
 
                 </div>
@@ -550,7 +547,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
 
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
-                        "Always understanding our requirements to the detail, designing and developing high-quality software."
+                        "Altijd onze vereisten tot in detail begrijpen, hoogwaardige software ontwerpen en ontwikkelen."
                     </p>
                     <div class="profile-pic-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/2-Andy Jassy.png" alt="client">
@@ -568,7 +565,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </span>
                     </div>
                     <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">
-                        explore
+                        verkennen
                     </button>
                 </div>
                 <!-- test -->
@@ -580,7 +577,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="images/_WINDOWS/7-testimonials/3-Germany flag.png" alt="germany flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
-                        "This plugin has been great to work with. It has some really advanced functionality and easy to modify."
+                        "Deze plug-in werkt geweldig. Hij heeft een aantal zeer geavanceerde functies en is eenvoudig aan te passen."
                     </p>
                     <div class="profile-pic-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/3-Oliver Zipse.png" alt="client">
@@ -594,11 +591,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="company-info-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/BMW.png" alt="bmw logo">
                         <span>
-                            BMW Group, Germany
+                            BMW Group, Duitsland
                         </span>
                     </div>
                     <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">
-                        explore
+                        verkennen
                     </button>
                 </div>
 
@@ -608,7 +605,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="images/_WINDOWS/7-testimonials/4-Netherlands flag.png" alt="netherlands flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
-                        "Amazing collaboration and top-notch results. Highly recommended!"
+                        "Geweldige samenwerking en uitstekende resultaten. Een echte aanrader!"
                     </p>
                     <div class="profile-pic-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/4-Jasper van Dijk.jpeg" alt="client">
@@ -617,16 +614,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         Jasper van Dijk
                     </h3>
                     <p class="role-global-cases-part Paragraph-for-our-global-cases-page">
-                        Software Developer
+                        Softwareontwikkelaar
                     </p>
                     <div class="company-info-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/philips.png" alt="philips logo">
                         <span>
-                            Philips, netherlands
+                            Philips, Nederland
                         </span>
                     </div>
                     <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">
-                        explore
+                        verkennen
                     </button>
                 </div>
 
@@ -636,7 +633,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="images/_WINDOWS/7-testimonials/france.flag.png" alt="france flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
-                        "Circle Solution exceeded our expectation s with their creativity and dedication."
+                        "Circle Solution overtrof onze verwachtingen met hun creativiteit en toewijding."
                     </p>
                     <div class="profile-pic-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/IMG_5901.JPG" alt="client">
@@ -645,13 +642,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         Marie Dubois
                     </h3>
                     <p class="role-global-cases-part Paragraph-for-our-global-cases-page">
-                        Product Manager
+                        Productmanager
                     </p>
                     <div class="company-info-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/loreal.png" alt="loreal logo">
-                        <span>L'Oréal, France</span>
+                        <span>L'Oréal, Frankrijk</span>
                     </div>
-                    <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">explore</button>
+                    <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">verkennen</button>
                 </div>
             </div>
         </div>
@@ -696,8 +693,8 @@ window.addEventListener('DOMContentLoaded', () => {
         <div class="contact-us-left-section">
             <!-- title, slogan -->
             <div class="contact-us-header-container">
-                <div class="contact-header">contact us</div>
-                <div class="contact-slogan">just connect the dots.</div>
+                <div class="contact-header">contact ons</div>
+                <div class="contact-slogan">verbind gewoon de punten.</div>
             </div>
             <!-- direct contact info -->
             <div class="contact-methods-downloads-container">
@@ -717,7 +714,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <!-- downloadable whitepapers -->
                 <div class="downloads">
-                    <div class="download-bold-text">download</div>
+                    <div class="download-bold-text">downloaden</div>
                     <div class="downloads-container">
                         <a class="download-lorem" href="lorem.txt" target="_blank" download="whitepaper">
                             <img class="download-icon" src="images/_WINDOWS/8-contact us/download.png">
@@ -739,22 +736,22 @@ window.addEventListener('DOMContentLoaded', () => {
         <!-- contact form -->
         <div class="contact-us-right-section" id="contact-form">
             <form class="contact-form" action="<?php echo $_SERVER["PHP_SELF"] ?>#contact-form" method="POST">
-                <label class="form-label" for="name">name</label>
+                <label class="form-label" for="name">naam</label>
                 <input class="form-input" type="text" name="name" id="name">
-                <label class="form-label" for="company">company name</label>
+                <label class="form-label" for="company">bedrijfsnaam</label>
                 <input class="form-input" type="text" name="company" id="company">
                 <label class="form-label" for="email">e-mail</label>
                 <input class="form-input" type="email" name="email" id="email">
-                <label class="form-label-message" for="message">how can we help?</label>
+                <label class="form-label-message" for="message">hoe kunnen we u helpen?</label>
                 <textarea class="message" name="message" id="message" rows="5" cols="50"></textarea>
                 <div class="attach-container">
                     <label class="attach-label" for="file">
                         <img class="attach-img" src="images/_WINDOWS/8-contact us/attach file.png">
-                        <span>attach file</span>
+                        <span>bestand bijvoegen</span>
                         <!-- tooltip -->
                         <div class="tooltip-container">
                             <img class="tooltip-img" src="images/_WINDOWS/8-contact us/information.png">
-                            <div class="tooltip-text">Upload relevant documents or images from your device.</div>
+                            <div class="tooltip-text">Upload relevante documenten of afbeeldingen vanaf uw apparaat.</div>
                         </div>
                     </label>
                     <input type="file" id="file">
@@ -763,7 +760,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 <div class="privacy-submit">
                     <div class="privacy-policy-container">
                         <input type="checkbox" name="privacy" id="privacy">
-                        <label class="form-label" for="privacy">i accept <a href="404page.html" class="privacy-link">privacy policy</a></label>
+                        <label class="form-label" for="privacy">Ik ga akkoord met het <a href="404page.html" class="privacy-link">privacybeleid</a></label>
                     </div>
                 </div>
                 <!-- submission button -->
@@ -806,16 +803,16 @@ window.addEventListener('DOMContentLoaded', () => {
             <div class="footer-right-section">
                 <!-- footer navbar -->
                 <div class="footer-column">
-                    <div class="footer-title">company</div>
-                    <a class="footer-option" href="#about-us">about us</a>
-                    <a class="footer-option" href="#global-reach">global reach</a>
-                    <a class="footer-option" href="#what-we-build">what we build</a>
-                    <a class="footer-option" href="#contact-us-page">contact us</a>
+                    <div class="footer-title">bedrijf</div>
+                    <a class="footer-option" href="#about-us">over ons</a>
+                    <a class="footer-option" href="#global-reach">wereldwijd bereik</a>
+                    <a class="footer-option" href="#what-we-build">wat we bouwen</a>
+                    <a class="footer-option" href="#contact-us-page">contact ons</a>
                 </div>
                 <div class="footer-column">
                     <div class="footer-title">legal</div>
-                    <a class="footer-option" href="404page.html">privacy policy</a>
-                    <a class="footer-option" href="404page.html">terms of use</a>
+                    <a class="footer-option" href="404page.html">privacybeleid</a>
+                    <a class="footer-option" href="404page.html">gebruiksvoorwaarden</a>
                 </div>
                 <div class="footer-column">
                     <div class="footer-title">contact</div>
@@ -831,39 +828,39 @@ window.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="faq-body">
                             <details>
-                                <summary class="faq-question">What does Circle Solutions do?</summary>
+                                <summary class="faq-question">Wat doet Circle Solutions?</summary>
                                 <p class="faq-text">
-                                    Circle Solutions develops custom software designed to help organizations work more efficiently. 
-                                    Our focus is on simplicity and functionality — delivering only what truly adds value.
+                                    Circle Solutions ontwikkelt software op maat om organisaties te helpen efficiënter te werken. 
+                                    Wij richten ons op eenvoud en functionaliteit — we leveren alleen wat echt waarde toevoegt.
                                 </p>
                             </details>
                             <details>
-                                <summary class="faq-question">Who are your solutions for?</summary>
+                                <summary class="faq-question">Voor wie zijn uw oplossingen bedoeld?</summary>
                                 <p class="faq-text">
-                                    We serve businesses and institutions seeking reliable, 
-                                    user-focused software that aligns with their operational goals and supports long-term growth.
+                                    Wij bedienen bedrijven en instellingen die op zoek zijn naar betrouwbare, 
+                                    gebruikersgerichte software die aansluit bij hun operationele doelstellingen en langetermijngroei ondersteunt.
                                 </p>
                             </details>
                             <details>
-                                <summary class="faq-question">What makes Circle Solutions different?</summary>
+                                <summary class="faq-question">Wat maakt Circle Solutions anders?</summary>
                                 <p class="faq-text">
-                                    We eliminate unnecessary complexity. Our software is clear, 
-                                    efficient, and built around real user needs — ensuring technology serves the business, 
-                                    not the other way around.
+                                    We elimineren onnodige complexiteit. Onze software is duidelijk, 
+                                    efficiënt en gebouwd rond de werkelijke behoeften van gebruikers, zodat technologie ten dienste staat van het bedrijf en 
+                                    niet andersom.
                                 </p>
                             </details>
                             <details>
-                                <summary class="faq-question">Can I see examples of your work?</summary>
+                                <summary class="faq-question">Kan ik voorbeelden van uw werk zien?</summary>
                                 <p class="faq-text">
-                                    Yes. Our "what we build" page showcases software by sector and use case, 
-                                    giving insight into the types of projects we deliver.
+                                    Ja. Op onze pagina ‘Wat we bouwen’ wordt software per sector en gebruikssituatie getoond, 
+                                    waardoor u inzicht krijgt in de soorten projecten die we leveren.
                                 </p>
                             </details>
                             <details>
-                                <summary class="faq-question">How can I contact Circle Solutions?</summary>
+                                <summary class="faq-question">Hoe kan ik contact opnemen met Circle Solutions?</summary>
                                 <p class="faq-text">
-                                    You can reach our team via the contact form on our website or directly by 
-                                    email at hi@circlesolutions.com. We aim to respond promptly to all inquiries.
+                                    U kunt ons team bereiken via het contactformulier op onze website of rechtstreeks via 
+                                    e-mail op hi@circlesolutions.com. Wij streven ernaar om alle vragen zo snel mogelijk te beantwoorden.
                                 </p>
                             </details>
                         </div>
@@ -876,7 +873,7 @@ window.addEventListener('DOMContentLoaded', () => {
         <div class="footer-reserved-rights-container">
             <hr class="footer-divider">
             <div class="copyright">
-                2025 cirlce solutions. All rights reserved.
+                2025 circle solutions. Alle rechten voorbehouden.
                 <img class="copyright-img" src="images/_WINDOWS/9-footer/copyright-white.png">
             </div>
         </div>
@@ -925,13 +922,13 @@ window.addEventListener('DOMContentLoaded', () => {
     <!-- cookie banner -->
         <?php if (!isset($_COOKIE[$cookie_name])): ?>
             <div class="cookie-banner">
-                <h1>we use cookies</h1>
-                <p>our website uses cookies to improve your browsing experience.<br>
-                    by continuing, we assume your permission to deploy cookies as detailed in our <a href="404page.html">privacy policy.</a></p>
+                <h1>we gebruiken cookies</h1>
+                <p>Onze website maakt gebruik van cookies om uw browse-ervaring te verbeteren.<br>
+                    door verder te gaan, gaan wij ervan uit dat u toestemming geeft voor het gebruik van cookies zoals beschreven in onze <a href="404page.html">privacybeleid.</a></p>
 
                 <form method="POST" style="display:inline;">
-                    <button type="submit" name="accept_cookie" class="accept-btn">Accept all cookies</button>
-                    <button type="submit" name="reject_cookie" class="reject-btn">Reject all</button>
+                    <button type="submit" name="accept_cookie" class="accept-btn">Alle cookies accepteren</button>
+                    <button type="submit" name="reject_cookie" class="reject-btn">Alles afwijzen</button>
                 </form>
             </div>
         <?php endif; ?>
