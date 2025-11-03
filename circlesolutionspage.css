@@ -1134,7 +1134,7 @@ padding-top: 9vw;
 .country-flags-track > img
 {
     width: 2vw;
-    height: 5vh;
+    height: auto;
     flex: 0 0 2.5em;
     display: flex;
     align-items: center;
@@ -1224,13 +1224,13 @@ padding: 13vw;
 
   .whitetext 
   {
-    font-size: 9vw; 
-    letter-spacing: -0.1vw; 
+    font-size: 6vw; 
+    letter-spacing: 0.1vw; 
   }
 
   .bluegrey 
   {
-    font-size: 5vw;
+    font-size: 4vw;
     letter-spacing: -0.1vw; 
     margin-top: 1vh;
     margin-bottom: 0;
@@ -1238,7 +1238,8 @@ padding: 13vw;
 
   .worldmap 
   {
-    width: 100vw; 
+    width: 80vw; 
+    max-width: 1920px;
   }
 
   .whitebox 
@@ -1263,14 +1264,14 @@ padding: 13vw;
   .brands-text > h1,
   .countries-text > h1 
   {
-    font-size: 6vw;
+    font-size: 4.5vw;
   }
 
   .projects,
   .brands,
   .countries 
   {
-    font-size: 5vw;
+    font-size: 3.5vw;
     padding-left: 0;
   }
 
@@ -1278,7 +1279,7 @@ padding: 13vw;
   .small-brands-text,
   .small-countries-text 
   {
-    font-size: 4.5vw;
+    font-size: 3vw;
     margin-left: 0;
   }
 
@@ -1313,7 +1314,7 @@ padding: 13vw;
 
   .circles-box > img 
   {
-    width: 40vw;
+    width: 30vw;
     height: auto;
   }
 
@@ -1324,12 +1325,12 @@ padding: 13vw;
 
   .WhatWeBuildBox-title
   {
-    font-size: 7vw !important;
+    font-size: 5.5vw;
   }
 
   .WhatWeBuildBox-subtitle
   {
-    font-size: 5vw;
+    font-size: 3.5vw;
   }
 }
 
