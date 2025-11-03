@@ -41,6 +41,7 @@ body{
     margin: 0;
     font-family: Calibre-Regular;
     color: #799DAB;
+    overflow-x: hidden;
 }
 .navbar{
     position: sticky;
@@ -70,8 +71,14 @@ body{
 .px150{
     font-size: 150px;
 }
-.px80{
-    font-size: 80px;
+.px16{
+    font-size: 16px;
+}
+.px18{
+    font-size: 18px;
+}
+.px12{
+    font-size: 12px;
 }
 .px70{
     font-size: 70px;
@@ -82,8 +89,8 @@ body{
 .px40{
     font-size: 40px;
 }
-.px24{
-    font-size: 24px;
+.px35{
+    font-size: 35px;
 }
 .px45{
     font-size: 45px;
@@ -96,7 +103,10 @@ body{
 }
 .textleftside{
     padding: 6rem;
-    line-height: 100px;
+    line-height: 125px;
+}
+.littlespacewelc{
+    line-height: 75px;
 }
 .language{
     width: 20px;
@@ -109,6 +119,12 @@ body{
     align-content: space-between;
     justify-content: flex-start;
 }
+
+.bluerightsidewelc{
+    align-items: center;
+    justify-content: center;
+}
+
 .card-collection{
     display: flex;
     justify-content: space-between;
@@ -116,7 +132,7 @@ body{
     padding: 20px;
 
 }
-.card{
+.cardwelc{
     background-color: white;
     border-radius: 10px;
     padding: 20px;
@@ -155,7 +171,7 @@ body{
     height: auto;
 }
 
-.white{
+.whitehomepage{
     color: white;
 }
 
@@ -164,7 +180,7 @@ body{
     height: auto;
 }
 
-.firstrow{
+.firstrowwelc{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -176,6 +192,7 @@ body{
     text-align: center;
     flex: 1 1 150px;
     min-width: 150px;
+    color:#799DAB;
 }
 
 
@@ -188,29 +205,64 @@ body{
       }
     }
 
+.trusted-companies{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.trusted-companies-track{
+     animation: scroll 20s linear infinite;
+    display: flex;
+    width: max-content;
+    gap: 1rem;
+}
+
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
 .trustedcompaniesimg{
     width: 200px;
     height: auto;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/* UMARU */
 
 .golden-circle-section {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
   padding: 80px 0;
 }
 
+/* Headings */
 .gc-heading {
   font-size: 72px;
-  font-weight: 700;
+  font: bold;
   color: #799dab;
+  font-weight: 700;
   margin: 0;
   text-transform: lowercase;
 }
 
+.next { 
+  display: block;
+}
+
 .gc-subtitle {
   font-size: 54px;
-  font-weight: 700;
+  font: bold;
   color: #c7eaf8;
+  font-weight: 700;
   margin: 5px 0;
   text-transform: lowercase;
 }
@@ -221,6 +273,7 @@ body{
   margin: 5px 0 60px;
 }
 
+/* Circle layout */
 .gc-container {
   display: flex;
   justify-content: center;
@@ -236,12 +289,14 @@ body{
 .gc-image {
   width: 230px;
   height: 230px;
+  
   object-fit: cover;
   background-color: #c7eaf8;
   display: block;
   margin: 0 auto 25px;
 }
 
+/* Text under each circle */
 .gc-desc {
   color: #799dab;
   font-size: 14px;
@@ -249,28 +304,74 @@ body{
   margin: 0;
 }
 
-.next {
-  display: block;
+/* === Enhancements for responsiveness and hover effects === */
+
+/* Make circles perfectly round */
+.gc-image {
+  border-radius: 50%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* -----------------------------
-   Spacer Between Sections
------------------------------ */
-.section-divider {
-  height: 70px; /* creates smooth scroll space */
-  width: 100%;
+/* Hover effects */
+.gc-item:hover .gc-image {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* -----------------------------
-   Vision & Mission Section Styles
------------------------------ */
+/* Slight text animation on hover */
+.gc-item:hover .gc-desc {
+  color: #5b7f8d;
+  transition: color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .gc-container {
+    gap: 60px;
+  }
+  .gc-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gc-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .gc-item {
+    max-width: 80%;
+  }
+  .gc-image {
+    width: 180px;
+    height: 180px;
+  }
+  .gc-heading {
+    font-size: 48px;
+  }
+  .gc-subtitle {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gc-image {
+    width: 150px;
+    height: 150px;
+  }
+  .gc-desc {
+    font-size: 13px;
+  }
+}
+
 .vision-mission {
   display: flex;
   flex-direction: column;
   gap: 160px;
-  padding-left: 80px;
+  padding-left: 80px; /* keeps the left text from touching the edge */
   padding-top: 100px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .vision-section,
@@ -284,9 +385,13 @@ body{
   flex: 1;
 }
 
+.next {
+  display: block;
+}
+
 .vm-title {
-  font-size: 100px;
-  font-weight: 600;
+  font-size: 5rem;
+  font-family: "Calibre-Bold";
   color: #c7eaf8;
   text-transform: lowercase;
   margin: 0;
@@ -312,8 +417,12 @@ body{
   max-width: 480px;
 }
 
+.vision p {
+ border-top: 40px;
+
+}
 .text-area h2 {
-  font-size: 40px;
+  font-size: 40px;  
   font-weight: 600;
   color: #c7eaf8;
   margin: 0 0 2px 0;
@@ -327,85 +436,89 @@ body{
   margin: 0;
 }
 
-.vision p {
-  border-top: 40px;
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 1200px) {
+  .vision-mission {
+    padding-left: 40px;
+    gap: 120px;
+    padding-top: 60px;
+  }
+
+  .vm-title {
+    font-size: 70px;
+  }
+
+  .text-area {
+    max-width: 400px;
+  }
+
+  .right-side {
+    margin-right: 50px;
+    gap: 15px;
+  }
+
+  .text-area h2 {
+    font-size: 32px;
+  }
+
+  .text-area p {
+    font-size: 18px;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 900px) {
+  .vision-section,
+  .mission-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right-side {
+    margin-right: 0;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .circle-img {
+    width: 35px;
+  }
+
+  .vm-title {
+    font-size: 60px;
+  }
+
+  .text-area h2 {
+    font-size: 28px;
+  }
+
+  .text-area p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vision-mission {
+    padding-left: 20px;
+    padding-top: 40px;
+    gap: 80px;
+  }
+
+  .vm-title {
+    font-size: 45px;
+  }
+
+  .text-area h2 {
+    font-size: 24px;
+  }
+
+  .text-area p {
+    font-size: 14px;
+  }
+
+  .circle-img {
+    width: 30px;
+  }
+}
 
 * {
     margin: 0;
@@ -931,37 +1044,43 @@ padding-top: 9vw;
 .country-flags
 {
     grid-area: 2/7/3/10;
-    display: flex;
+    width: 110%;
     margin-left: -7vw;
-    gap: 1.7em;
+    overflow: hidden;
 }
 
-.country-flags> img
+
+.country-flags-track > img
 {
-    width: 100%;
-    overflow-x: auto;
+    width: 2vw;
     height: 5vh;
     flex: 0 0 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.country-flags-track{
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: max-content;
+    gap: 1rem;
+}
+
+@keyframes scroll {
+ 0%
+ {
+    transform: translateX(0);
+ }
+ 100%{
+    transform: translateX(-50%);
+ }
 }
 
 .japan-flag
 {
     border: solid black 0.5px;
     border-radius: 90%;
-}
-
-/* .country-flags::-webkit-scrollbar
-{
-    
-} */
-
-.country-flags::scroll-button(right){
-    content: ">";
-    border: none;
-    background-color: white;
-    color: #799DAB;
-    font-size: 2.5vw;
-    
 }
 
 /*What We Build Page*/
@@ -997,18 +1116,10 @@ padding: 13vw;
     margin-bottom: -0,5vh;
 }
 
-.white-circle1
-{
-    background-color: white;
-    width: 10vw;
-    height: 10vh;
-    border-radius: 90%;
-}
-
 .circles-box > img
 {
     width: 17vw;
-    height: 31vh;
+    height: auto;
 }
 
 .circles-box
@@ -1077,7 +1188,7 @@ padding: 13vw;
     margin-bottom: 100px;
 }
 
-.container {
+.container-global-cases-part {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -1085,7 +1196,7 @@ padding: 13vw;
     margin-bottom: 50px;
 }
 
-.card {
+.card-global-cases-part {
     width: 277px;
     height: 380px;
     background-color: white;
@@ -1096,11 +1207,11 @@ padding: 13vw;
     border-radius: 20px;
 }
 
-.card:hover {
+.card-global-cases-part:hover {
     transform: translateY(-7px);
 }
 
-.icon {
+.icon-global-cases-part {
     background-color: #ffffff;
     padding: 50px 0;
     display: flex;
@@ -1108,12 +1219,12 @@ padding: 13vw;
     align-items: center;
 }
 
-.icon img {
+.icon-global-cases-part img {
     width: 200px;
     height: 200px;
 }
 
-.label {
+.label-global-cases-part {
     background-color: #799DAB;
     color: white;
     font-size: 40px;
@@ -1128,7 +1239,7 @@ padding: 13vw;
     border-radius: 0 0 20px 20px;
 }
 
-.explore-btn {
+.explore-btn-global-cases-part {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -1153,11 +1264,11 @@ padding: 13vw;
     transform: translateY(-7px);
 }
 
-#clients {
+#clients-global-cases-part {
     margin-top: 180px;
 }
 
-.section {
+.section-global-cases-part {
     position: relative;
     display: flex;
     justify-content: center;
@@ -1166,18 +1277,18 @@ padding: 13vw;
     width: 100%;
 }
 
-.slider {
+.slider-global-cases-part {
     width: 70%;
     overflow: hidden;
 }
 
-.track {
+.track-global-cases-part {
     display: flex;
     gap: 20px;
     transition: transform 0.6s ease;
 }
 
-.card2 {
+.card2-global-cases-part {
     flex: 0 0 27%;
     background-color: white;
     border-radius: 20px;
@@ -1186,40 +1297,40 @@ padding: 13vw;
     text-align: center;
 }
 
-.flag img {
+.flag-global-cases-part img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
-.text {
+.text-global-cases-part {
     font-size: 18px;
     color: #555;
     margin-bottom: 20px;
     line-height: 1.6;
 }
 
-.profile-pic img {
+.profile-pic-global-cases-part img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
 
-.card2 h3 {
+.card2-global-cases-part h3 {
     font-size: 22px;
     color: #333;
     margin-bottom: 4px;
 }
 
-.role {
+.role-global-cases-part {
     font-size: 16px;
     color: #888;
     margin-bottom: 15px;
 }
 
-.company-info {
+.company-info-global-cases-part {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1229,12 +1340,12 @@ padding: 13vw;
     margin-bottom: 15px;
 }
 
-.company-info img {
+.company-info-global-cases-part img {
     width: 25px;
     height: 25px;
 }
 
-.explore {
+.explore-global-cases-part {
     background-color: #49738b;
     color: white;
     border: none;
@@ -1245,7 +1356,7 @@ padding: 13vw;
     transition: background 0.3s, transform 0.3s;
 }
 
-.explore:hover {
+.explore-global-cases-part:hover {
     background-color: #2f576d;
     transform: translateY(-3px);
 }
@@ -1262,10 +1373,6 @@ padding: 13vw;
     color: #49738b;
     transition: background 0.3s;
 }
-
-
-
-
 
 
 
@@ -1422,15 +1529,15 @@ padding: 13vw;
     margin-bottom: 20px;
 }
 
+
+/* change the input text while autofilling form and delete the background*/
+/* found the solutions on stackoverflow */
 input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0 1000px none inset !important;
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
     -webkit-text-fill-color: #799DAB !important;
-    transition: background-color 5000s ease-in-out 0s;
 }
 
 .form-input:focus {
@@ -1649,6 +1756,7 @@ textarea:-webkit-autofill:focus {
 
 /* FAQ styling */
 
+/* allows for the smooth animations */
 :root {
     interpolate-size: allow-keywords;
 }
@@ -1769,54 +1877,6 @@ summary::before {
     opacity: 1;
     pointer-events: all;
     animation: fadeIn 0.3s forwards;
-}
-
-/* body {
-font-family: "calibre";
-background-color: #C7EAF8;
-display: flex;
-grid-template-columns: repeat(12, 1fr);
-grid-template-rows: repeat(12, 1fr);
-justify-content: center;
-align-items: center;
-flex-direction: column;
-text-align: center;
-} */
-
-main
-{
-    margin: 80px;
-}
-
-.white
-{
-    color: white;
-    font-family: "calibre";
-    font-weight: 700;
-    font-size: 90px;
-    letter-spacing: -2.3px;
-}
-
-.bluegrey
-{
-    color: #799DAB;
-    font-family: "calibre";
-    font-weight: 500;
-    font-size: 25px;
-    letter-spacing: -1px;
-    margin-top: -40px;
-}
-
-.worldmap
-{
-    width: 80vw;
-}
-
-.whitebox
-{
-    background-color: white;
-    width: 1fr;
-    height: 30vh
 }
 
 /* section : 404 page not found */

@@ -91,11 +91,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <h4 class="px50 littlespacewelc">just connect the dots</h4>
             </div>
             <!-- trusted across borders section -->
-            <div>
+            <div class="bluerightsidewelc">
                 <h4 class="px30"><b>trusted across borders</b></h4>
                 <!-- card divclasses are for the white little cards -->
                 <div class="card-collection"> 
-                    <div class="card">
+                    <div class="cardwelc">
                         <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                         <p class="px16">“circle solutions provides really good, dedicated talents that posses a strong work
                         ethic.”</p>
@@ -105,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <p class="px12">CEO | Luckin Coffee, China</p>
                         <img class="flag" src="images\_WINDOWS\1-homepage\1-China flag.png" alt="chinaflag">
                     </div>
-                    <div class="card">
+                    <div class="cardwelc">
                         <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                         <p class="px16">“always understanding our requirements to the detail, designing and developing
                         high-quality software.”</p>
@@ -115,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <p class="px12">CEO | Amazon, USA</p>
                         <img class="flag" src="images\_WINDOWS\1-homepage\2-US flag.png" alt="usflag">
                     </div>
-                    <div class="card">
+                    <div class="cardwelc">
                         <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
                         <p class="px16">“this plugin has been great to work with. It has some really advanced functionality
                         and easy to modify”</p>
@@ -126,14 +126,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img class="flag" src="images\_WINDOWS\1-homepage\3-Germany flag.png" alt="usflag">
                     </div>
                 </div>
-                <a href="globalreach"><img class="globalreach"
-                        src="images\_WINDOWS\1-homepage\explore global reach button.png" alt=""></a>
+                <a href="globalreach"> <img class="globalreach" src="images\_WINDOWS\1-homepage\explore global reach button.png" alt="globalreach"></a>
             </div>
         </div>
         <div class="whitehomepage">
-            <div class="firstrow">
+            <div class="firstrowwelc">
                 <img class="reviews" src="images\_WINDOWS\1-homepage\Clutch Review.png" alt="clutchreview">
-                <div class="vertical-line"></div>
                 <div class="sectionwelc">
                     <p class="px45"><b>15</b></p>
                     <p class="px30"><b>years</b></p>
@@ -160,15 +158,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <p class="px35">trusted by 200+ leading brands worldwide</p>
             <div class="trusted-companies">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Amazon.png" alt="amazon">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\BMW.png" alt="bmw">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Samsung.png" alt="samsung">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KLM.png" alt="klm">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Visa.png" alt="visa">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Volkswagen.png" alt="volks">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Nike.png" alt="nike">
-                <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Hermes.png" alt="hermes">
+                <div class="trusted-companies-track">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Amazon.png" alt="amazon">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\BMW.png" alt="bmw">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Samsung.png" alt="samsung">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KLM.png" alt="klm">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Visa.png" alt="visa">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Volkswagen.png" alt="volks">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Nike.png" alt="nike">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Hermes.png" alt="hermes">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Grab.png" alt="grab">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\HCSC.png" alt="hcsc">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\KFC.png" alt="kfc">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\MINI.png" alt="mini">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Paypal.png" alt="paypal">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\Puma.png" alt="puma">
+                    <img class="trustedcompaniesimg" src="images\_WINDOWS\2-partner brands\TESCO.png" alt="tesco">
+                </div>
             </div>
+        
         </div>
 
 
@@ -451,7 +459,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
         
-        <!--Global reach-->
+        <!--Global reach page-->
     <section>
     <div class="GlobalReachBox" id="global-reach">
         <h1 class="whitetext">our global reach</h1>
@@ -474,18 +482,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
              <div class="vertical-line2"></div>
              <div class="country-flags">
-                <img src="images/_WINDOWS/4-global presence/1-US flag.png" alt="US flag">
-                <img src="images/_WINDOWS/4-global presence/2-China flag.png" alt="China flag">
-                <img src="images/_WINDOWS/4-global presence/3-Germany flag.png" alt="Germany flag">
-                <img src="images/_WINDOWS/4-global presence/4-France flag.png" alt="France flag">
-                <img src="images/_WINDOWS/4-global presence/5-India flag.png" alt="India flag">
-                <img class="japan-flag" src="images/_WINDOWS/4-global presence/7-Japan flag.png" alt="Japan flag">
-                <img src="images/_WINDOWS/4-global presence/6-UK flag.png" alt="UK flag">
-                <img src="images/_WINDOWS/4-global presence/8-Hungary flag.png" alt="Hungary flag">
-                <img src="images/_WINDOWS/4-global presence/9-Thailand flag.png" alt="Thailand">
-                <img src="images/_WINDOWS/4-global presence/10-Poland flag.png" alt="Poland flag">
-                <img src="images/_WINDOWS/4-global presence/11-Iran flag.png" alt="Iran flag">
-                <img src="images/_WINDOWS/4-global presence/12-Sierra Leone.png" alt="Sierra Leone">
+                <div class="country-flags-track">
+                    <img src="images/_WINDOWS/4-global presence/1-US flag.png" alt="US flag">
+                    <img src="images/_WINDOWS/4-global presence/2-China flag.png" alt="China flag">
+                    <img src="images/_WINDOWS/4-global presence/3-Germany flag.png" alt="Germany flag">
+                    <img src="images/_WINDOWS/4-global presence/4-France flag.png" alt="France flag">
+                    <img src="images/_WINDOWS/4-global presence/5-India flag.png" alt="India flag">
+                    <img class="japan-flag" src="images/_WINDOWS/4-global presence/7-Japan flag.png" alt="Japan flag">
+                    <img src="images/_WINDOWS/4-global presence/6-UK flag.png" alt="UK flag">
+                    <img src="images/_WINDOWS/4-global presence/8-Hungary flag.png" alt="Hungary flag">
+                    <img src="images/_WINDOWS/4-global presence/9-Thailand flag.png" alt="Thailand">
+                    <img src="images/_WINDOWS/4-global presence/10-Poland flag.png" alt="Poland flag">
+                    <img src="images/_WINDOWS/4-global presence/11-Iran flag.png" alt="Iran flag">
+                    <img src="images/_WINDOWS/4-global presence/12-Sierra Leone.png" alt="Sierra Leone">
+                    <img src="images/_WINDOWS/4-global presence/1-US flag.png" alt="US flag">
+                    <img src="images/_WINDOWS/4-global presence/2-China flag.png" alt="China flag">
+                    <img src="images/_WINDOWS/4-global presence/3-Germany flag.png" alt="Germany flag">
+                    <img src="images/_WINDOWS/4-global presence/4-France flag.png" alt="France flag">
+                    <img src="images/_WINDOWS/4-global presence/5-India flag.png" alt="India flag">
+                    <img class="japan-flag" src="images/_WINDOWS/4-global presence/7-Japan flag.png" alt="Japan flag">
+                    <img src="images/_WINDOWS/4-global presence/6-UK flag.png" alt="UK flag">
+                    <img src="images/_WINDOWS/4-global presence/8-Hungary flag.png" alt="Hungary flag">
+                    <img src="images/_WINDOWS/4-global presence/9-Thailand flag.png" alt="Thailand">
+                    <img src="images/_WINDOWS/4-global presence/10-Poland flag.png" alt="Poland flag">
+                    <img src="images/_WINDOWS/4-global presence/11-Iran flag.png" alt="Iran flag">
+                    <img src="images/_WINDOWS/4-global presence/12-Sierra Leone.png" alt="Sierra Leone">
+                </div>
              </div>
         </div>
      </div>
@@ -566,36 +588,39 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <h1 class="h1-amin-css">our global cases</h1>
     <p class="Paragraph-for-our-global-cases-page">successful projects we delivered across borders</p>
 
-    <div class="container">
-        <div class="card">
-            <div class="icon">
-                <img src="fin-tech.jpg" alt="fin tech">
+    <h1 class="header1-our-global-cases-part">our global cases</h1>
+    <p class="paragraph-our-global-cases-part">successful projects we delivered across borders</p>
+
+    <div class="container-global-cases-part">
+        <div class="card-global-cases-part">
+            <div class="icon-global-cases-part">
+                <img src="images/-windows/6-memberProfiles/fin-tech.png" alt="fin tech">
             </div>
-            <div class="label">fin tech</div>
+            <div class="label-global-cases-part">fin tech</div>
         </div>
 
-        <div class="card">
-            <div class="icon">
-                <img src="e-commerce.jpg" alt="e-commerce">
+        <div class="card-global-cases-part">
+            <div class="icon-global-cases-part">
+                <img src="images/-windows/6-memberProfiles/e-commerce.png" alt="e-commerce">
             </div>
-            <div class="label">e-commerce</div>
+            <div class="label-global-cases-part">e-commerce</div>
         </div>
 
-        <div class="card">
-            <div class="icon">
-                <img src="food&drinks.jpg" alt="food & drinks">
+        <div class="card-global-cases-part">
+            <div class="icon-global-cases-part">
+                <img src="images/-windows/6-memberProfiles/food-and-drinks.png" alt="food & drinks">
             </div>
-            <div class="label">food & drinks</div>
+            <div class="label-global-cases-part">food & drinks</div>
         </div>
 
-        <div class="card">
-            <div class="icon">
-                <img src="real-estate.jpg" alt="real estate">
+        <div class="card-global-cases-part">
+            <div class="icon-global-cases-part">
+                <img src="images/-windows/6-memberProfiles/real-estate.png" alt="real estate">
             </div>
-            <div class="label">real estate</div>
+            <div class="label-global-cases-part">real estate</div>
         </div>
     </div>
-    <div class="explore-btn">
+    <div class="explore-btn-global-cases-part">
         <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&oq=goo&gs_lcrp=EgZjaHJvbWUqDQgBEC4YxwEY0QMYgAQyBggAEEUYOTINCAEQLhjHARjRAxiABDIMCAIQIxgnGIAEGIoFMgYIAxBFGDwyBggEEEUYQTIGCAUQRRhBMgYIBhBFGEEyBggHEEUYPNIBCDI5MzFqMGo3qAIIsAIB8QXm6ydBWxvpePEF5usnQVsb6Xg&sourceid=chrome&ie=UTF-8"
             class="explore-more" target="_blank" rel="noopener noreferrer">
             explore more &gt;
@@ -611,19 +636,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         siccess stories from our clints around the world
     </p>
 
-    <div class="section">
+    <div class="section-global-cases-part">
         <button class="nav-btn prev-btn">❮</button>
-        <div class="slider">
-            <div class="track">
+        <div class="slider-global-cases-part">
+            <div class="track-global-cases-part">
                 <!-- 1 -->
-                <div class="card2">
-                    <div class="flag">
+                <div class="card2-global-cases-part">
+                    <div class="flag-global-cases-part">
                         <img src="china.flag.png" alt="china flag">
                     </div>
 
                      <p class="text" class="Paragraph-for-our-global-cases-page">"Circle solutions provides—really good, dedicated talents that possess a strong work ethic."</p>
 
-                    <div class="profile-pic">
+                    <div class="profile-pic-global-cases-part">
                         <img src="chinese-people.jpg" alt="client">
                     </div>
 
@@ -631,18 +656,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                      <p class="role" class="Paragraph-for-our-global-cases-page">CEO</p>
 
-                    <div class="company-info">
+                    <div class="company-info-global-cases-part">
                         <img src="luckin-coffee.png" alt="Luckin logo">
                         <span>Luckin Coffee, China</span>
                     </div>
 
-                     <button class="explore">explore</button>
+                     <button class="explore-global-cases-part">explore</button>
 
                 </div>
 
                 <!-- 2 -->
-                <div class="card2">
-                    <div class="flag">
+                <div class="card2-global-cases-part">
+                    <div class="flag-global-cases-part">
                         <img src="usa.flag.png" alt="usa flag">
                     </div>
 
@@ -658,13 +683,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <p class="role" class="Paragraph-for-our-global-cases-page">
                         CEO
                     </p>
-                    <div class="company-info">
+                    <div class="company-info-global-cases-part">
                         <img src="amazon.png" alt="amazon logo">
                         <span>
                             Amazon.com, USA
                         </span>
                     </div>
-                    <button class="explore">explore</button>
+                    <button class="explore-global-cases-part">explore</button>
                 </div>
 
                 <!-- 3 -->
@@ -678,7 +703,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="bmw.png" alt="bmw logo">
                         <span>BMW Group, Germany</span>
                     </div>
-                    <button class="explore">explore</button>
+                    <button class="explore-global-cases-part">explore</button>
                 </div>
 
                 <!-- 4 -->
@@ -692,7 +717,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="philips.png" alt="sony logo">
                         <span>Philips, netherlands</span>
                     </div>
-                    <button class="explore" onclick="window.location.href='www.google.com'">explore</button>
+                    <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">explore</button>
                 </div>
 
                 <!-- 5 -->
@@ -706,20 +731,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="loreal.png" alt="loreal logo">
                         <spam>L'Oréal, France</spam>
                     </div>
-                    <button class="explore" onclick="window.location.href='www.google.com'">explore</button>
+                    <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">explore</button>
                 </div>
             </div>
         </div>
         <button class="nav-btn next-btn">❯</button>
     </div>
+    </div>
 <script>
 window.addEventListener('DOMContentLoaded', () => {
-    const track = document.querySelector('.track');
+    const track = document.querySelector('.track-global-cases-part');
     const nextBtn = document.querySelector('.next-btn');
     const prevBtn = document.querySelector('.prev-btn');
 
     let index = 0;
-    const totalCards = document.querySelectorAll('.card2').length;
+    const totalCards = document.querySelectorAll('.card2-global-cases-part').length;
     const visibleCards = 3; 
     const maxIndex = totalCards - visibleCards;
 
@@ -738,7 +764,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 </script>
-
 
 
 
