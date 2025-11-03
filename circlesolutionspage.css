@@ -1368,6 +1368,13 @@ padding: 13vw;
     box-sizing: border-box;
 }*/
 /*hi*/
+/* f */
+.amin-global-cases-part{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0;
+    background-color: #c7eaf8;
+}
 .h1-amin-css {
     color: #799DAB;
     text-align: center;
@@ -1484,12 +1491,17 @@ padding: 13vw;
 }
 
 .card2-global-cases-part {
-    flex: 0 0 27%;
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     padding: 25px;
     text-align: center;
+    min-height: 420px;
 }
 
 .flag-global-cases-part img {
@@ -1545,10 +1557,11 @@ padding: 13vw;
     color: white;
     border: none;
     border-radius: 25px;
-    padding: 8px 22px;
+    padding: 10px 22px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
     transition: background 0.3s, transform 0.3s;
+    margin-top: auto;
 }
 
 .explore-global-cases-part:hover {

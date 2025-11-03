@@ -583,39 +583,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-
+<div class="amin-global-cases-part">
 
     <h1 class="h1-amin-css">our global cases</h1>
     <p class="Paragraph-for-our-global-cases-page">successful projects we delivered across borders</p>
 
-    <h1 class="header1-our-global-cases-part">our global cases</h1>
-    <p class="paragraph-our-global-cases-part">successful projects we delivered across borders</p>
+
 
     <div class="container-global-cases-part">
         <div class="card-global-cases-part">
             <div class="icon-global-cases-part">
-                <img src="images/-windows/6-memberProfiles/fin-tech.png" alt="fin tech">
+                <img src="/public/images/6-memberProfiles/fin-tech.png" alt="fin tech">
             </div>
             <div class="label-global-cases-part">fin tech</div>
         </div>
 
         <div class="card-global-cases-part">
             <div class="icon-global-cases-part">
-                <img src="images/-windows/6-memberProfiles/e-commerce.png" alt="e-commerce">
+                <img src="/public/images/6-memberProfiles/e-commerce.png" alt="e-commerce">
             </div>
             <div class="label-global-cases-part">e-commerce</div>
         </div>
 
         <div class="card-global-cases-part">
             <div class="icon-global-cases-part">
-                <img src="images/-windows/6-memberProfiles/food-and-drinks.png" alt="food & drinks">
+                <img src="/public/images/6-memberProfiles/food-and-drinks.png" alt="food & drinks">
             </div>
             <div class="label-global-cases-part">food & drinks</div>
         </div>
 
         <div class="card-global-cases-part">
             <div class="icon-global-cases-part">
-                <img src="images/-windows/6-memberProfiles/real-estate.png" alt="real estate">
+                <img src="/public/images/6-memberProfiles/real-estate.png" alt="real estate">
             </div>
             <div class="label-global-cases-part">real estate</div>
         </div>
@@ -633,7 +632,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </h1>
 
      <p class="Paragraph-for-our-global-cases-page">
-        siccess stories from our clints around the world
+        success stories from our clients around the world
     </p>
 
     <div class="section-global-cases-part">
@@ -646,7 +645,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="china.flag.png" alt="china flag">
                     </div>
 
-                     <p class="text" class="Paragraph-for-our-global-cases-page">"Circle solutions provides—really good, dedicated talents that possess a strong work ethic."</p>
+                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page"> 
+                        "Circle solutions provides—really good, dedicated talents that possess a strong work ethic."
+                     </p>
 
                     <div class="profile-pic-global-cases-part">
                         <img src="chinese-people.jpg" alt="client">
@@ -654,7 +655,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                      <h3>Jinyi Guo</h3>
 
-                     <p class="role" class="Paragraph-for-our-global-cases-page">CEO</p>
+                     <p class="role-global-cases-part Paragraph-for-our-global-cases-page">
+                        CEO
+                        </p>
 
                     <div class="company-info-global-cases-part">
                         <img src="luckin-coffee.png" alt="Luckin logo">
@@ -671,16 +674,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="usa.flag.png" alt="usa flag">
                     </div>
 
-                    <p class="text" class="Paragraph-for-our-global-cases-page">
+                    <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
                         "Always understanding our requirements to the detail, designing and developing high-quality software."
                     </p>
-                    <div class="profile-pic">
+                    <div class="profile-pic-global-cases-part">
                         <img src="usa-people.jpeg" alt="client">
                     </div>
                     <h3>
                         Andy Jassy
                     </h3>
-                    <p class="role" class="Paragraph-for-our-global-cases-page">
+                    <p class="role-global-cases-part Paragraph-for-our-global-cases-page">
                         CEO
                     </p>
                     <div class="company-info-global-cases-part">
@@ -693,43 +696,81 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
 
                 <!-- 3 -->
-                <div class="card2">
-                    <div class="flag"><img src="germany.flag.png" alt="germany flag"></div>
-                    <p class="text" class="Paragraph-for-our-global-cases-page">"This plugin has been great to work with. It has some really advanced functionality and easy to modify."</p>
-                    <div class="profile-pic"><img src="germany-people.jpeg" alt="client"></div>
-                    <h3>Oliver Zipse</h3>
-                    <p class="role" class="Paragraph-for-our-global-cases-page">CEO</p>
-                    <div class="company-info">
-                        <img src="bmw.png" alt="bmw logo">
-                        <span>BMW Group, Germany</span>
+                <div class="card2-global-cases-part">
+                    <div class="flag-global-cases-part">
+                        <img src="germany.flag.png" alt="germany flag">
                     </div>
-                    <button class="explore-global-cases-part">explore</button>
+                    <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
+                        "This plugin has been great to work with. It has some really advanced functionality and easy to modify."
+                    </p>
+                    <div class="profile-pic-global-cases-part">
+                        <img src="germany-people.jpeg" alt="client">
+                    </div>
+                    <h3>
+                        Oliver Zipse
+                    </h3>
+                    <p class="role-global-cases-part Paragraph-for-our-global-cases-page">
+                        CEO
+                    </p>
+                    <div class="company-info-global-cases-part">
+                        <img src="bmw.png" alt="bmw logo">
+                        <span>
+                            BMW Group, Germany
+                        </span>
+                    </div>
+                    <button class="explore-global-cases-part">
+                        explore
+                    </button>
                 </div>
 
                 <!-- 4 -->
-                <div class="card2">
-                    <div class="flag"><img src="netherlands.flag.png" alt="netherlands flag"></div>
-                    <p class="text" class="Paragraph-for-our-global-cases-page">"Amazing collaboration and top-notch results. Highly recommended!"</p>
-                    <div class="profile-pic"><img src="dutch-people.jpeg" alt="client"></div>
-                    <h3>Jasper van Dijk</h3>
-                    <p class="role" class="Paragraph-for-our-global-cases-page">Software Developer</p>
-                    <div class="company-info">
-                        <img src="philips.png" alt="sony logo">
-                        <span>Philips, netherlands</span>
+                <div class="card2-global-cases-part">
+                    <div class="flag-global-cases-part">
+                        <img src="netherlands.flag.png" alt="netherlands flag">
                     </div>
-                    <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">explore</button>
+                    <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
+                        "Amazing collaboration and top-notch results. Highly recommended!"
+                    </p>
+                    <div class="profile-pic-global-cases-part">
+                        <img src="dutch-people.jpeg" alt="client">
+                    </div>
+                    <h3>
+                        Jasper van Dijk
+                    </h3>
+                    <p class="role-global-cases-part Paragraph-for-our-global-cases-page">
+                        Software Developer
+                    </p>
+                    <div class="company-info-global-cases-part">
+                        <img src="philips.png" alt="sony logo">
+                        <span>
+                            Philips, netherlands
+                        </span>
+                    </div>
+                    <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">
+                        explore
+                    </button>
                 </div>
 
                 <!-- 5 -->
-                <div class="card2">
-                    <div class="flag"><img src="france.flag.png" alt="france flag"></div>
-                    <p class="text" class="Paragraph-for-our-global-cases-page">"Circle Solution exceeded our expectation s with their creativity and dedication."</p>
-                    <div class="profile-pic"><img src="french-people.jpeg" alt="client"></div>
-                    <h3>Marie Dubois</h3>
-                    <p class="role" class="Paragraph-for-our-global-cases-page">Product Manager</p>
-                    <div class="company-info">
+                <div class="card2-global-cases-part">
+                    <div class="flag-global-cases-part">
+                        <img src="france.flag.png" alt="france flag">
+                    </div>
+                    <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
+                        "Circle Solution exceeded our expectation s with their creativity and dedication."
+                    </p>
+                    <div class="profile-pic-global-cases-part">
+                        <img src="french-people.jpeg" alt="client">
+                    </div>
+                    <h3>
+                        Marie Dubois
+                    </h3>
+                    <p class="role-global-cases-part Paragraph-for-our-global-cases-page">
+                        Product Manager
+                    </p>
+                    <div class="company-info-global-cases-part">
                         <img src="loreal.png" alt="loreal logo">
-                        <spam>L'Oréal, France</spam>
+                        <span>L'Oréal, France</span>
                     </div>
                     <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">explore</button>
                 </div>
@@ -737,31 +778,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <button class="nav-btn next-btn">❯</button>
     </div>
-    </div>
+</div>
 <script>
 window.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.track-global-cases-part');
     const nextBtn = document.querySelector('.next-btn');
     const prevBtn = document.querySelector('.prev-btn');
+    const cards = document.querySelectorAll('.card2-global-cases-part');
 
     let index = 0;
-    const totalCards = document.querySelectorAll('.card2-global-cases-part').length;
-    const visibleCards = 3; 
-    const maxIndex = totalCards - visibleCards;
+    const visibleCards = 3;
+
+    function updateSlider() {
+        const cardWidth = cards[0].offsetWidth + 20;
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
 
     nextBtn.addEventListener('click', () => {
-        if (index < maxIndex) {
+        if (index < cards.length - visibleCards) {
             index++;
-            track.style.transform = "translateX(-" + (index * (100 / visibleCards)) + "%)";
+            updateSlider();
         }
     });
 
     prevBtn.addEventListener('click', () => {
         if (index > 0) {
             index--;
-            track.style.transform = "translateX(-" + (index * (100 / visibleCards)) + "%)";
+            updateSlider();
         }
     });
+
+    window.addEventListener('resize', updateSlider);
 });
 </script>
 
