@@ -787,7 +787,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 <script>
 window.addEventListener('DOMContentLoaded', () => {
-    const track = document.querySelector('.track-global-cases-part');
+    const track = document.querySelector('.amin-global-cases-part .track-global-cases-part');
     const nextBtn = document.querySelector('.next-btn');
     const prevBtn = document.querySelector('.prev-btn');
     const cards = document.querySelectorAll('.card2-global-cases-part');
