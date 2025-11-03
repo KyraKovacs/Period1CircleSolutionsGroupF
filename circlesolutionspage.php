@@ -75,15 +75,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- navbar -->
         <div class="navbar">
             <img class="logonav" src="images\logo\logo\circle solutions_logo_01(bluetext_blank background).png" alt="logo">
-            <a href="language"> <img class="language" src="images\_WINDOWS\1-homepage\language select icon.png"
-                    alt="languageselect">EN</a>
-            <a href="contactus">contact us</a>
-            <a href="whatwebuild">what we build</a>
-            <a href="aboutus">about us</a>
-            <a href="home">home</a>
+            <a href="#home">home</a>
+            <a href="#aboutus">about us</a>
+            <a href="#what-we-build">what we build</a>
+            <a href="#contact-us-page">contact us</a>
+            <a href="blog.html">blog</a>
+            <a href="language"> <img class="language" src="images\_WINDOWS\1-homepage\language select icon.png" alt="languageselect">EN</a>
         </div>
         <!-- text left side -->
-        <div class="welcometext">
+        <div id="home" class="welcometext">
             <div class="textleftside">
                 <h1 class="px180 bigspacewelc"><b>software</b></h1>
                 <h2 class="px150 bigspacewelc"><b>solutions</b></h2>
@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <!-- trusted across borders section -->
             <div class="bluerightsidewelc">
-                <h4 class="px30"><b>trusted across borders</b></h4>
+                <h4 class="px40 trustedwelc"><b>trusted across borders</b></h4>
                 <!-- card divclasses are for the white little cards -->
                 <div class="card-collection"> 
                     <div class="cardwelc">
@@ -126,7 +126,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img class="flag" src="images\_WINDOWS\1-homepage\3-Germany flag.png" alt="usflag">
                     </div>
                 </div>
-                <a href="globalreach"> <img class="globalreach" src="images\_WINDOWS\1-homepage\explore global reach button.png" alt="globalreach"></a>
+                <div class="globalreachcontainerwelc">
+                    <a href="#global-reach"> <img class="globalreachwelc" src="images\_WINDOWS\1-homepage\explore global reach button.png" alt="globalreach"></a>
+                </div>
             </div>
         </div>
         <div class="whitehomepage">
@@ -178,21 +180,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="golden-circle-section" id="about-us">
-
-    <h1 class="gc-heading">about us</h1>
+    
+    <h1 id="aboutus" class="gc-heading">about us</h1>
     <h2 class="gc-subtitle">golden circle</h2>
     <p class="gc-author">- by Simon Sinek -</p>
 
@@ -246,71 +236,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- section : values -->
         <section class="values-section">
@@ -514,7 +439,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
      </section>
 
      <!--What We Build Page-->
-     <section>
         <div class="WhatWeBuildBox" id="what-we-build">
             <div class="WhatWeBuildBox-title">what we build</div>
             <div class="WhatWeBuildBox-subtitle">explore how our solutions foster growth and digital discovery of your unique business</div>
@@ -529,59 +453,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <img src="images/_WINDOWS/5-what we build/web_dev.png" alt="web dev">   
                 </div>
         </div>
-     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- Amin -->
-
-
-
-
-
-
-
-
-
 
 <div class="amin-global-cases-part">
 
@@ -735,7 +608,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="images/_WINDOWS/7-testimonials/4-Netherlands flag.png" alt="netherlands flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
-                        "Amazing collaboration and top-notch and very good results. Highly recommended circle solutions!"
+                        "Amazing collaboration and top-notch results. Highly recommended!"
                     </p>
                     <div class="profile-pic-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/4-Jasper van Dijk.jpeg" alt="client">
@@ -744,7 +617,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         Jasper van Dijk
                     </h3>
                     <p class="role-global-cases-part Paragraph-for-our-global-cases-page">
-                        CEO
+                        Software Developer
                     </p>
                     <div class="company-info-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/philips.png" alt="philips logo">
@@ -763,7 +636,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="images/_WINDOWS/7-testimonials/france.flag.png" alt="france flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
-                        "Circle Solution exceeded our expectation s with their creativity and dedication very good circle solution."
+                        "Circle Solution exceeded our expectation s with their creativity and dedication."
                     </p>
                     <div class="profile-pic-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/IMG_5901.JPG" alt="client">
@@ -772,7 +645,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         Marie Dubois
                     </h3>
                     <p class="role-global-cases-part Paragraph-for-our-global-cases-page">
-                        CEO
+                        Product Manager
                     </p>
                     <div class="company-info-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/loreal.png" alt="loreal logo">
@@ -787,7 +660,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 <script>
 window.addEventListener('DOMContentLoaded', () => {
-    const track = document.querySelector('.amin-global-cases-part .track-global-cases-part');
+    const track = document.querySelector('.track-global-cases-part');
     const nextBtn = document.querySelector('.next-btn');
     const prevBtn = document.querySelector('.prev-btn');
     const cards = document.querySelectorAll('.card2-global-cases-part');
@@ -796,9 +669,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const visibleCards = 3;
 
     function updateSlider() {
-    const cardWidth = cards[0].offsetWidth + 20;
-    track.style.transform = `translateX(-${index * cardWidth}px)`; 
-     }
+        const cardWidth = cards[0].offsetWidth + 20;
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
 
     nextBtn.addEventListener('click', () => {
         if (index < cards.length - visibleCards) {
@@ -817,86 +690,6 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', updateSlider);
 });
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- CONTACT US PAGE -->
     <div class="contact-us-container" id="contact-us-page">
