@@ -698,6 +698,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         explore
                     </button>
                 </div>
+                <!-- test -->
 
                 <!-- 3 -->
                 <div class="card2-global-cases-part">
