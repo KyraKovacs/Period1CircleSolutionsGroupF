@@ -698,11 +698,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         explore
                     </button>
                 </div>
+                <!-- test -->
+                 <!-- y -->
 
                 <!-- 3 -->
                 <div class="card2-global-cases-part">
                     <div class="flag-global-cases-part">
-                        <img src=images/_WINDOWS/7-testimonials/3-Germany flag.png" alt="germany flag">
+                        <img src="images/_WINDOWS/7-testimonials/3-Germany flag.png" alt="germany flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
                         "This plugin has been great to work with. It has some really advanced functionality and easy to modify."
@@ -764,7 +766,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         "Circle Solution exceeded our expectation s with their creativity and dedication."
                     </p>
                     <div class="profile-pic-global-cases-part">
-                        <img src="images/_WINDOWS/7-testimonials/french-guy.png" alt="client">
+                        <img src="images/_WINDOWS/7-testimonials/IMG_5901.JPG" alt="client">
                     </div>
                     <h3>
                         Marie Dubois
