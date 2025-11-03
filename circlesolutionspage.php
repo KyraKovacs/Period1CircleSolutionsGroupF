@@ -642,7 +642,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- 1 -->
                 <div class="card2-global-cases-part">
                     <div class="flag-global-cases-part">
-                        <img src="china.flag.png" alt="china flag">
+                        <img src="images/_WINDOWS/7-testimonials/2-china flag.png" alt="china flag">
                     </div>
 
                      <p class="text-global-cases-part Paragraph-for-our-global-cases-page"> 
@@ -650,7 +650,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                      </p>
 
                     <div class="profile-pic-global-cases-part">
-                        <img src="chinese-people.jpg" alt="client">
+                        <img src="images/_WINDOWS/7-testimonials/1-Jinyi Guo.png" alt="client">
                     </div>
 
                      <h3>Jinyi Guo</h3>
@@ -660,7 +660,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </p>
 
                     <div class="company-info-global-cases-part">
-                        <img src="luckin-coffee.png" alt="Luckin logo">
+                        <img src="images/_WINDOWS/7-testimonials/Luckin Coffee.png" alt="Luckin logo">
                         <span>Luckin Coffee, China</span>
                     </div>
 
@@ -673,14 +673,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- 2 -->
                 <div class="card2-global-cases-part">
                     <div class="flag-global-cases-part">
-                        <img src="usa.flag.png" alt="usa flag">
+                        <img src="images/_WINDOWS/7-testimonials/1-US flag.png" alt="usa flag">
                     </div>
 
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
                         "Always understanding our requirements to the detail, designing and developing high-quality software."
                     </p>
                     <div class="profile-pic-global-cases-part">
-                        <img src="usa-people.jpeg" alt="client">
+                        <img src="images/_WINDOWS/7-testimonials/2-Andy Jassy.png" alt="client">
                     </div>
                     <h3>
                         Andy Jassy
@@ -689,7 +689,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         CEO
                     </p>
                     <div class="company-info-global-cases-part">
-                        <img src="amazon.png" alt="amazon logo">
+                        <img src="images/_WINDOWS/7-testimonials/Amazon.png" alt="amazon logo">
                         <span>
                             Amazon.com, USA
                         </span>
@@ -702,13 +702,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- 3 -->
                 <div class="card2-global-cases-part">
                     <div class="flag-global-cases-part">
-                        <img src="germany.flag.png" alt="germany flag">
+                        <img src=images/_WINDOWS/7-testimonials/3-Germany flag.png" alt="germany flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
                         "This plugin has been great to work with. It has some really advanced functionality and easy to modify."
                     </p>
                     <div class="profile-pic-global-cases-part">
-                        <img src="germany-people.jpeg" alt="client">
+                        <img src="images/_WINDOWS/7-testimonials/3-Oliver Zipse.png" alt="client">
                     </div>
                     <h3>
                         Oliver Zipse
@@ -717,7 +717,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         CEO
                     </p>
                     <div class="company-info-global-cases-part">
-                        <img src="bmw.png" alt="bmw logo">
+                        <img src="images/_WINDOWS/7-testimonials/BMW.png" alt="bmw logo">
                         <span>
                             BMW Group, Germany
                         </span>
@@ -730,13 +730,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- 4 -->
                 <div class="card2-global-cases-part">
                     <div class="flag-global-cases-part">
-                        <img src="netherlands.flag.png" alt="netherlands flag">
+                        <img src="images/_WINDOWS/7-testimonials/4-Netherlands flag.png" alt="netherlands flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
                         "Amazing collaboration and top-notch results. Highly recommended!"
                     </p>
                     <div class="profile-pic-global-cases-part">
-                        <img src="dutch-people.jpeg" alt="client">
+                        <img src="images/_WINDOWS/7-testimonials/4-Jasper van Dijk.jpeg" alt="client">
                     </div>
                     <h3>
                         Jasper van Dijk
@@ -745,7 +745,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         Software Developer
                     </p>
                     <div class="company-info-global-cases-part">
-                        <img src="philips.png" alt="sony logo">
+                        <img src="images/_WINDOWS/7-testimonials/philips.png" alt="philips logo">
                         <span>
                             Philips, netherlands
                         </span>
@@ -758,13 +758,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- 5 -->
                 <div class="card2-global-cases-part">
                     <div class="flag-global-cases-part">
-                        <img src="france.flag.png" alt="france flag">
+                        <img src="images/_WINDOWS/7-testimonials/france.flag.png" alt="france flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
                         "Circle Solution exceeded our expectation s with their creativity and dedication."
                     </p>
                     <div class="profile-pic-global-cases-part">
-                        <img src="french-people.jpeg" alt="client">
+                        <img src="images/_WINDOWS/7-testimonials/french-guy.png" alt="client">
                     </div>
                     <h3>
                         Marie Dubois
@@ -773,7 +773,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         Product Manager
                     </p>
                     <div class="company-info-global-cases-part">
-                        <img src="loreal.png" alt="loreal logo">
+                        <img src="images/_WINDOWS/7-testimonials/loreal.png" alt="loreal logo">
                         <span>L'Oréal, France</span>
                     </div>
                     <button class="explore-global-cases-part" onclick="window.location.href='www.google.com'">explore</button>
