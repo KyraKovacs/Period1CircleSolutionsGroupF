@@ -1360,14 +1360,15 @@ padding: 13vw;
 
 
 
-.the-our-global-cases-part {
-    background-color: #C7EAF8 !important;
+
+/*body {
+    background-color: #C7EAF8;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}*/
 
-.header1-our-global-cases-part {
+.h1-amin-css {
     color: #799DAB;
     text-align: center;
     font-size: 100px;
@@ -1375,7 +1376,7 @@ padding: 13vw;
     margin-bottom: 20px;
 }
 
-.paragraph-our-global-cases-part {
+.Paragraph-for-our-global-cases-page{
     color: #799DAB;
     text-align: center;
     font-size: 30px;
