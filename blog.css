@@ -1,0 +1,341 @@
+@font-face {
+    font-family: "Calibre-Regular";
+    src: url(fonts/fonts/Calibre-Regular.otf);
+}
+
+@font-face {
+    font-family: "Calibre-Bold";
+    src: url(fonts/fonts/Calibre-Bold.otf);
+}
+
+@font-face {
+    font-family: "Calibre-Black";
+    src: url(fonts/fonts/Calibre-Black.otf);
+}
+
+@font-face {
+    font-family: "Calibre-Semibold";
+    src: url(fonts/fonts/Calibre-Semibold.otf);
+}
+
+@font-face {
+    font-family: "Calibre-Medium";
+    src: url(fonts/fonts/Calibre-Medium.otf);
+}
+
+@font-face {
+    font-family: "Calibre-Light";
+    src: url(fonts/fonts/Calibre-Light.otf);
+}
+
+body{
+    margin: 0;
+    font-family: Calibre-Regular;
+    color: #799DAB;
+    overflow-x: hidden;
+}
+
+
+.navbar{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #C7EAF8;
+    z-index: 1000;
+}
+
+.logonav{
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.language{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.navbar a{
+    float: inline-end;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    color: #799DAB;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.mainblogpost{
+    display: flex;
+    max-width: 1750px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 40px auto;
+    background-color:#C7EAF8;
+}
+
+.textmainblog{
+    
+    flex: 1;
+    padding: 30px;
+    background-color:#C7EAF8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.more{
+    width: 200px;
+    height: auto;
+}
+.image{
+    flex: 1;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.blogcards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #C7EAF8;
+    border-radius: 20px;
+    padding: 20px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-container {
+    background-color: #799DAB;
+}
+
+.footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.footer-left-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 250px;
+}
+
+.footer-right-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.footer-company-title {
+    font-family: Calibre-Bold;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 64px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    margin-bottom: 32px;
+}
+
+.footer-social-img {
+    height: 24px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-family: Calibre-Bold;
+    color: white;
+}
+
+.footer-option {
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.footer-option:hover {
+    text-decoration: underline;
+}
+
+.footer-noclick-option {
+    color: white;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.footer-divider {
+    border: none;
+    height: 1px;
+    background-color: white;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    padding: 24px 24px;
+    justify-content: flex-start;
+}
+
+.copyright-img {
+    height: 14px;
+    margin-right: 3px;
+}
+
+/* FAQ styling */
+
+/* allows for the smooth animations */
+:root {
+    interpolate-size: allow-keywords;
+}
+
+summary {
+    font-family: Calibre-Medium;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+details {
+    overflow: hidden;
+}
+
+details::details-content {
+    margin-inline: 32px;
+    block-size: 0;
+    transition: block-size 0.5s,
+    content-visibility 0.5s;
+    transition-behavior: allow-discrete;
+}
+
+details[open]::details-content {
+    block-size: auto;
+}
+
+summary::marker {
+    content: none;
+}
+
+summary::before {
+    content: "\004F";
+    margin-right: 16px;
+}
+
+.faq-button {
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Calibre-Regular;
+    background: none;
+    outline: none;
+    border: none;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.faq-button:hover {
+    text-decoration: underline;
+}
+
+.faq-question {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.faq-text {
+    font-size: 20px;
+}
+
+.faq {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: 1px solid #799DAB;
+    z-index: 1000;
+    background-color: white;
+    width: 600px;
+    max-width: 80%;
+}
+
+.faq.active {
+    transform: translate(-50%, -50%) scale(1);
+    animation: fadeIn 0.3s forwards;
+}
+
+.faq-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-header .faq-title {
+    font-family: Calibre-Bold;
+    font-size: 40px;
+}
+
+.faq-header .close-faq {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 32px;
+    font-family: Calibre-Bold;
+    color: #799DAB;
+}
+
+.faq-body {
+    padding: 10px 15px;
+}
+
+#faqOverlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+}
+
+#faqOverlay.active {
+    opacity: 1;
+    pointer-events: all;
+    animation: fadeIn 0.3s forwards;
+}
