@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="#aboutus">over ons</a>
             <a href="#what-we-build">wat we bouwen</a>
             <a href="#contact-us-page">contact ons</a>
-            <a href="blog.html">blog</a>
+            <a href="blogdutch.html">blog</a>
             <a href="circlesolutionspage.php"> <img class="language" src="images\_WINDOWS\1-homepage\language select icon.png" alt="languageselect">NL</a>
         </div>
         <!-- text left side -->
