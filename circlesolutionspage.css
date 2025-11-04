@@ -233,7 +233,7 @@ body{
 }
 
 .trusted-companies-track{
-     animation: scroll 20s linear infinite;
+    animation: scroll 20s linear infinite;
     display: flex;
     width: max-content;
     gap: 1rem;
