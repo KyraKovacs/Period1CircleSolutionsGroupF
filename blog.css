@@ -77,6 +77,13 @@ body{
         justify-content: center;
     }
 
+.theme-button
+{
+    height: auto;
+    width: 3vw;
+    padding-top: 2.7vh;
+}
+
     h3{
         font-size: 40px;
     }

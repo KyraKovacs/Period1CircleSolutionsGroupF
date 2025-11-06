@@ -1,4 +1,21 @@
 <?php
+session_start(); // Start or resume the session
+
+// Default: dark mode on first visit
+if (!isset($_SESSION['mode'])) {
+    $_SESSION['mode'] = 'light';
+}
+
+// Handle toggle POST form
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['toggle_mode'])) {
+    $_SESSION['mode'] = ($_SESSION['mode'] === 'light') ? 'dark' : 'light';
+    header("Location: " . strtok($_SERVER['REQUEST_URI'], '#'));
+exit;
+}
+?>
+
+
+<?php
     function validateInput() {
         $name = filter_input(INPUT_POST, "name");
         $company = filter_input(INPUT_POST, "company");
@@ -67,6 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions</title>
     <link rel="stylesheet" href="circlesolutionspage.css">
+    <link rel="stylesheet" href="<?php echo ($_SESSION['mode'] === 'light') ? 'circlesolutionspage.css' : 'circlesolutionspageD.css'; ?>">
 </head>
 
 <body>
@@ -79,8 +97,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="#aboutus">over ons</a>
             <a href="#what-we-build">wat we bouwen</a>
             <a href="#contact-us-page">contact ons</a>
-            <a href="blogdutch.html">blog</a>
+            <a href="blogdutch.php">blog</a>
             <a href="circlesolutionspage.php"> <img class="language" src="images\_WINDOWS\1-homepage\language select icon.png" alt="languageselect">NL</a>
+            <form method="POST" style="display:inline;">
+                <button type="submit" name="toggle_mode" style="background:none; border:none; padding:0; cursor:pointer;">
+                   <img class="theme-button" src="<?php echo ($_SESSION['mode'] === 'light') 
+                    ? 'images/_WINDOWS/1-homepage/sun.png' 
+                    : 'images/_WINDOWS/1-homepage/moon.png'; ?>" alt="ux and ui">
+                </button>
+            </form>
         </div>
         <!-- text left side -->
         <div id="home" class="welcometext">
@@ -205,13 +230,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="section-divider"></div>
 
     <!-- Vision & Mission Section -->
+     <div class="bcg-color-vision-mision">
     <div class="vision-mission">
     <div class="vision-section">
         <div class="left-side">
         <h1 class="vm-title">visie</h1>
         </div>
         <div class="right-side">
-        <img src="images/_WINDOWS/3-about us/circle.jpeg" alt="circle" class="circle-img">
+        <img src="images/_WINDOWS/3-about us/DM_circle.png" alt="circle" class="circle-img">
         <div class="text-area">
             <h2>visie</h2>
             <p>we houden ervan om dingen eenvoudig te houden, geen grote gebaren,<span class="next">geen theater of veelbelovende utopieën.</span></p>
@@ -224,7 +250,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h1 class="vm-title">&amp; missie</h1>
         </div>
         <div class="right-side">
-        <img src="images/_WINDOWS/3-about us/circle.jpeg" alt="circle" class="circle-img">
+        <img src="images/_WINDOWS/3-about us/DM_circle.png" alt="circle" class="circle-img">
         <div class="text-area">
             <h2>missie</h2>
             <p>software ontwikkelen die aansluit bij de individuele kwaliteiten<span class="next">van individuele behoeften</span></p><br>
@@ -233,6 +259,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
     </div>
+</div>
 
 <!-- section : values -->
         <section class="values-section">
@@ -386,7 +413,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="GlobalReachBox" id="global-reach">
         <h1 class="whitetext">ons wereldwijde bereik</h1>
         <div class="bluegrey">wereldwijd vertrouwd in meer dan 30 landen</div>
-        <img class="worldmap" src="images/_WINDOWS/4-global presence/world map.png" alt="world map">
+        <img class="worldmap" src="<?php echo ($_SESSION['mode'] === 'light') 
+        ? 'images/_WINDOWS/4-global presence/world map.png' 
+        : 'images/_WINDOWS/4-global presence/world mapD.png'; ?>" alt="worldmap">
         <div class="whitebox">
             <div class="projects-text">
                     <h1>2000+ <b class="projects">projecten</b></h1> 
@@ -440,14 +469,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="WhatWeBuildBox-title">wat we bouwen</div>
             <div class="WhatWeBuildBox-subtitle">Ontdek hoe onze oplossingen de groei en digitale ontdekking van uw unieke bedrijf bevorderen.</div>
                 <div class="circles-box">
-                    <img src="images/_WINDOWS/5-what we build/API.png" alt="API">
-                    <img src="images/_WINDOWS/5-what we build/cloud_dev.png" alt="cloud dev">  
-                    <img src="images/_WINDOWS/5-what we build/hire_developer.png" alt="hire developer">  
-                    <img src="images/_WINDOWS/5-what we build/mobileapp.png" alt="mobile app">  
-                    <img src="images/_WINDOWS/5-what we build/product_dev.png" alt="product dev">  
-                    <img src="images/_WINDOWS/5-what we build/software_testing.png" alt="software testing">  
-                    <img src="images/_WINDOWS/5-what we build/UX_UI.png" alt="UX/UI">  
-                    <img src="images/_WINDOWS/5-what we build/web_dev.png" alt="web dev">   
+                    <img src="<?php echo ($_SESSION['mode'] === 'light') 
+                    ? 'images/_WINDOWS/5-dark & light mode - what we build/LM_API.png' 
+                    : 'images/_WINDOWS/5-dark & light mode - what we build/DM_API.png'; ?>" alt="API">
+                    <img src="<?php echo ($_SESSION['mode'] === 'light') 
+                    ? 'images/_WINDOWS/5-dark & light mode - what we build/LM_cloud_dev.png' 
+                    : 'images/_WINDOWS/5-dark & light mode - what we build/DM_cloud_dev.png'; ?>" alt="cloud dev"> 
+                     <img src="<?php echo ($_SESSION['mode'] === 'light') 
+                    ? 'images/_WINDOWS/5-dark & light mode - what we build/LM_hired_devloper.png' 
+                    : 'images/_WINDOWS/5-dark & light mode - what we build/DM_hired_developer.png'; ?>" alt="hired developer">   
+                   <img src="<?php echo ($_SESSION['mode'] === 'light') 
+                    ? 'images/_WINDOWS/5-dark & light mode - what we build/LM_mobile app.png' 
+                    : 'images/_WINDOWS/5-dark & light mode - what we build/DM_mobile_app.png'; ?>" alt="mobile app">  
+                    <img src="<?php echo ($_SESSION['mode'] === 'light') 
+                    ? 'images/_WINDOWS/5-dark & light mode - what we build/LM_product_dev.png' 
+                    : 'images/_WINDOWS/5-dark & light mode - what we build/DM_product dev.png'; ?>" alt="product dev"> 
+                    <img src="<?php echo ($_SESSION['mode'] === 'light') 
+                    ? 'images/_WINDOWS/5-dark & light mode - what we build/LM_software_testing.png' 
+                    : 'images/_WINDOWS/5-dark & light mode - what we build/DM_software_testing.png'; ?>" alt="software testing">  
+                    <img src="<?php echo ($_SESSION['mode'] === 'light') 
+                    ? 'images/_WINDOWS/5-dark & light mode - what we build/LM_ux_ui.png' 
+                    : 'images/_WINDOWS/5-dark & light mode - what we build/DM_ux_ui.png'; ?>" alt="ux and ui">  
+                    <img src="<?php echo ($_SESSION['mode'] === 'light') 
+                    ? 'images/_WINDOWS/5-dark & light mode - what we build/LM_web_dev.png' 
+                    : 'images/_WINDOWS/5-dark & light mode - what we build/DM_web_dev.png'; ?>" alt="web dev">   
                 </div>
         </div>
 
@@ -764,11 +809,11 @@ window.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
                 <!-- submission button -->
-                <input class="submit-img" type="image" src="images/_WINDOWS/8-contact us/connect.png">
+               <button name="contact_form_submit" style="background:none; border:none; padding:0; cursor:pointer;" type="submit"><img class="submit-img" src="images/_WINDOWS/8-contact us/connect.png" alt="submit form button"></button>
             </form>
             <!-- form data validation -->
             <?php
-            if($_SERVER["REQUEST_METHOD"] == "POST") {
+             if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["contact_form_submit"])) {
                 $output = validateInput();
 
 

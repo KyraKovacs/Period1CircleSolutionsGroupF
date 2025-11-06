@@ -1,3 +1,18 @@
+<?php
+session_start(); // Start or resume the session
+
+// Default: dark mode on first visit
+if (!isset($_SESSION['mode'])) {
+    $_SESSION['mode'] = 'light';
+}
+
+// Handle toggle POST form
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['toggle_mode'])) {
+    $_SESSION['mode'] = ($_SESSION['mode'] === 'light') ? 'dark' : 'light';
+    header("Location: " . strtok($_SERVER['REQUEST_URI'], '#'));
+exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions Blog</title>
     <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="<?php echo ($_SESSION['mode'] === 'light') ? 'blog.css' : 'blogdarkmode.css'; ?>">
 </head>
 <body>
     <div class="navbar">
@@ -13,8 +29,15 @@
         <a href="circlesolutionspage.php">about us</a>
         <a href="circlesolutionspage.php">what we build</a>
         <a href="circlesolutionspage.php">contact us</a>
-        <a href="blog.html">blog</a>
+        <a href="blog.php">blog</a>
         <a href="blogdutch.html"> <img class="language" src="images\_WINDOWS\1-homepage\language select icon.png" alt="languageselect">EN</a>
+        <form method="POST" style="display:inline;">
+                <button type="submit" name="toggle_mode" style="background:none; border:none; padding:0; cursor:pointer;">
+                   <img class="theme-button" src="<?php echo ($_SESSION['mode'] === 'light') 
+                    ? 'images/_WINDOWS/1-homepage/sun.png' 
+                    : 'images/_WINDOWS/1-homepage/moon.png'; ?>" alt="ux and ui">
+                </button>
+            </form>
     </div>
     <div class="textonpage">
         <h3>Learn about IT news with Circle Solutions:</h3>
