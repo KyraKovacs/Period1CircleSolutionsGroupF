@@ -605,10 +605,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="images/_WINDOWS/7-testimonials/4-Netherlands flag.png" alt="netherlands flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
-                        "Geweldige samenwerking en uitstekende resultaten. Een echte aanrader!"
+                        "Geweldige samenwerking en uitstekende resultaten.Absoluut Een echte aanrader voor iedereen!"
                     </p>
                     <div class="profile-pic-global-cases-part">
-                        <img src="images/_WINDOWS/7-testimonials/4-Jasper van Dijk.jpeg" alt="client">
+                        <img src="images/_WINDOWS/7-testimonials/4-Jasper van Dijk.png" alt="client">
                     </div>
                     <h3>
                         Jasper van Dijk
@@ -633,10 +633,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="images/_WINDOWS/7-testimonials/france.flag.png" alt="france flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
-                        "Circle Solution overtrof onze verwachtingen met hun creativiteit en toewijding."
+                        "Circle Solution overtrof al onze verwachtingen met hun uitzonderlijke, innovatieve creativiteit en toewijding."
                     </p>
                     <div class="profile-pic-global-cases-part">
-                        <img src="images/_WINDOWS/7-testimonials/IMG_5901.JPG" alt="client">
+                        <img src="images/_WINDOWS/7-testimonials/5-Marie Dubois.png" alt="client">
                     </div>
                     <h3>
                         Marie Dubois

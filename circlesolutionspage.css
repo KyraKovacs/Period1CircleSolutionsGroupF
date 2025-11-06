@@ -270,9 +270,16 @@ body{
   font-size: 72px;
   font: bold;
   color: #799dab;
-  font-weight: 700;
   margin: 0;
   text-transform: lowercase;
+  /* color: #799DAB ; */
+  text-align: center;
+    /* font-size: 100px; */
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Calibre-Bold";
+  font-weight: 700;
+  font-size: 5vw;
 }
 
 .next { 
@@ -1398,14 +1405,13 @@ padding: 13vw;
     background-color: #c7eaf8;
 }
 .h1-amin-css {
-    color: #799DAB;
+    color: #799DAB ;
     text-align: center;
     /* font-size: 100px; */
     font-weight: bold;
     margin-bottom: 20px;
     
     font-family: "Calibre-Bold";
-    src: url(fonts/fonts/Calibre-Bold.otf);
     font-weight: 700;
     font-size: 5vw;
 }

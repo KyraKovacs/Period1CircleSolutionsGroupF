@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                     <div class="cardwelc">
                         <img class="quote" src="images\_WINDOWS\1-homepage\quotation.png" alt="quotation">
-                        <p class="px16">“this plugin has been great to work with. It has some really advanced functionality
+                        <p class="px16">“this plugin has been great to work with. It has some advanced functionality
                         and easy to modify”</p>
                         <img class="CEO" src="images\_WINDOWS\1-homepage\3-Oliver Zipse.png" alt="oliverzipse">
                         <p class="px18"><b>Oliver Zipse</b></p>
@@ -608,7 +608,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="images/_WINDOWS/7-testimonials/4-Netherlands flag.png" alt="netherlands flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
-                        "Amazing collaboration and top-notch results. Highly recommended!"
+                        " Amazing and fantastic collaboration and top-notch results.  Highly  recommended Circle Solution!"
                     </p>
                     <div class="profile-pic-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/4-Jasper van Dijk.png" alt="client">
@@ -636,7 +636,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <img src="images/_WINDOWS/7-testimonials/france.flag.png" alt="france flag">
                     </div>
                     <p class="text-global-cases-part Paragraph-for-our-global-cases-page">
-                        "Circle Solution exceeded our expectation s with their creativity and dedication."
+                        "Circle Solution consistently exceeded  all our expectations with their creativity and dedication."
                     </p>
                     <div class="profile-pic-global-cases-part">
                         <img src="images/_WINDOWS/7-testimonials/5-Marie Dubois.png" alt="client">
