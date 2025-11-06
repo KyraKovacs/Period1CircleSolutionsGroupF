@@ -1,0 +1,496 @@
+
+/* -----------------------------
+   Golden Circle Section Styles
+----------------------------- */
+
+.golden-circle-section {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 80px 0;
+}
+
+/* Headings */
+.gc-heading {
+  font-size: 72px;
+  font: bold;
+  color: #799dab;
+  font-weight: 700;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+.next { 
+  display: block;
+}
+
+.gc-subtitle {
+  font-size: 54px;
+  font: bold;
+  color: #c7eaf8;
+  font-weight: 700;
+  margin: 5px 0;
+  text-transform: lowercase;
+}
+
+.gc-author {
+  font-size: 14px;
+  color: #799dab;
+  margin: 5px 0 60px;
+}
+
+/* Circle layout */
+.gc-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 120px;
+  flex-wrap: wrap;
+}
+
+.gc-item {
+  max-width: 260px;
+}
+
+.gc-image {
+  width: 230px;
+  height: 230px;
+  
+  object-fit: cover;
+  background-color: #c7eaf8;
+  display: block;
+  margin: 0 auto 25px;
+}
+
+/* Text under each circle */
+.gc-desc {
+  color: #799dab;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* === Enhancements for responsiveness and hover effects === */
+
+/* Make circles perfectly round */
+.gc-image {
+  border-radius: 50%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover effects */
+.gc-item:hover .gc-image {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Slight text animation on hover */
+.gc-item:hover .gc-desc {
+  color: #5b7f8d;
+  transition: color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .gc-container {
+    gap: 60px;
+  }
+  .gc-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gc-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .gc-item {
+    max-width: 80%;
+  }
+  .gc-image {
+    width: 180px;
+    height: 180px;
+  }
+  .gc-heading {
+    font-size: 48px;
+  }
+  .gc-subtitle {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gc-image {
+    width: 150px;
+    height: 150px;
+  }
+  .gc-desc {
+    font-size: 13px;
+  }
+}
+
+
+
+
+
+/* === Fix: Keep content centered on smaller screens === */
+@media (max-width: 768px) {
+  body, html {
+    overflow-x: hidden;
+  }
+
+  .golden-circle-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gc-container {
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto;
+  }
+
+  .gc-item {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .golden-circle-section {
+    padding: 60px 10px;
+  }
+
+  .gc-container {
+    width: 100%;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .gc-item {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+/* -----------------------------
+   Spacer Between Sections
+----------------------------- */
+.section-divider {
+  height: 70px; /* creates smooth scroll space */
+  width: 100%;
+}
+
+.vision-mission {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+  padding-left: 80px; /* keeps the left text from touching the edge */
+  padding-top: 100px;
+}
+
+.vision-section,
+.mission-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.next {
+  display: block;
+}
+
+.vm-title {
+  font-size: 100px;
+  font-weight: 600;
+  color: #c7eaf8;
+  text-transform: lowercase;
+  margin: 0;
+  line-height: 1;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin-right: 100px;
+}
+
+.circle-img {
+  width: 45px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.text-area {
+  max-width: 480px;
+}
+
+.vision p {
+ border-top: 40px;
+
+}
+.text-area h2 {
+  font-size: 40px;  
+  font-weight: 600;
+  color: #c7eaf8;
+  margin: 0 0 2px 0;
+  text-transform: lowercase;
+}
+
+.text-area p {
+  font-size: 20px;
+  color: #799dab;
+  line-height: 1.7;
+  margin: 0;
+}
+
+
+
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 1200px) {
+  .vision-mission {
+    padding-left: 40px;
+    gap: 120px;
+    padding-top: 60px;
+  }
+
+  .vm-title {
+    font-size: 70px;
+  }
+
+  .text-area {
+    max-width: 400px;
+  }
+
+  .right-side {
+    margin-right: 50px;
+    gap: 15px;
+  }
+
+  .text-area h2 {
+    font-size: 32px;
+  }
+
+  .text-area p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .vision-section,
+  .mission-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right-side {
+    margin-right: 0;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .circle-img {
+    width: 35px;
+  }
+
+  .vm-title {
+    font-size: 60px;
+  }
+
+  .text-area h2 {
+    font-size: 28px;
+  }
+
+  .text-area p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vision-mission {
+    padding-left: 20px;
+    padding-top: 40px;
+    gap: 80px;
+  }
+
+  .vm-title {
+    font-size: 45px;
+  }
+
+  .text-area h2 {
+    font-size: 24px;
+  }
+
+  .text-area p {
+    font-size: 14px;
+  }
+
+  .circle-img {
+    width: 30px;
+  }
+}
+
+
+
+
+
+/* === Fix: Keep vision & mission content centered on smaller screens === */
+@media (max-width: 900px) {
+  .vision-mission {
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .vision-section,
+  .mission-section {
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .left-side,
+  .right-side,
+  .text-area {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .circle-img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .vision-mission {
+    width: 100%;
+    padding: 40px 10px;
+  }
+
+  .left-side,
+  .right-side,
+  .text-area {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .circle-img {
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  .text-area h2,
+  .text-area p {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* === CENTERING FIX (add at end of visionnew.css) === */
+.vision-mission {
+  box-sizing: border-box;
+  max-width: 1180px;     /* keeps the whole section centered and constrained */
+  margin: 0 auto;        
+  padding-left: 0;       
+  padding-right: 0;
+  width: 100%;
+}
+
+/* Keep left and right columns spaced but centered as a whole */
+.vision-section,
+.mission-section {
+  width: 100%;
+  max-width: 1100px;     
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  gap: 40px;             
+  box-sizing: border-box;
+}
+
+/* Give left and right predictable column sizes so they don't collapse together */
+.left-side,
+.right-side {
+  flex: 0 0 48%;         
+  min-width: 220px;      
+  box-sizing: border-box;
+}
+
+/* Ensure text-area doesn't overflow and wraps nicely */
+.text-area {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Keep the circle image positioned nicely inside the right column */
+.circle-img {
+  flex-shrink: 0;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Responsive adjustments that preserve spacing on smaller screens */
+@media (max-width: 1100px) {
+  .vision-section,
+  .mission-section {
+    gap: 30px;
+    max-width: 920px;
+  }
+  .left-side,
+  .right-side {
+    flex: 0 0 46%;
+  }
+}
+
+@media (max-width: 900px) {
+  /* your existing mobile rules already switch to column layout;
+     keep them but ensure there's spacing between stacked blocks */
+  .vision-section,
+  .mission-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .left-side,
+  .right-side {
+    flex: 0 0 auto;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .vision-mission {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
