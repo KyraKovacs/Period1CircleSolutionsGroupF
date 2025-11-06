@@ -90,9 +90,13 @@ body{
 }
 .px180{
     font-size: 180px;
+    font-weight: 800;
+    font-family: "Calibre-Bold";
 }
 .px150{
     font-size: 150px;
+    font-weight: 800;
+    font-family: "Calibre-Bold";
 }
 .px16{
     font-size: 16px;
