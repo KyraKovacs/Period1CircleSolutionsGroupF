@@ -611,7 +611,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         "Amazing collaboration and top-notch results. Highly recommended!"
                     </p>
                     <div class="profile-pic-global-cases-part">
-                        <img src="images/_WINDOWS/7-testimonials/4-Jasper van Dijk.jpeg" alt="client">
+                        <img src="images/_WINDOWS/7-testimonials/4-Jasper van Dijk.png" alt="client">
                     </div>
                     <h3>
                         Jasper van Dijk
@@ -639,7 +639,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         "Circle Solution exceeded our expectation s with their creativity and dedication."
                     </p>
                     <div class="profile-pic-global-cases-part">
-                        <img src="images/_WINDOWS/7-testimonials/IMG_5901.JPG" alt="client">
+                        <img src="images/_WINDOWS/7-testimonials/5-Marie Dubois.png" alt="client">
                     </div>
                     <h3>
                         Marie Dubois
